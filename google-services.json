@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "724156354427",
+    "firebase_url": "https://getjob-fee75.firebaseio.com",
+    "project_id": "getjob-fee75",
+    "storage_bucket": "getjob-fee75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724156354427:android:33c1a15eb0dc67de2937de",
+        "android_client_info": {
+          "package_name": "com.team3.getjob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724156354427-o2ncqkjen7j24u6vk2rj6ipai2vr9j92.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.team3.getjob",
+            "certificate_hash": "47a79529385f65848638f62ac28d7c71502b9595"
+          }
+        },
+        {
+          "client_id": "724156354427-3mvhcvrcqi4k75n7ctec1pa54jjrifae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNooKFahvYwFPpa0KmMqecfV2qgKxMArw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724156354427-3mvhcvrcqi4k75n7ctec1pa54jjrifae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
