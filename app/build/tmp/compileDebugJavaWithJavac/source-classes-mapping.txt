@@ -2,4 +2,3 @@ com/team3/getjob/BuildConfig.java
  com.team3.getjob.BuildConfig
 com/team3/getjob/MainActivity.java
  com.team3.getjob.MainActivity
- com.team3.getjob.MainActivity$1

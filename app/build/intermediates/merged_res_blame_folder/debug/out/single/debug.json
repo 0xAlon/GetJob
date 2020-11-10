@@ -24,6 +24,10 @@
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/drawable_background.xml.flat",
+        "source": "/Users/alon/Documents/GetJob/app/src/main/res/drawable/background.xml"
+    },
+    {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
