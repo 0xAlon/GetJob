@@ -1,7 +1,7 @@
-#Tue Nov 10 17:36:13 IST 2020
-base.0=/Users/alon/Documents/GetJob/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+#Wed Nov 18 18:38:25 IST 2020
+base.0=C\:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/Users/alon/Documents/GetJob/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
+base.1=C\:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
