@@ -1,4 +1,8 @@
+com/team3/getjob/LoginFragment.java
+ com.team3.getjob.LoginFragment
 com/team3/getjob/BuildConfig.java
  com.team3.getjob.BuildConfig
 com/team3/getjob/MainActivity.java
  com.team3.getjob.MainActivity
+com/team3/getjob/WelcomeActivity.java
+ com.team3.getjob.WelcomeActivity

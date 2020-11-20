@@ -8,6 +8,10 @@
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/layout_activity_welcome.xml.flat",
+        "source": "/Users/alon/Documents/GetJob/app/src/main/res/layout/activity_welcome.xml"
+    },
+    {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/drawable/ic_launcher_background.xml"
     },
@@ -16,16 +20,16 @@
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/drawable_background.xml.flat",
+        "source": "/Users/alon/Documents/GetJob/app/src/main/res/drawable/background.xml"
+    },
+    {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/drawable_background.xml.flat",
-        "source": "/Users/alon/Documents/GetJob/app/src/main/res/drawable/background.xml"
     },
     {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -42,6 +46,10 @@
     {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/layout_fragment_login.xml.flat",
+        "source": "/Users/alon/Documents/GetJob/app/src/main/res/layout/fragment_login.xml"
     },
     {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
