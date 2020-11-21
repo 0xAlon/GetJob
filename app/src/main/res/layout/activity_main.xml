@@ -6,6 +6,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity"
     android:background="@drawable/background"
-    android:id="@+id/login_main_container">
+    android:id="@+id/login_main_container"
+    tools:viewBindingIgnore="true" >
 
 </LinearLayout>
