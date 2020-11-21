@@ -1,4 +1,4 @@
-#Wed Nov 18 18:38:25 IST 2020
+#Sat Nov 21 14:01:26 IST 2020
 base.0=C\:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
