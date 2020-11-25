@@ -32,6 +32,10 @@
         "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
+        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins.xml.flat",
+        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\font\\poppins.xml"
+    },
+    {
         "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
@@ -54,6 +58,10 @@
     {
         "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_filter.xml.flat",
+        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\activity_filter.xml"
     },
     {
         "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
