@@ -3,15 +3,21 @@ package com.team3.getjob;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
+import com.team3.getjob.RegisterUser;
 
-/**
- * Example local unit test, which will execute on the development machine (host).
- *
- * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
- */
 public class ExampleUnitTest {
+
     @Test
-    public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+    public void isValidPassword_test() {
+        assertFalse(RegisterUser.isValidPassword("12345"));
+        assertFalse(RegisterUser.isValidPassword("123abc"));
     }
+
+    public void isEmailValid_test() {
+        assertFalse(RegisterUser.isEmailValid("alon"));
+        assertFalse(RegisterUser.isEmailValid("alon@alon"));
+        assertTrue(RegisterUser.isEmailValid("alon@alon.com"));
+    }
+
+
 }
