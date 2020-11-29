@@ -1624,7 +1624,9 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id Email
 id FUNCTION
+id Location
 id META
 id NO_DEBUG
 id SHIFT
@@ -1709,6 +1711,7 @@ id beginning
 id blocking
 id bottom
 id bounce
+id button
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -1729,6 +1732,8 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id company_name
+id companyname
 id confirm_button
 id container
 id content
@@ -1817,6 +1822,7 @@ id light
 id line1
 id line3
 id linear
+id list
 id listMode
 id list_item
 id masked
@@ -1874,6 +1880,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id phone
 id pin
 id position
 id postLayout
@@ -1960,6 +1967,12 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView11
+id textView13
+id textView2
+id textView3
+id textView7
+id textView9
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -1989,6 +2002,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id user_name
 id view_offset_helper
 id visible
 id wide
@@ -2075,6 +2089,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout employer_profile
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
