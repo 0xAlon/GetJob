@@ -9,11 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 
-import static com.team3.getjob.R.id.checkBox;
-import static com.team3.getjob.R.id.checkBox6;
-import static com.team3.getjob.R.id.checkBox7;
-import static com.team3.getjob.R.id.checkBox8;
-import static com.team3.getjob.R.id.checkBox9;
+import java.util.ArrayList;
 
 public class rank_filter extends AppCompatActivity {
 
@@ -21,6 +17,73 @@ public class rank_filter extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rank_filter);
+        CheckBox check1 = findViewById(R.id.checkBox);
+        CheckBox check2 = findViewById(R.id.checkBox6);
+        CheckBox check3 = findViewById(R.id.checkBox7);
+        CheckBox check4 = findViewById(R.id.checkBox8);
+        CheckBox check5 = findViewById(R.id.checkBox9);
+        ArrayList<String>result=new ArrayList<>();
+
+        check1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(check1.isChecked())
+                    result.add("1");
+                else
+                    result.remove("1");
+            }
+        });
+        check2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(check2.isChecked())
+                    result.add("2");
+                else
+                    result.remove("2");
+            }
+        });
+        check3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(check1.isChecked())
+                    result.add("3");
+                else
+                    result.remove("3");
+            }
+        });
+        check4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(check4.isChecked())
+                    result.add("4");
+                else
+                    result.remove("4");
+            }
+        });
+        check5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(check5.isChecked())
+                    result.add("5");
+                else
+                    result.remove("5");
+            }
+        });
+
+
+        //Complete
+        Button complete = (Button) findViewById(R.id.button);
+        complete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                StringBuilder str=new StringBuilder();
+                for(String s:result) {
+                    str.append(s).append("\n");
+                }
+            }
+        });
+        //--------------------------------------------------------------------------
+
         //option for cancel location filter and came back for filter menu
         Button button = (Button) findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
@@ -31,32 +94,8 @@ public class rank_filter extends AppCompatActivity {
             }
         });
         //--------------------------------------------------------------------------
+
     }
-
-    public void click(View view) {
-        // Is the view now checked?
-        boolean checked = ((CheckBox) view).isChecked();
-        if (view.getId() == checkBox) {
-            if(checked)
-                Log.d("tag","Hi!");
-        }
-        else if(view.getId() == checkBox6) {
-            if(checked)
-
-
-        else if(view.getId() == checkBox7) {
-            if(checked)
-
-        }
-        else if(view.getId() == checkBox8) {
-            if(checked)
-
-        }
-        else if(view.getId() == checkBox9) {
-            if(checked)
-
-        }
-    }
-
 }
+
 
