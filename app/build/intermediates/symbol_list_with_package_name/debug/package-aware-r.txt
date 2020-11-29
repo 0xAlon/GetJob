@@ -1003,6 +1003,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gray
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color light_blue
@@ -1557,6 +1558,7 @@ drawable btn_radio_on_to_off_mtrl_animation
 drawable button_1
 drawable button_2
 drawable button_3
+drawable button_4
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -2974,6 +2976,7 @@ style Widget_Support_CoordinatorLayout
 style button_1
 style button_2
 style button_3
+style button_4
 style image_1
 style text_box_1
 style text_box_2

@@ -12,6 +12,7 @@ import androidx.fragment.app.FragmentManager;
 
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class WelcomeActivity extends Fragment implements View.OnClickListener{
 
@@ -35,7 +36,7 @@ public class WelcomeActivity extends Fragment implements View.OnClickListener{
 
         Button registerUser = (Button) view.findViewById(R.id.user);
         registerUser.setOnClickListener(this);
-
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
         return view;
     }
 
