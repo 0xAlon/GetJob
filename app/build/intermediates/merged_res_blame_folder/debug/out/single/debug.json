@@ -8,16 +8,12 @@
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/layout_activity_welcome.xml.flat",
-        "source": "/Users/alon/Documents/GetJob/app/src/main/res/layout/activity_welcome.xml"
+        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/drawable_ic_image_1.xml.flat",
+        "source": "/Users/alon/Documents/GetJob/app/src/main/res/drawable/ic_image_1.xml"
     },
     {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/drawable_button_3.xml.flat",
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/drawable/button_3.xml"
-    },
-    {
-        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/drawable_ic_image_1.xml.flat",
-        "source": "/Users/alon/Documents/GetJob/app/src/main/res/drawable/ic_image_1.xml"
     },
     {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
@@ -42,6 +38,10 @@
     {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/font_poppins_bold.xml.flat",
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/font/poppins_bold.xml"
+    },
+    {
+        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/layout_fragment_welcome.xml.flat",
+        "source": "/Users/alon/Documents/GetJob/app/src/main/res/layout/fragment_welcome.xml"
     },
     {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
@@ -80,19 +80,19 @@
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/layout_fragment_login.xml.flat",
-        "source": "/Users/alon/Documents/GetJob/app/src/main/res/layout/fragment_login.xml"
+        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/layout_activity_job_list.xml.flat",
+        "source": "/Users/alon/Documents/GetJob/app/src/main/res/layout/activity_job_list.xml"
     },
     {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     }
 ]

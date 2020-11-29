@@ -1,7 +1,15 @@
-com/team3/getjob/LoginFragment.java
- com.team3.getjob.LoginFragment
 com/team3/getjob/BuildConfig.java
  com.team3.getjob.BuildConfig
+com/team3/getjob/RegisterUser.java
+ com.team3.getjob.RegisterUser
+com/team3/getjob/JobListActivity.java
+ com.team3.getjob.JobListActivity
+com/team3/getjob/ForgotPassword.java
+ com.team3.getjob.ForgotPassword
+com/team3/getjob/RegisterRecruiter.java
+ com.team3.getjob.RegisterRecruiter
+com/team3/getjob/Login.java
+ com.team3.getjob.Login
 com/team3/getjob/MainActivity.java
  com.team3.getjob.MainActivity
 com/team3/getjob/WelcomeActivity.java

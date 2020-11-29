@@ -33,12 +33,12 @@ public class MainActivity extends AppCompatActivity {
         if (currentUser == null) {
             fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction()
-                    .add(R.id.login_main_container, new LoginFragment(fragmentManager))
+                    .add(R.id.login_main_container, new WelcomeActivity(fragmentManager))
                     .commit();
         } else {
             Log.d(TAG, currentUser.getUid());
             // TODO check user type
-            Intent intent = new Intent(this, WelcomeActivity.class);
+            Intent intent = new Intent(this, JobListActivity.class);
             startActivity(intent);
         }
     }
