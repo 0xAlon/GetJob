@@ -7,16 +7,10 @@ import android.util.Log;
 import android.widget.ListView;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.firestore.CollectionReference;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 
 public class Jobs_Pull extends AppCompatActivity {
 
@@ -31,20 +25,19 @@ public class Jobs_Pull extends AppCompatActivity {
 
         mListView = findViewById(R.id.list_view);
 
+        ArrayList<job_model> temp_list = new ArrayList<job_model>();
 
-        ArrayList<job_model> temp_list = LoadJobs();
-
-
-        for(int i=0; i <= temp_list.size() ; i++)
+        for (int i = 0; i < 10; i++)
         {
-            Log.d("check", temp_list.get(i).toString());
+            temp_list.add(new job_model("Gardener","Lite work in garden","BerSheva" ,2020));
         }
 
         jobs_adapter adapter = new jobs_adapter(this, temp_list);
         mListView.setAdapter(adapter);
     }
 
-    ArrayList<job_model> LoadJobs()
+
+    /*ArrayList<job_model> LoadJobs()
     {
         ArrayList<job_model> temp_list = new ArrayList<job_model>(2);;
         mAuth = FirebaseAuth.getInstance();
@@ -56,7 +49,7 @@ public class Jobs_Pull extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         for (QueryDocumentSnapshot document : task.getResult()) {
 
-                            temp_list.add(new job_model(document.getString("Title"),document.getString("Description"),document.getString("Location")));
+                            temp_list.add(new job_model(document.getString("Title"),document.getString("Description"),document.getString("Location"), year));
                             Log.d("check", (document.getString("Title") + document.getString("Description") + document.getString("Location")));
                         }
                     } else {
@@ -67,6 +60,6 @@ public class Jobs_Pull extends AppCompatActivity {
 
         return temp_list;
 
-    }
+    }*/
 
 }

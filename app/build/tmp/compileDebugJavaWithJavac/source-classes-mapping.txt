@@ -1,10 +1,10 @@
 com/team3/getjob/BuildConfig.java
  com.team3.getjob.BuildConfig
-com/team3/getjob/jobs_adapter.java
- com.team3.getjob.jobs_adapter
 com/team3/getjob/job_model.java
  com.team3.getjob.job_model
 com/team3/getjob/MainActivity.java
  com.team3.getjob.MainActivity
+com/team3/getjob/jobs_adapter.java
+ com.team3.getjob.jobs_adapter
 com/team3/getjob/Jobs_Pull.java
  com.team3.getjob.Jobs_Pull

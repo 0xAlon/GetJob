@@ -1768,7 +1768,6 @@ id dropdown_menu
 id easeIn
 id easeInOut
 id easeOut
-id editTextDate
 id edit_query
 id end
 id enterAlways
@@ -1813,6 +1812,8 @@ id job_date
 id job_description
 id job_location
 id job_title
+id jobs_search
+id jobs_title
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -1967,7 +1968,6 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView3
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
