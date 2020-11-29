@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GetJob">
-        <activity android:name=".rank_filter"></activity>
+        <activity android:name=".PaymentActivity"></activity>
+        <activity android:name=".LanguagesActivity" />
+        <activity android:name=".rank_filter" />
         <activity android:name=".Location" />
         <activity android:name=".Filter">
             <intent-filter>

@@ -17,8 +17,8 @@ public class Filter extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Filter.this, Location.class);
-                startActivity(intent);
+                Intent intent1 = new Intent(Filter.this, Location.class);
+                startActivity(intent1);
             }
         });
 
@@ -26,8 +26,26 @@ public class Filter extends AppCompatActivity {
         rankB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Filter.this, rank_filter.class);
-                startActivity(intent);
+                Intent intent2 = new Intent(Filter.this, rank_filter.class);
+                startActivity(intent2);
+            }
+        });
+
+        Button LanguagesB = (Button) findViewById(R.id.button3);
+        LanguagesB .setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3 = new Intent(Filter.this, LanguagesActivity.class);
+                startActivity(intent3);
+            }
+        });
+
+        Button PaymentB = (Button) findViewById(R.id.button6);
+        PaymentB .setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent4 = new Intent(Filter.this, PaymentActivity.class);
+                startActivity(intent4);
             }
         });
 

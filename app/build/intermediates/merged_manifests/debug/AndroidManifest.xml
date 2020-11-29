@@ -26,6 +26,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.GetJob" >
+        <activity android:name="com.team3.getjob.PaymentActivity" />
+        <activity android:name="com.team3.getjob.LanguagesActivity" />
         <activity android:name="com.team3.getjob.rank_filter" />
         <activity android:name="com.team3.getjob.Location" />
         <activity android:name="com.team3.getjob.Filter" >

@@ -1712,8 +1712,10 @@ id bottom
 id bounce
 id button
 id button2
+id button3
 id button4
 id button5
+id button6
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -1971,8 +1973,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
-id textView2
-id textView3
 id textView4
 id text_input_end_icon
 id text_input_start_icon
@@ -2074,8 +2074,10 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_filter
+layout activity_languages
 layout activity_location
 layout activity_main
+layout activity_payment
 layout activity_rank_filter
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2227,6 +2229,7 @@ string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
 string languages
+string languages_filter
 string location
 string location_filter
 string material_slider_range_end
@@ -2272,6 +2275,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string payment
+string payment_filter
 string project_id
 string search_menu_title
 string select_filter_options_and_press_complete
