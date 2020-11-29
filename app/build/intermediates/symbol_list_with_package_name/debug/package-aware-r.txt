@@ -1780,6 +1780,8 @@ id dropdown_menu
 id easeIn
 id easeInOut
 id easeOut
+id editText
+id editText1
 id edit_query
 id end
 id enterAlways
@@ -1830,6 +1832,7 @@ id light
 id line1
 id line3
 id linear
+id linearLayout
 id listMode
 id list_item
 id masked
@@ -1974,6 +1977,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
+id textView5
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -2214,6 +2218,8 @@ string common_signin_button_text
 string common_signin_button_text_long
 string complete
 string default_web_client_id
+string enter_high_border
+string enter_low_border
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -2226,12 +2232,14 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
+string high
 string icon_content_description
 string item_view_role_description
 string languages
 string languages_filter
 string location
 string location_filter
+string low
 string material_slider_range_end
 string material_slider_range_start
 string mtrl_badge_numberless_content_description

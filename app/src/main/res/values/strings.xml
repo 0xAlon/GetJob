@@ -18,5 +18,9 @@
     <string name="payment">Payment</string>
     <string name="languages_filter">Languages Filter</string>
     <string name="payment_filter">Payment Filter</string>
+    <string name="low">low</string>
+    <string name="enter_low_border">Enter low border</string>
+    <string name="enter_high_border">enter_high_border</string>
+    <string name="high">high</string>
 
 </resources>

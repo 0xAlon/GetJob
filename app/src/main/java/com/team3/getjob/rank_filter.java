@@ -94,7 +94,7 @@ public class rank_filter extends AppCompatActivity {
             }
         });
         //--------------------------------------------------------------------------
-
+    //need to add and think how to return this array of rank choces
     }
 }
 
