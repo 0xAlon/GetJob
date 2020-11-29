@@ -16,7 +16,6 @@ public class Jobs_Pull extends AppCompatActivity {
 
     FirebaseFirestore db;
     ListView mListView;
-    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,22 +24,25 @@ public class Jobs_Pull extends AppCompatActivity {
 
         mListView = findViewById(R.id.list_view);
 
-        ArrayList<job_model> temp_list = new ArrayList<job_model>();
+      /*  ArrayList<job_model> temp_list = new ArrayList<job_model>();
 
         for (int i = 0; i < 10; i++)
         {
             temp_list.add(new job_model("Gardener","Lite work in garden","BerSheva" ,2020));
         }
+*/
+        ArrayList<job_model> temp_list = new ArrayList<job_model>();
+
+        temp_list.addAll(LoadJobs());
 
         jobs_adapter adapter = new jobs_adapter(this, temp_list);
         mListView.setAdapter(adapter);
     }
 
 
-    /*ArrayList<job_model> LoadJobs()
+    ArrayList<job_model> LoadJobs()
     {
-        ArrayList<job_model> temp_list = new ArrayList<job_model>(2);;
-        mAuth = FirebaseAuth.getInstance();
+        ArrayList<job_model> temp_list = new ArrayList<job_model>();
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
         db.collection("Posts")
@@ -49,8 +51,7 @@ public class Jobs_Pull extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         for (QueryDocumentSnapshot document : task.getResult()) {
 
-                            temp_list.add(new job_model(document.getString("Title"),document.getString("Description"),document.getString("Location"), year));
-                            Log.d("check", (document.getString("Title") + document.getString("Description") + document.getString("Location")));
+                            Log.d("check", (document.getString("Title") + document.getString("Description") + document.getString("Location") + document.getString("Data")));
                         }
                     } else {
                         Log.d("check", "Error getting documents: ", task.getException());
@@ -60,6 +61,6 @@ public class Jobs_Pull extends AppCompatActivity {
 
         return temp_list;
 
-    }*/
+    }
 
 }
