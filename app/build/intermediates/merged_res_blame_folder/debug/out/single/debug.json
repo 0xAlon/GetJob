@@ -76,12 +76,20 @@
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/font/poppins.xml"
     },
     {
+        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/drawable_ic_back.xml.flat",
+        "source": "/Users/alon/Documents/GetJob/app/src/main/res/drawable/ic_back.xml"
+    },
+    {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/layout_activity_job_list.xml.flat",
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/layout/activity_job_list.xml"
+    },
+    {
+        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/layout_fragment_register_user.xml.flat",
+        "source": "/Users/alon/Documents/GetJob/app/src/main/res/layout/fragment_register_user.xml"
     },
     {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
