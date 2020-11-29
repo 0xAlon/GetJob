@@ -21,5 +21,15 @@ public class Filter extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button rankB = (Button) findViewById(R.id.button5);
+        rankB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Filter.this, rank_filter.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

@@ -16,6 +16,10 @@
         "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rank_filter.xml.flat",
+        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\activity_rank_filter.xml"
+    },
+    {
         "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },

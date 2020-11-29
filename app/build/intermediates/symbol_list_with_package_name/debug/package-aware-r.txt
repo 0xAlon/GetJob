@@ -1713,6 +1713,7 @@ id bounce
 id button
 id button2
 id button4
+id button5
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -1721,6 +1722,11 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
+id checkBox
+id checkBox6
+id checkBox7
+id checkBox8
+id checkBox9
 id checkbox
 id checked
 id chip
@@ -1967,6 +1973,7 @@ id textStart
 id textView
 id textView2
 id textView3
+id textView4
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -1980,6 +1987,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -2068,6 +2076,7 @@ layout abc_tooltip
 layout activity_filter
 layout activity_location
 layout activity_main
+layout activity_rank_filter
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2140,6 +2149,8 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 string Payment
+string Rank
+string Rank_Filter
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -2169,6 +2180,11 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
 string appbar_scrolling_view_behavior
+string average_score_1
+string average_score_2
+string average_score_3
+string average_score_4
+string average_score_5
 string bottom_sheet_behavior
 string cancel_and_return_to_filter_menu
 string character_counter_content_description
@@ -2211,6 +2227,7 @@ string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
 string languages
+string location
 string location_filter
 string material_slider_range_end
 string material_slider_range_start
@@ -2257,6 +2274,7 @@ string path_password_strike_through
 string payment
 string project_id
 string search_menu_title
+string select_filter_options_and_press_complete
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
