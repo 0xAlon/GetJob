@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:2:1-30:12
+ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:2:1-29:12
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\rabin\.gradle\caches\transforms-2\files-2.1\f8aaae792a30a1f56b0d58cd10f75c0e\material-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\rabin\.gradle\caches\transforms-2\files-2.1\0a5045bc66945a7765a6f0a1f5ff6c5e\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\rabin\.gradle\caches\transforms-2\files-2.1\5a0a5d253b938e8a0386b39b912ab5cf\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
@@ -57,25 +57,25 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\rabin\.gradle
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\rabin\.gradle\caches\transforms-2\files-2.1\3efae7f87f8fb15dcf1f34473eb75964\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\rabin\.gradle\caches\transforms-2\files-2.1\4d43431ba977acfaa5f80826d23a5d96\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\rabin\.gradle\caches\transforms-2\files-2.1\bc08a9b8e8d88a4a706f5b1d66b83db9\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:2:1-29:12
 	package
 		ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:3:5-31
 		INJECTED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:2:1-29:12
 		INJECTED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:2:1-29:12
 		INJECTED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:5:5-28:19
+ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:5:5-27:19
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\rabin\.gradle\caches\transforms-2\files-2.1\f8aaae792a30a1f56b0d58cd10f75c0e\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\rabin\.gradle\caches\transforms-2\files-2.1\f8aaae792a30a1f56b0d58cd10f75c0e\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\rabin\.gradle\caches\transforms-2\files-2.1\0a5045bc66945a7765a6f0a1f5ff6c5e\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -132,6 +132,10 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\ra
 		ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:11:9-44
+activity#com.team3.getjob.Location
+ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:12:9-55
+	android:name
+		ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:12:19-43
 activity#com.team3.getjob.Filter
 ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:13:9-19:20
 	android:name
@@ -147,9 +151,9 @@ ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.x
 	android:name
 		ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:17:27-74
 activity#com.team3.getjob.MainActivity
-ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:21:9-27:20
+ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:20:9-26:20
 	android:name
-		ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:21:19-47
+		ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:20:19-47
 uses-sdk
 INJECTED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml
