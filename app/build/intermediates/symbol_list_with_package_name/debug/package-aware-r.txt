@@ -1710,6 +1710,7 @@ id beginning
 id blocking
 id bottom
 id bounce
+id button
 id button2
 id button4
 id buttonPanel
@@ -2169,6 +2170,7 @@ string abc_toolbar_collapse_description
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
+string cancel_and_return_to_filter_menu
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -2209,6 +2211,7 @@ string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
 string languages
+string location_filter
 string material_slider_range_end
 string material_slider_range_start
 string mtrl_badge_numberless_content_description

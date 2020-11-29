@@ -5,5 +5,7 @@
     <string name="Payment">Switch</string>
     <string name="payment">Payment</string>
     <string name="languages">Languages</string>
+    <string name="location_filter">Location Filter</string>
+    <string name="cancel_and_return_to_filter_menu">cancel and return to filter menu</string>
 
 </resources>

@@ -2,6 +2,7 @@ com/team3/getjob/BuildConfig.java
  com.team3.getjob.BuildConfig
 com/team3/getjob/Location.java
  com.team3.getjob.Location
+ com.team3.getjob.Location$1
 com/team3/getjob/Filter.java
  com.team3.getjob.Filter
  com.team3.getjob.Filter$1
