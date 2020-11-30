@@ -20,6 +20,10 @@
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/layout_fragment_register_recruiter.xml.flat",
+        "source": "/Users/alon/Documents/GetJob/app/src/main/res/layout/fragment_register_recruiter.xml"
+    },
+    {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
     },

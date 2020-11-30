@@ -6,4 +6,13 @@
     <string name="text_4">התחבר</string>
     <string name="text_5">מחפש עבודה</string>
     <string name="text_6">מעסיק</string>
+    <string name="name">שם</string>
+    <string name="password">סיסמה</string>
+    <string name="mail">מייל</string>
+    <string name="address">כתובת</string>
+    <string name="id">מספר תעודת זהות</string>
+    <string name="phone">מספר טלפון</string>
+    <string name="age">גיל</string>
+    <string name="create_profile">יצירת משתמש</string>
+    <string name="company">שם עסק</string>
 </resources>

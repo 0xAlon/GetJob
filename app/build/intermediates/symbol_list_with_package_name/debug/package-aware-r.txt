@@ -1742,6 +1742,8 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id company
+id company_field
 id confirm_button
 id container
 id content
@@ -2104,6 +2106,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_register_recruiter
 layout fragment_register_user
 layout fragment_welcome
 layout mtrl_alert_dialog
@@ -2188,6 +2191,8 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string address
+string age
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -2214,6 +2219,8 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string company
+string create_profile
 string default_web_client_id
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -2227,7 +2234,9 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string id
 string item_view_role_description
+string mail
 string material_slider_range_end
 string material_slider_range_start
 string mtrl_badge_numberless_content_description
@@ -2265,11 +2274,14 @@ string mtrl_picker_toggle_to_calendar_input_mode
 string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
+string name
+string password
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string phone
 string project_id
 string search_menu_title
 string status_bar_notification_info_overflow

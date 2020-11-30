@@ -61,10 +61,12 @@ public class WelcomeActivity extends Fragment implements View.OnClickListener{
                 Log.e(TAG, "login");
                 break;
             case R.id.recruiter:
-                Log.e(TAG, "recruiter");
+                fragmentManager.beginTransaction()
+                        .replace(R.id.login_main_container, new RegisterRecruiter())
+                        .addToBackStack("RegisterRecruiter")
+                        .commit();
                 break;
             case R.id.user:
-                Log.e(TAG, "user");
                 fragmentManager.beginTransaction()
                         .replace(R.id.login_main_container, new RegisterUser())
                         .addToBackStack("RegisterUser")
