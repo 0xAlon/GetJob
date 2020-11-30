@@ -29,6 +29,7 @@ public class job_model {
         this.languages = languages;
     }
 
+
     public job_model() {
     }
 
