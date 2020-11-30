@@ -1624,9 +1624,7 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
-id Email
 id FUNCTION
-id Location
 id META
 id NO_DEBUG
 id SHIFT
@@ -1773,6 +1771,7 @@ id easeIn
 id easeInOut
 id easeOut
 id edit_query
+id email
 id end
 id enterAlways
 id enterAlwaysCollapsed
@@ -1825,6 +1824,7 @@ id linear
 id list
 id listMode
 id list_item
+id location
 id masked
 id message
 id middle

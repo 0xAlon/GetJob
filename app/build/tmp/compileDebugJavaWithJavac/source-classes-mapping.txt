@@ -1,8 +1,8 @@
 com/team3/getjob/BuildConfig.java
  com.team3.getjob.BuildConfig
-com/team3/getjob/PersonJobs.java
- com.team3.getjob.PersonJobs
 com/team3/getjob/EmployerProfile.java
  com.team3.getjob.EmployerProfile
 com/team3/getjob/MainActivity.java
  com.team3.getjob.MainActivity
+com/team3/getjob/PersonJobs.java
+ com.team3.getjob.PersonJobs

@@ -80,7 +80,7 @@
                 android:text="Email" />
 
             <TextView
-                android:id="@+id/Email"
+                android:id="@+id/email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
@@ -100,7 +100,7 @@
                 android:text="Location" />
 
             <TextView
-                android:id="@+id/Location"
+                android:id="@+id/location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
@@ -144,4 +144,3 @@
 
 
 </LinearLayout>
-
