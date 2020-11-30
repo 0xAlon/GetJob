@@ -16,12 +16,8 @@
 
         <ImageButton
             android:id="@+id/back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="350dp"
+            style="@style/back_button"
             android:layout_weight="1"
-            android:background="@null"
             app:srcCompat="@drawable/ic_back" />
 
     </LinearLayout>
@@ -29,115 +25,85 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="100dp"
         android:orientation="vertical"
-        android:paddingLeft="13dp"
-        android:paddingRight="13dp">
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
 
         <TextView
             android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/text"
             android:text="שם" />
 
         <EditText
             android:id="@+id/name_field"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:hint="ישראל ישראלי"
+            style="@style/text_field"
             android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/text"
             android:text="סיסמה" />
 
         <EditText
             android:id="@+id/password_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
+            style="@style/text_field"
             android:inputType="textPassword" />
 
         <TextView
             android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/text"
             android:text="מייל" />
 
         <EditText
             android:id="@+id/email_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="מייל@מייל.com"
+            style="@style/text_field"
             android:inputType="textEmailAddress" />
 
         <TextView
             android:id="@+id/address"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/text"
             android:text="כתובת" />
 
         <EditText
             android:id="@+id/address_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="ישראל"
+            style="@style/text_field"
             android:inputType="textAutoCorrect" />
 
         <TextView
             android:id="@+id/phone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/text"
             android:text="מספר טלפון" />
 
         <EditText
             android:id="@+id/phone_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="0500000000"
-            android:gravity="right"
+            style="@style/text_field"
             android:inputType="phone" />
 
         <TextView
             android:id="@+id/id"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/text"
             android:text="מספר תעודת זהות" />
 
         <EditText
             android:id="@+id/id_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="000000000"
-            android:gravity="right"
+            style="@style/text_field"
             android:inputType="numberSigned" />
 
         <TextView
             android:id="@+id/age"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/text"
             android:text="גיל" />
 
         <EditText
             android:id="@+id/age_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="00"
-            android:gravity="right"
+            style="@style/text_field"
             android:inputType="numberSigned" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/register"
             style="@style/button_4"
-            android:text="@string/text_4" />
-
+            android:text="יצירת משתמש" />
 
     </LinearLayout>
 </LinearLayout>

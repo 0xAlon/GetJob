@@ -44,6 +44,13 @@ public class ExampleUnitTest {
         assertTrue(RegisterUser.isValidId("123456789"));
     }
 
+    @Test
+    public void isValidAge_test() {
+        assertFalse(RegisterUser.isValidAge("123"));
+        assertFalse(RegisterUser.isValidAge("1"));
+        assertFalse(RegisterUser.isValidAge("01"));
+        assertTrue(RegisterUser.isValidAge("21"));
+    }
 
 
 

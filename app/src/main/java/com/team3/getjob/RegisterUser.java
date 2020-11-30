@@ -1,5 +1,6 @@
 package com.team3.getjob;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -10,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
@@ -48,6 +50,9 @@ public class RegisterUser extends Fragment implements View.OnClickListener{
         ImageButton back = (ImageButton) view.findViewById(R.id.back);
         back.setOnClickListener(this);
 
+        Button register = (Button) view.findViewById(R.id.register);
+        register.setOnClickListener(this);
+
         password = (TextView) view.findViewById(R.id.password_field);
         email = (TextView) view.findViewById(R.id.email_field);
         name = (TextView) view.findViewById(R.id.name_field);
@@ -82,48 +87,70 @@ public class RegisterUser extends Fragment implements View.OnClickListener{
                 break;
 
             case R.id.register:
+                if (checkValidation()){
+                    mAuth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString())
+                            .addOnCompleteListener(getActivity(), task -> {
+                                if (task.isSuccessful()) {
+                                    FirebaseUser user = mAuth.getCurrentUser();
+                                    FirebaseFirestore db = FirebaseFirestore.getInstance();
 
+                                    Map<String, Object> userData = new HashMap<>();
+                                    userData.put("Uid", user.getUid());
+                                    userData.put("Address", String.valueOf(address.getText().toString()));
+                                    userData.put("Age", String.valueOf(age.getText().toString()));
+                                    userData.put("Email", String.valueOf(email.getText().toString()));
+                                    userData.put("Id", String.valueOf(id.getText().toString()));
+                                    userData.put("Name", String.valueOf(name.getText().toString()));
+                                    userData.put("PhoneNumber", String.valueOf(phone.getText().toString()));
 
-                if (isEmailValid(email.getText().toString())){
-                    if (isValidPassword(password.getText().toString())){
-                        mAuth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString())
-                                .addOnCompleteListener(getActivity(), task -> {
-                                    if (task.isSuccessful()) {
-                                        FirebaseUser user = mAuth.getCurrentUser();
-                                        FirebaseFirestore db = FirebaseFirestore.getInstance();
-
-                                        Map<String, Object> userData = new HashMap<>();
-                                        userData.put("Uid", user.getUid());
-                                        userData.put("Address", String.valueOf(address.getText().toString()));
-                                        userData.put("Age", String.valueOf(age.getText().toString()));
-                                        userData.put("Email", String.valueOf(email.getText().toString()));
-                                        userData.put("Id", String.valueOf(id.getText().toString()));
-                                        userData.put("Name", String.valueOf(name.getText().toString()));
-                                        userData.put("PhoneNumber", String.valueOf(phone.getText().toString()));
-
-                                        db.collection("Users") // Add a new document with a generated ID
-                                                .add(userData)
-                                                .addOnSuccessListener(documentReference -> {
-                                                    Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
+                                    db.collection("Users") // Add a new document with a generated ID
+                                            .add(userData)
+                                            .addOnSuccessListener(documentReference -> {
+                                                Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
                                                     /*
                                                     Intent intent = new Intent(getContext(), JobListActivity.class);
                                                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
                                                     startActivity(intent);*/
-                                                })
-                                                .addOnFailureListener(e -> Log.w(TAG, "Error adding document", e));
-                                    }
-                                }).addOnFailureListener(Throwable::printStackTrace);
-                    }
-                    else{
-                        Log.e(TAG,"Not Valid password");
-                    }
+                                            })
+                                            .addOnFailureListener(e -> Log.w(TAG, "Error adding document", e));
+                                }
+                            }).addOnFailureListener(Throwable::printStackTrace);
                 }
-                else{
-                    Log.e(TAG,"Not Valid email");
-                }
-
                 break;
         }
+    }
+
+
+    private boolean checkValidation(){
+        if (!isValidPassword(password.getText().toString())){
+            Toast.makeText(getActivity(),"Invalid Password",Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (!isEmailValid(email.getText().toString())){
+            Toast.makeText(getActivity(),"Invalid Email",Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (!isAlpha(name.getText().toString())){
+            Toast.makeText(getActivity(),"Invalid Name",Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (!isAlpha(address.getText().toString())){
+            Toast.makeText(getActivity(),"Invalid Address",Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (!isValidAge(age.getText().toString())){
+            Toast.makeText(getActivity(),"Invalid Age",Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (!isValidId(id.getText().toString())){
+            Toast.makeText(getActivity(),"Invalid ID number",Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (!isValidPhoneNumber(phone.getText().toString())){
+            Toast.makeText(getActivity(),"Invalid Phone number",Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        return true;
     }
 
 
@@ -158,6 +185,13 @@ public class RegisterUser extends Fragment implements View.OnClickListener{
     public static boolean isValidId(String id) {
         CharSequence inputStr = id;
         Pattern pattern = Pattern.compile("[0-9]{9}");
+        Matcher matcher = pattern.matcher(inputStr);
+        return matcher.matches();
+    }
+
+    public static boolean isValidAge(String age) {
+        CharSequence inputStr = age;
+        Pattern pattern = Pattern.compile("[1-9]{1}+[0-9]{1}");
         Matcher matcher = pattern.matcher(inputStr);
         return matcher.matches();
     }
