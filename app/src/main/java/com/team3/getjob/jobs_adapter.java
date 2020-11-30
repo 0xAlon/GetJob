@@ -17,11 +17,13 @@ public class jobs_adapter extends BaseAdapter {
     private LayoutInflater mInflater;
     private ArrayList<job_model> mDataSource;
 
+
     public jobs_adapter(Context context, ArrayList<job_model> items)
     {
         mDataSource = items;
         mInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
+
 
     @Override
     public int getCount() {
@@ -44,14 +46,15 @@ public class jobs_adapter extends BaseAdapter {
         TextView title =(TextView) rowItem.findViewById(R.id.job_title);
         TextView description =(TextView) rowItem.findViewById(R.id.job_description);
         TextView location =(TextView) rowItem.findViewById(R.id.job_location);
-        TextView date = (TextView) rowItem.findViewById(R.id.job_date);
+        TextView date =(TextView) rowItem.findViewById(R.id.job_date);
+
 
         job_model jobs = getItem(position);
 
         title.setText(jobs.getTitle());
         description.setText(jobs.getDescription());
         location.setText(jobs.getLocation());
-        date.setText(String.valueOf(jobs.getYear()));
+        date.setText(jobs.getDate().toString());
 
 
         return rowItem;
