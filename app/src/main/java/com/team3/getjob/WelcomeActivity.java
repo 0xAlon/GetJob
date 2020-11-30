@@ -1,7 +1,6 @@
 package com.team3.getjob;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,6 +35,7 @@ public class WelcomeActivity extends Fragment implements View.OnClickListener{
 
         Button registerUser = (Button) view.findViewById(R.id.user);
         registerUser.setOnClickListener(this);
+
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         return view;
     }
@@ -58,7 +58,10 @@ public class WelcomeActivity extends Fragment implements View.OnClickListener{
     public void onClick(final View v) { //check for what button is pressed
         switch (v.getId()) {
             case R.id.login:
-                Log.e(TAG, "login");
+                fragmentManager.beginTransaction()
+                        .replace(R.id.login_main_container, new LoginFragment())
+                        .addToBackStack("Login")
+                        .commit();
                 break;
             case R.id.recruiter:
                 fragmentManager.beginTransaction()

@@ -1801,6 +1801,7 @@ id fixed
 id flip
 id floating
 id forever
+id forget_password
 id ghost_view
 id ghost_view_holder
 id gone
@@ -2106,6 +2107,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_login
 layout fragment_register_recruiter
 layout fragment_register_user
 layout fragment_welcome
