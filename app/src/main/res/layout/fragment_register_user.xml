@@ -29,10 +29,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="110dp"
         android:orientation="vertical"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp">
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp">
 
         <TextView
             android:id="@+id/name"
@@ -100,6 +100,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="0500000000"
+            android:gravity="right"
             android:inputType="phone" />
 
         <TextView
@@ -114,6 +115,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="000000000"
+            android:gravity="right"
             android:inputType="numberSigned" />
 
         <TextView
@@ -128,6 +130,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="00"
+            android:gravity="right"
             android:inputType="numberSigned" />
 
         <com.google.android.material.button.MaterialButton

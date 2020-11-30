@@ -76,9 +76,6 @@ public class RegisterUser extends Fragment implements View.OnClickListener{
     @Override
     public void onClick(View v) {
 
-
-
-
         switch (v.getId()) {
             case R.id.back:
                 getFragmentManager().popBackStackImmediate();
@@ -130,25 +127,38 @@ public class RegisterUser extends Fragment implements View.OnClickListener{
     }
 
 
-    //Password must contain minimum 8 characters at least 1 Alphabet, 1 Number
-    public static boolean isValidPassword(String s) {
-        Pattern PASSWORD_PATTERN
-                = Pattern.compile(
-                "[a-zA-Z0-9\\!\\@\\#\\$]{8,24}");
-
-        return !TextUtils.isEmpty(s) && PASSWORD_PATTERN.matcher(s).matches();
+    //Password must contain minimum 8 characters at least 1 Alphabet, 1 Number, 1 special character
+    public static boolean isValidPassword(String password) {
+        final String PASSWORD_PATTERN =
+                "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{8,20}$";
+        final Pattern pattern = Pattern.compile(PASSWORD_PATTERN);
+        Matcher matcher = pattern.matcher(password);
+        return matcher.matches();
     }
 
-    /**
-     * method is used for checking valid email id format.
-     *
-     * @param email
-     * @return boolean true for valid false for invalid
-     */
     public static boolean isEmailValid(String email) {
         String expression = "^[\\w\\.-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$";
         Pattern pattern = Pattern.compile(expression, Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(email);
+        return matcher.matches();
+    }
+
+    public static boolean isAlpha(String name) {
+        String expression = "^[a-zA-Z]*$";
+        CharSequence inputStr = name;
+        Pattern pattern = Pattern.compile(expression);
+        Matcher matcher = pattern.matcher(inputStr);
+        return matcher.matches();
+    }
+
+    public static boolean isValidPhoneNumber(String phone){
+        return  !(!phone.matches("(00972|0|\\+972)[5][0-9]{8}") && !phone.matches("(00970|0|\\+970)[5][0-9]{8}") && !phone.matches("(05[0-9]|0[12346789])([0-9]{7})") && !phone.matches("(00972|0|\\+972|0|)[2][0-9]{7}"));
+    }
+
+    public static boolean isValidId(String id) {
+        CharSequence inputStr = id;
+        Pattern pattern = Pattern.compile("[0-9]{9}");
+        Matcher matcher = pattern.matcher(inputStr);
         return matcher.matches();
     }
 }
