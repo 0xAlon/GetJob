@@ -1,22 +1,32 @@
 package com.team3.getjob;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class EmployerProfile extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
     private String TAG="EmployerProfile";
-
+    private Button add_job_button;
     TextView user_name;
     TextView email;
     TextView phone_num;
@@ -37,6 +47,13 @@ public class EmployerProfile extends AppCompatActivity {
         company_name = (TextView) findViewById(R.id.company_name);
         loction = (TextView) findViewById(R.id.location);
 
+        add_job_button = (Button) findViewById(R.id.addjob);
+        add_job_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAddJobWindow();
+            }
+        });
     }
 
     @Override
@@ -75,4 +92,9 @@ public class EmployerProfile extends AppCompatActivity {
                 });
     }
 
+    public void openAddJobWindow()
+    {
+        Intent intent = new Intent(this,AddJobWindow.class);
+        startActivity(intent);
+    }
 }
