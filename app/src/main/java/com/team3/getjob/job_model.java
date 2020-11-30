@@ -1,11 +1,5 @@
 package com.team3.getjob;
 
-import java.lang.reflect.Array;
-import java.sql.Time;
-import java.sql.Timestamp;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.time.DateTimeException;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -14,12 +8,12 @@ public class job_model {
     private String title;
     private String description;
     private String location;
-    private double payment;
-    private double rank;
+    private String payment;
+    private int rank;
     private Date date;
     private ArrayList<String> languages;
 
-    public job_model(String title, String description, String location, double payment, double rank, Date date, ArrayList<String> languages) {
+    public job_model(String title, String description, String location, String payment, int rank, Date date, ArrayList<String> languages) {
         this.title = title;
         this.description = description;
         this.location = location;
@@ -29,7 +23,8 @@ public class job_model {
         this.languages = languages;
     }
 
-    public job_model(String title, String description, String location, String s, int rank, Date temp_date, ArrayList<String> temp_lang) {
+
+    public job_model() {
     }
 
     public String getTitle() {
@@ -56,11 +51,11 @@ public class job_model {
         this.location = location;
     }
 
-    public double getPayment() {
+    public String getPayment() {
         return payment;
     }
 
-    public void setPayment(double payment) {
+    public void setPayment(String payment) {
         this.payment = payment;
     }
 
@@ -68,7 +63,7 @@ public class job_model {
         return rank;
     }
 
-    public void setRank(double rank) {
+    public void setRank(int rank) {
         this.rank = rank;
     }
 
