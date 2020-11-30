@@ -22,5 +22,8 @@
     <string name="enter_low_border">Enter low border</string>
     <string name="enter_high_border">enter_high_border</string>
     <string name="high">high</string>
+    <string name="english">English</string>
+    <string name="hebrew">Hebrew</string>
+    <string name="russian">Russian</string>
 
 </resources>

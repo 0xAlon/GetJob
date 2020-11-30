@@ -1628,9 +1628,12 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id English
 id FUNCTION
+id Hebrew
 id META
 id NO_DEBUG
+id Russian
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2221,6 +2224,7 @@ string common_signin_button_text
 string common_signin_button_text_long
 string complete
 string default_web_client_id
+string english
 string enter_high_border
 string enter_low_border
 string error_icon_content_description
@@ -2234,6 +2238,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hebrew
 string hide_bottom_view_on_scroll_behavior
 string high
 string icon_content_description
@@ -2288,6 +2293,7 @@ string path_password_strike_through
 string payment
 string payment_filter
 string project_id
+string russian
 string search_menu_title
 string select_filter_options_and_press_complete
 string status_bar_notification_info_overflow

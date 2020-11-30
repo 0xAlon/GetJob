@@ -26,10 +26,8 @@ public class FilterTest {
     @Test
     public void  testLaunch(){
         View view = mFilter.findViewById(R.id.textView);
-
        assertNotNull(view);
     }
-
 
     @After
     public void tearDown() throws Exception {
