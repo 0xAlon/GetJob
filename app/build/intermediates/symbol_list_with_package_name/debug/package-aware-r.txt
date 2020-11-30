@@ -1003,6 +1003,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gray
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color light_blue
@@ -1557,6 +1558,7 @@ drawable btn_radio_on_to_off_mtrl_animation
 drawable button_1
 drawable button_2
 drawable button_3
+drawable button_4
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1584,6 +1586,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_back
 drawable ic_image_1
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1693,8 +1696,12 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id address
+id address_field
 id adjust_height
 id adjust_width
+id age
+id age_field
 id alertTitle
 id aligned
 id all
@@ -1707,6 +1714,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id back
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -1773,6 +1781,8 @@ id easeIn
 id easeInOut
 id easeOut
 id edit_query
+id email
+id email_field
 id end
 id enterAlways
 id enterAlwaysCollapsed
@@ -1804,6 +1814,8 @@ id honorRequest
 id icon
 id icon_group
 id icon_only
+id id
+id id_field
 id ifRoom
 id ignore
 id ignoreRequest
@@ -1859,6 +1871,8 @@ id mtrl_picker_text_input_range_end
 id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
+id name
+id name_field
 id navigation_header_container
 id never
 id noScroll
@@ -1876,11 +1890,15 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id password
+id password_field
 id password_toggle
 id path
 id pathRelative
 id peekHeight
 id percent
+id phone
+id phone_field
 id pin
 id position
 id postLayout
@@ -1890,6 +1908,7 @@ id radio
 id ratio
 id recruiter
 id rectangles
+id register
 id reverseSawtooth
 id right
 id right_icon
@@ -2085,6 +2104,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_register_user
 layout fragment_welcome
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
@@ -2953,12 +2973,16 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style back_button
 style button_1
 style button_2
 style button_3
+style button_4
 style image_1
+style text
 style text_box_1
 style text_box_2
+style text_field
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
