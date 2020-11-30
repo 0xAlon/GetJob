@@ -1878,6 +1878,7 @@ id name
 id name_field
 id navigation_header_container
 id never
+id next
 id noScroll
 id none
 id normal
@@ -1912,6 +1913,7 @@ id ratio
 id recruiter
 id rectangles
 id register
+id remember
 id reverseSawtooth
 id right
 id right_icon
@@ -2107,6 +2109,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_forgot_password
 layout fragment_login
 layout fragment_register_recruiter
 layout fragment_register_user
@@ -2285,8 +2288,11 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string phone
 string project_id
+string remember
 string search_menu_title
 string status_bar_notification_info_overflow
+string text7
+string text8
 string text_1
 string text_2
 string text_3

@@ -26,9 +26,10 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
     TextView password;
     TextView email;
 
-    public LoginFragment() {
+    public LoginFragment(FragmentManager fragmentManager) {
         FirebaseApp.initializeApp(getContext());
         mAuth = FirebaseAuth.getInstance();
+        this.fragmentManager = fragmentManager;
     }
 
     @Override
@@ -40,6 +41,9 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
 
         ImageButton back = (ImageButton) view.findViewById(R.id.back);
         back.setOnClickListener(this);
+
+        TextView forgot_password = (TextView) view.findViewById(R.id.forget_password);
+        forgot_password.setOnClickListener(this);
 
         password = (TextView) view.findViewById(R.id.password_field);
         email = (TextView) view.findViewById(R.id.email_field);
@@ -57,8 +61,16 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
             case R.id.login:
                 login();
                 break;
+
+            case R.id.forget_password:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.login_main_container, new ForgotPassword(fragmentManager))
+                        .addToBackStack("ForgotPassword")
+                        .commit();
+                break;
         }
     }
+
 
     void login(){
         mAuth.signInWithEmailAndPassword(email.getText().toString(), password.getText().toString())

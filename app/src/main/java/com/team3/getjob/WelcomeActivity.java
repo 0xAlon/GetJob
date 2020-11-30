@@ -59,7 +59,7 @@ public class WelcomeActivity extends Fragment implements View.OnClickListener{
         switch (v.getId()) {
             case R.id.login:
                 fragmentManager.beginTransaction()
-                        .replace(R.id.login_main_container, new LoginFragment())
+                        .replace(R.id.login_main_container, new LoginFragment(fragmentManager))
                         .addToBackStack("Login")
                         .commit();
                 break;

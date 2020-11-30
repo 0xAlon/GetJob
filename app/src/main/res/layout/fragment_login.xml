@@ -64,6 +64,7 @@
             android:textSize="15sp"
             android:textColor="@color/black"
             android:text="שכחתי סיסמה"
+            android:clickable="true"
             android:layout_height="wrap_content"
             android:layout_width="match_parent" />
 

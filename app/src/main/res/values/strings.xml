@@ -15,4 +15,7 @@
     <string name="age">גיל</string>
     <string name="create_profile">יצירת משתמש</string>
     <string name="company">שם עסק</string>
+    <string name="remember">נזכרתי! מעבר להתחברות</string>
+    <string name="text7">נתקלנו בקשיים?</string>
+    <string name="text8">אל דאגה מיד ממשיכים!</string>
 </resources>
