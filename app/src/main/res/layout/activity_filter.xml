@@ -10,81 +10,24 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="86dp"
+        android:layout_height="79dp"
         android:layout_marginStart="56dp"
         android:layout_marginTop="780dp"
         android:layout_marginEnd="56dp"
         android:layout_marginBottom="50dp"
-        android:backgroundTint="#71C6FF"
-        android:fontFamily="sans-serif"
-        android:text="@string/complete"
-        android:textColor="@color/black"
-        android:textSize="25sp"
+        android:backgroundTint="#F7FBFD"
+        android:fontFamily="sans-serif-light"
+        app:icon="@drawable/icons8_checkmark"
+        app:iconPadding="@android:dimen/app_icon_size"
+        app:iconSize="@android:dimen/app_icon_size"
+        app:iconTint="@color/light_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.004"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.888" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#0071C6FF"
-        android:text="@string/location"
-        android:textColor="#101010"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#0071C6FF"
-        android:text="@string/languages"
-        android:textColor="#101010"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.411" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#0071C6FF"
-        android:text="@string/payment"
-        android:textColor="#101010"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.316" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="86dp"
-        android:layout_height="44dp"
-        android:backgroundTint="#0071C6FF"
-        android:text="@string/Rank"
-        android:textColor="#101010"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.583" />
+        app:layout_constraintVertical_bias="0.904" />
 
     <LinearLayout
         android:layout_width="165dp"
@@ -123,13 +66,69 @@
         android:layout_width="111dp"
         android:layout_height="72dp"
         android:backgroundTint="@color/white"
-        android:drawableBottom="@android:drawable/ic_delete"
+        app:icon="@drawable/icons8_delete"
+        app:iconGravity="textStart"
+        app:iconTint="@color/light_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.949" />
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="317dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="130dp"
+
+            android:backgroundTint="#0071C6FF"
+            android:text="@string/languages"
+            android:textColor="#101010" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="130dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#0071C6FF"
+            android:text="@string/payment"
+            android:textAlignment="center"
+            android:textColor="#101010" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="126dp"
+            android:layout_height="44dp"
+            android:layout_marginHorizontal="130dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#0071C6FF"
+            android:text="@string/Rank"
+            android:textColor="#101010" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="130dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#0071C6FF"
+            android:text="@string/location"
+            android:textColor="#101010" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

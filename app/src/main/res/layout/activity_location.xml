@@ -43,31 +43,34 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#71C6FF"
+        android:layout_width="95dp"
+        android:layout_height="66dp"
+        android:backgroundTint="#FBFCFD"
         android:text="@string/complete"
-        android:textColor="@color/black"
+        app:icon="@drawable/icons8_checkmark"
+        app:iconGravity="end"
+        app:iconTint="#03A9F4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.915" />
+        app:layout_constraintVertical_bias="0.948" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#71C6FF"
-        android:text="@string/cancel_and_return_to_filter_menu"
-        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        app:icon="@drawable/icons8_delete"
+        app:iconGravity="textStart"
+        app:iconTint="#03A9F4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.842"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.949" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
