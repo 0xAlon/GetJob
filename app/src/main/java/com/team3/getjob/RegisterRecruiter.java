@@ -92,12 +92,14 @@ public class RegisterRecruiter extends Fragment implements View.OnClickListener{
                                     Map<String, Object> userData = new HashMap<>();
                                     userData.put("Uid", user.getUid());
                                     userData.put("Address", String.valueOf(address.getText().toString()));
-                                    userData.put("Id", String.valueOf(id.getText().toString()));
+                                    userData.put("Id", Integer.parseInt(id.getText().toString()));
                                     userData.put("Email", String.valueOf(email.getText().toString()));
                                     userData.put("Company", String.valueOf(company.getText().toString()));
                                     userData.put("Name", String.valueOf(name.getText().toString()));
-                                    userData.put("PhoneNumber", String.valueOf(phone.getText().toString()));
-
+                                    userData.put("UserType", 3);
+                                    userData.put("Rating", 0);
+                                    userData.put("PhoneNumber", Integer.parseInt(phone.getText().toString()));
+                                    
                                     db.collection("Users") // Add a new document with a generated ID
                                             .add(userData)
                                             .addOnSuccessListener(documentReference -> {
