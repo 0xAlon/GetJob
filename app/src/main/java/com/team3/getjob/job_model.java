@@ -14,12 +14,12 @@ public class job_model {
     private String title;
     private String description;
     private String location;
-    private double payment;
-    private double rank;
+    private String payment;
+    private String rank;
     private Date date;
     private ArrayList<String> languages;
 
-    public job_model(String title, String description, String location, double payment, double rank, Date date, ArrayList<String> languages) {
+    public job_model(String title, String description, String location, String payment, String rank, Date date, ArrayList<String> languages) {
         this.title = title;
         this.description = description;
         this.location = location;
@@ -57,19 +57,19 @@ public class job_model {
         this.location = location;
     }
 
-    public double getPayment() {
+    public String getPayment() {
         return payment;
     }
 
-    public void setPayment(double payment) {
+    public void setPayment(String payment) {
         this.payment = payment;
     }
 
-    public double getRank() {
+    public String getRank() {
         return rank;
     }
 
-    public void setRank(double rank) {
+    public void setRank(String rank) {
         this.rank = rank;
     }
 
