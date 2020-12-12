@@ -43,7 +43,7 @@ public class jobs_pull_fragment extends Fragment {
 
     // TODO: Rename and change types of parameters
     private String mParam1;
-    private String mParam2;
+    private job_model mParam2;
 
     public jobs_pull_fragment() {
         // Required empty public constructor
@@ -86,7 +86,7 @@ public class jobs_pull_fragment extends Fragment {
         TextView description =(TextView)view.findViewById(R.id.description_Full);
         TextView location =(TextView)view.findViewById(R.id.location_Full);
         TextView payment =(TextView)view.findViewById(R.id.payment_Full);
-        Log.d("CHECK","Title Old" + title.getText().toString());
+
 
         db = FirebaseFirestore.getInstance();
 
@@ -104,6 +104,7 @@ public class jobs_pull_fragment extends Fragment {
                         description.setText(jobs_post.getDescription());
                         location.setText(jobs_post.getLocation());
                         payment.setText(jobs_post.getPayment());
+
                         Log.d("CHECK","Title nEW" + title.getText());
                     } else {
                         Log.d("CHECK" ,"No such document");

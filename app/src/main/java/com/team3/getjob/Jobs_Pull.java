@@ -29,6 +29,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Jobs_Pull extends AppCompatActivity {
 
@@ -44,6 +45,7 @@ public class Jobs_Pull extends AppCompatActivity {
         mListView = findViewById(R.id.list_view);
         db = FirebaseFirestore.getInstance();
 
+        List<String> id_list = new ArrayList<String>();
         ArrayList<job_model> temp_list = new ArrayList<job_model>();
         Context context = this;
 
@@ -56,6 +58,7 @@ public class Jobs_Pull extends AppCompatActivity {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 Log.d("check", document.getId() + " => " + document.getData());
                                 job_model jobs = document.toObject(job_model.class);
+                                id_list.add(document.getId());
                                 temp_list.add(new job_model(jobs.getTitle(),jobs.getDescription(), jobs.getLocation(), jobs.getPayment(),jobs.getRank(),jobs.getDate(),jobs.getLanguages()));
                                 jobs_adapter adapter = new jobs_adapter(context, temp_list);
                                 mListView.setAdapter(adapter);
@@ -69,9 +72,8 @@ public class Jobs_Pull extends AppCompatActivity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                job_model job_scan = (job_model) adapterView.getItemAtPosition(i);
-                jobs_pull_fragment jobsPullFragment = jobs_pull_fragment.newInstance(job_scan.getTitle());
-                getSupportFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.jobs_pull_frame, jobsPullFragment).commit();
+                jobs_pull_fragment jobsPullFragment = jobs_pull_fragment.newInstance(id_list.get(i));
+                getSupportFragmentManager().beginTransaction().addToBackStack(null).add(R.id.jobs_pull_frame, jobsPullFragment).commit();
             }
         });
     }
