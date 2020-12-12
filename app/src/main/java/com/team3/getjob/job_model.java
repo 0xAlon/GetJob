@@ -19,20 +19,6 @@ public class job_model {
     private Date date;
     private ArrayList<String> languages;
 
-    public job_model(String title, String description, String location, String payment, String rank, Date date, ArrayList<String> languages) {
-        this.title = title;
-        this.description = description;
-        this.location = location;
-        this.payment = payment;
-        this.rank = rank;
-        this.date = date;
-        this.languages = languages;
-    }
-
-
-    public job_model() {
-    }
-
     public String getTitle() {
         return title;
     }
@@ -89,27 +75,19 @@ public class job_model {
         this.languages = languages;
     }
 
-    /*//add data and auto generate id+++++++++++++++++++++++++
-        temp_lang.add("English");
-        Date temp_date = new Date();
+    public job_model(String title, String description, String location, String payment, String rank, Date date, ArrayList<String> languages) {
+        this.title = title;
+        this.description = description;
+        this.location = location;
+        this.payment = payment;
+        this.rank = rank;
+        this.date = date;
+        this.languages = languages;
+    }
 
-        job_model jobs = new job_model("PHP Developer",
-                "Smart and impressive man for work in industry",
-                "Los angeles", 300, 5, temp_date,temp_lang);
 
-            db.collection("Posts")
-                    .add(jobs)
-                    .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                        @Override
-                        public void onSuccess(DocumentReference documentReference) {
-                            Log.d("check", "DocumentSnapshot written with ID: " + documentReference.getId());
-                        }
-                    })
-                    .addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            Log.w("check", "Error adding document", e);
-                        }
-                    });*/
+    public job_model() {
+    }
+
 
 }

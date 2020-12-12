@@ -42,5 +42,11 @@
         android:layout_marginHorizontal="20dp"
         />
 
+    <FrameLayout
+        android:id="@+id/jobs_pull_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

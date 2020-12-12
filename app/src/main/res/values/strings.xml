@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">GetJob</string>
     <string name="try_description">Lorem Ipsum is simply dummy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description_job_full">Rick and Morty (2013–present) is an American adult animated science-fiction sitcom created by Justin Roiland and Dan Harmon for Adult Swim.
+        The series follows the misadventures of the cynical mad scientist, Rick Sanchez,
+        and his fretful and easily influenced grandson, Morty Smith, who split their time between domestic family life and
+        interdimensional adventures.</string>
 </resources>

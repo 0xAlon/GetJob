@@ -7,7 +7,11 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Adapter;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -62,48 +66,23 @@ public class Jobs_Pull extends AppCompatActivity {
                     }
                 });
 
-
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                job_model job_scan = (job_model) adapterView.getItemAtPosition(i);
+                jobs_pull_fragment jobsPullFragment = jobs_pull_fragment.newInstance(job_scan.getTitle());
+                getSupportFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.jobs_pull_frame, jobsPullFragment).commit();
+            }
+        });
     }
 
 
 
-    /*//add data and auto generate id+++++++++++++++++++++++++
-        temp_lang.add("English");
-        Date temp_date = new Date();
-
-        job_model jobs = new job_model("PHP Developer",
-                "Smart and impressive man for work in industry",
-                "Los angeles", 300, 5, temp_date,temp_lang);
-
-            db.collection("Posts")
-                    .add(jobs)
-                    .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                        @Override
-                        public void onSuccess(DocumentReference documentReference) {
-                            Log.d("check", "DocumentSnapshot written with ID: " + documentReference.getId());
-                        }
-                    })
-                    .addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            Log.w("check", "Error adding document", e);
-                        }
-                    });*/
-
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   /*
 
 
-        /*DocumentReference docRef = db.collection("Posts").document("4X6Op5WfTMGUnhYgyPS0");
-        docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-            @Override
-            public void onSuccess(DocumentSnapshot documentSnapshot) {
-                Log.d("check", "onSuccess: " + documentSnapshot.get("Title"));
-                job_model temp = documentSnapshot.toObject(job_model.class);
-                Log.d("check", "onSuccess:  " + temp.getDescription());
-                temp_list.add(temp);
-            }
-        });
-*/
+
+
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     //GET DATA FROM D.BASE

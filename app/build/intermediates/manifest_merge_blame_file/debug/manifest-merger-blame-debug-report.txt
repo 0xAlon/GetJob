@@ -24,7 +24,7 @@
 14-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\97253\.gradle\caches\transforms-2\files-2.1\e7088e93aa9e4ba3fcef4d8a3f9d1310\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:26:22-107
 15
 16    <application
-16-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:5:5-29:19
+16-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:5:5-26:19
 17        android:allowBackup="true"
 17-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:6:9-35
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -43,31 +43,31 @@
 26        android:theme="@style/Theme.GetJob" >
 26-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:11:9-44
 27        <activity android:name="com.team3.getjob.Jobs_Pull" >
-27-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:13:9-19:20
-27-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:13:19-44
+27-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:12:9-18:20
+27-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:12:19-44
 28            <intent-filter>
-28-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:14:9-18:25
+28-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:13:13-17:29
 29                <action android:name="android.intent.action.MAIN" />
-29-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:15:13-65
-29-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:15:21-62
+29-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:14:17-69
+29-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:14:25-66
 30
 31                <category android:name="android.intent.category.LAUNCHER" />
-31-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:17:13-73
-31-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:17:23-70
+31-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:16:17-77
+31-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:16:27-74
 32            </intent-filter>
 33        </activity>
 34        <activity android:name="com.team3.getjob.MainActivity" >
-34-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:21:9-27:20
-34-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:21:19-47
+34-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:19:9-25:20
+34-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:19:19-47
 35            <intent-filter>
-35-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:14:9-18:25
+35-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:13:13-17:29
 36                <action android:name="android.intent.action.MAIN" />
-36-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:15:13-65
-36-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:15:21-62
+36-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:14:17-69
+36-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:14:25-66
 37
 38                <category android:name="android.intent.category.LAUNCHER" />
-38-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:17:13-73
-38-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:17:23-70
+38-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:16:17-77
+38-->C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:16:27-74
 39            </intent-filter>
 40        </activity>
 41        <activity
