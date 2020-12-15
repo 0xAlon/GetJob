@@ -3,6 +3,8 @@ package com.team3.getjob;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -31,6 +33,7 @@ public class AddJobWindow extends AppCompatActivity implements View.OnClickListe
     TextView job_detail;
     Button confirm_button;
 
+    @SuppressLint({"WrongViewCast", "RestrictedApi"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +48,7 @@ public class AddJobWindow extends AppCompatActivity implements View.OnClickListe
         job_detail = (TextView) findViewById(R.id.jobdetail_field);
         confirm_button=findViewById(R.id.confirm_button);
         confirm_button.setOnClickListener(this);
+
     }
 
 
@@ -85,4 +89,5 @@ public class AddJobWindow extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
+
 }

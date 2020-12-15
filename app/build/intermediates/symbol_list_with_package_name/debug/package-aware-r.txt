@@ -1815,6 +1815,7 @@ id honorRequest
 id icon
 id icon_group
 id icon_only
+id id
 id ifRoom
 id ignore
 id ignoreRequest
@@ -2096,6 +2097,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_job_window
+layout activity_employee_profile
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
