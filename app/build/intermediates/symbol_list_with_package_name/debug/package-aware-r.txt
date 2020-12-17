@@ -2169,6 +2169,13 @@ layout text_view_without_line_height
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+string InvalidAge
+string InvalidEmail
+string InvalidId
+string InvalidLogin
+string InvalidName
+string InvalidPassword
+string InvalidPhone
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

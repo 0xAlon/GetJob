@@ -29,8 +29,8 @@ public class Validation {
         return matcher.matches();
     }
 
-    public static boolean isValidPhoneNumber(String phone){
-        return  !(!phone.matches("(00972|0|\\+972)[5][0-9]{8}") && !phone.matches("(00970|0|\\+970)[5][0-9]{8}") && !phone.matches("(05[0-9]|0[12346789])([0-9]{7})") && !phone.matches("(00972|0|\\+972|0|)[2][0-9]{7}"));
+    public static boolean isValidPhoneNumber(String phone) {
+        return !(!phone.matches("(00972|0|\\+972)[5][0-9]{8}") && !phone.matches("(00970|0|\\+970)[5][0-9]{8}") && !phone.matches("(05[0-9]|0[12346789])([0-9]{7})") && !phone.matches("(00972|0|\\+972|0|)[2][0-9]{7}"));
     }
 
     public static boolean isValidId(String id) {

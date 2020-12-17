@@ -16,7 +16,7 @@ import androidx.fragment.app.FragmentManager;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class LoginFragment extends Fragment implements View.OnClickListener{
+public class LoginFragment extends Fragment implements View.OnClickListener {
 
     private FragmentManager fragmentManager;
     private FirebaseAuth mAuth;
@@ -33,14 +33,17 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
     }
 
     @Override
-    public View onCreateView (LayoutInflater inflater,
-                              ViewGroup container,
-                              Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater,
+                             ViewGroup container,
+                             Bundle savedInstanceState) {
         binding = inflater.inflate(R.layout.fragment_login, container, false);
         View view = binding.getRootView();
 
         ImageButton back = (ImageButton) view.findViewById(R.id.back);
         back.setOnClickListener(this);
+
+        Button login = (Button) view.findViewById(R.id.login);
+        login.setOnClickListener(this);
 
         TextView forgot_password = (TextView) view.findViewById(R.id.forget_password);
         forgot_password.setOnClickListener(this);
@@ -71,8 +74,8 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
         }
     }
 
-
-    void login(){
+    void login() {
+        String InvalidLogin = getString(R.string.InvalidLogin);
         mAuth.signInWithEmailAndPassword(email.getText().toString(), password.getText().toString())
                 .addOnCompleteListener(getActivity(), task -> {
                     if (task.isSuccessful()) {
@@ -80,9 +83,8 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
                         Intent intent = new Intent(getContext(), JobPoll.class);
                         startActivity(intent);*/
                     } else {
-                        Toast.makeText(getContext(), "User not found", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), InvalidLogin, Toast.LENGTH_SHORT).show();
                     }
                 }).addOnFailureListener(Throwable::printStackTrace);
     }
-
 }

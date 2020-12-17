@@ -18,4 +18,11 @@
     <string name="remember">נזכרתי! מעבר להתחברות</string>
     <string name="text7">נתקלנו בקשיים?</string>
     <string name="text8">אל דאגה מיד ממשיכים!</string>
+    <string name="InvalidEmail">כתובת מייל לא תקינה</string>
+    <string name="InvalidPassword">סיסמה חלשה</string>
+    <string name="InvalidName">שם לא תקין</string>
+    <string name="InvalidId">מספר תעודה לא תקין</string>
+    <string name="InvalidAge">גיל לא תקין</string>
+    <string name="InvalidPhone">מספר טלפון לא תקין</string>
+    <string name="InvalidLogin">מייל או סיסמה לא נכונים</string>
 </resources>

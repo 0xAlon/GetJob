@@ -8,12 +8,12 @@
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/drawable_button_3.xml.flat",
-        "source": "/Users/alon/Documents/GetJob/app/src/main/res/drawable/button_3.xml"
-    },
-    {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/drawable_ic_image_1.xml.flat",
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/drawable/ic_image_1.xml"
+    },
+    {
+        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/drawable_button_3.xml.flat",
+        "source": "/Users/alon/Documents/GetJob/app/src/main/res/drawable/button_3.xml"
     },
     {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",

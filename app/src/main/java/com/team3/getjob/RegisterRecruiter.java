@@ -1,6 +1,8 @@
 package com.team3.getjob;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,7 +22,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RegisterRecruiter extends Fragment implements View.OnClickListener{
+public class RegisterRecruiter extends Fragment implements View.OnClickListener {
 
     private FirebaseAuth mAuth;
     private static final String TAG = "LoginFragment";
@@ -36,9 +38,9 @@ public class RegisterRecruiter extends Fragment implements View.OnClickListener{
 
 
     @Override
-    public View onCreateView (LayoutInflater inflater,
-                              ViewGroup container,
-                              Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater,
+                             ViewGroup container,
+                             Bundle savedInstanceState) {
         binding = inflater.inflate(R.layout.fragment_register_recruiter, container, false);
         View view = binding.getRootView();
 
@@ -49,12 +51,109 @@ public class RegisterRecruiter extends Fragment implements View.OnClickListener{
         register.setOnClickListener(this);
 
         password = (TextView) view.findViewById(R.id.password_field);
+        password.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {
+                if (!Validation.isValidPassword(password.getText().toString())) {
+                    password.setError(getString(R.string.InvalidPassword));
+                }
+            }
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+        });
+
         email = (TextView) view.findViewById(R.id.email_field);
+        email.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {
+                if (!Validation.isEmailValid(email.getText().toString())) {
+                    email.setError(getString(R.string.InvalidEmail));
+                }
+            }
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+        });
+
         name = (TextView) view.findViewById(R.id.name_field);
+        name.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {
+                if (!Validation.isAlpha(name.getText().toString())) {
+                    name.setError(getString(R.string.InvalidName));
+                }
+            }
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+        });
+
         id = (TextView) view.findViewById(R.id.id_field);
+        id.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {
+                if (!Validation.isValidId(id.getText().toString())) {
+                    id.setError(getString(R.string.InvalidId));
+                }
+            }
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+        });
+
         company = (TextView) view.findViewById(R.id.company_field);
+        company.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {
+                if (!Validation.isValidCompany(company.getText().toString())) {
+                    company.setError(getString(R.string.InvalidName));
+                }
+            }
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+        });
+
         address = (TextView) view.findViewById(R.id.address_field);
+        address.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {
+                if (!Validation.isAlpha(address.getText().toString())) {
+                    address.setError(getString(R.string.InvalidName));
+                }
+            }
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+        });
+
         phone = (TextView) view.findViewById(R.id.phone_field);
+        phone.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {
+                if (!Validation.isValidPhoneNumber(phone.getText().toString())) {
+                    phone.setError(getString(R.string.InvalidPhone));
+                }
+            }
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+        });
 
         return view;
     }
@@ -82,7 +181,7 @@ public class RegisterRecruiter extends Fragment implements View.OnClickListener{
                 break;
 
             case R.id.register:
-                if (checkValidation()){
+                if (checkValidation()) {
                     mAuth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString())
                             .addOnCompleteListener(getActivity(), task -> {
                                 if (task.isSuccessful()) {
@@ -99,7 +198,7 @@ public class RegisterRecruiter extends Fragment implements View.OnClickListener{
                                     userData.put("UserType", 3);
                                     userData.put("Rating", 0);
                                     userData.put("PhoneNumber", Integer.parseInt(phone.getText().toString()));
-                                    
+
                                     db.collection("Users") // Add a new document with a generated ID
                                             .add(userData)
                                             .addOnSuccessListener(documentReference -> {
@@ -117,33 +216,26 @@ public class RegisterRecruiter extends Fragment implements View.OnClickListener{
         }
     }
 
-    private boolean checkValidation(){
-        if (!Validation.isValidPassword(password.getText().toString())){
-            Toast.makeText(getActivity(),"Invalid Password",Toast.LENGTH_SHORT).show();
+    private boolean checkValidation() {
+        if (!Validation.isValidPassword(password.getText().toString())) {
             return false;
         }
-        if (!Validation.isEmailValid(email.getText().toString())){
-            Toast.makeText(getActivity(),"Invalid Email",Toast.LENGTH_SHORT).show();
+        if (!Validation.isEmailValid(email.getText().toString())) {
             return false;
         }
-        if (!Validation.isAlpha(name.getText().toString())){
-            Toast.makeText(getActivity(),"Invalid Name",Toast.LENGTH_SHORT).show();
+        if (!Validation.isAlpha(name.getText().toString())) {
             return false;
         }
-        if (!Validation.isAlpha(address.getText().toString())){
-            Toast.makeText(getActivity(),"Invalid Address",Toast.LENGTH_SHORT).show();
+        if (!Validation.isAlpha(address.getText().toString())) {
             return false;
         }
-        if (!Validation.isValidCompany(company.getText().toString())){
-            Toast.makeText(getActivity(),"Invalid Company name",Toast.LENGTH_SHORT).show();
+        if (!Validation.isValidCompany(company.getText().toString())) {
             return false;
         }
-        if (!Validation.isValidId(id.getText().toString())){
-            Toast.makeText(getActivity(),"Invalid ID number",Toast.LENGTH_SHORT).show();
+        if (!Validation.isValidId(id.getText().toString())) {
             return false;
         }
-        if (!Validation.isValidPhoneNumber(phone.getText().toString())){
-            Toast.makeText(getActivity(),"Invalid Phone number",Toast.LENGTH_SHORT).show();
+        if (!Validation.isValidPhoneNumber(phone.getText().toString())) {
             return false;
         }
         return true;
