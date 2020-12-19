@@ -16,13 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".PaymentActivity"/>
+        <activity android:name=".LanguagesActivity" />
+        <activity android:name=".rank_filter" />
+        <activity android:name=".Location" />
+        <activity android:name=".Filter"/>
+        <activity android:name=".MainActivity"/>
     </application>
 
 </manifest>

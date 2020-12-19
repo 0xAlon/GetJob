@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:2:1-28:12
+ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:2:1-27:12
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\97253\.gradle\caches\transforms-2\files-2.1\f8aaae792a30a1f56b0d58cd10f75c0e\material-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\97253\.gradle\caches\transforms-2\files-2.1\0a5045bc66945a7765a6f0a1f5ff6c5e\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\97253\.gradle\caches\transforms-2\files-2.1\5a0a5d253b938e8a0386b39b912ab5cf\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
@@ -67,25 +67,25 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\97253\.gradle\cache
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\97253\.gradle\caches\transforms-2\files-2.1\bc08a9b8e8d88a4a706f5b1d66b83db9\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:17.1.0] C:\Users\97253\.gradle\caches\transforms-2\files-2.1\ac411d41ba44e897fc383a0c096cb75f\jetified-protolite-well-known-types-17.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.28.0] C:\Users\97253\.gradle\caches\transforms-2\files-2.1\af1aceeddfddfe8433b60faf6ef2e76e\jetified-grpc-android-1.28.0\AndroidManifest.xml:2:1-13:12
-INJECTED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:2:1-27:12
 	package
 		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:3:5-31
 		INJECTED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:2:1-28:12
+		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:2:1-27:12
 		INJECTED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:2:1-28:12
+		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:2:1-27:12
 		INJECTED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:5:5-26:19
+ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:5:5-25:19
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\97253\.gradle\caches\transforms-2\files-2.1\f8aaae792a30a1f56b0d58cd10f75c0e\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\97253\.gradle\caches\transforms-2\files-2.1\f8aaae792a30a1f56b0d58cd10f75c0e\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\97253\.gradle\caches\transforms-2\files-2.1\0a5045bc66945a7765a6f0a1f5ff6c5e\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -158,10 +158,30 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:16:17-77
 	android:name
 		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:16:27-74
-activity#com.team3.getjob.MainActivity
-ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:19:9-25:20
+activity#com.team3.getjob.PaymentActivity
+ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:19:9-52
 	android:name
-		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:19:19-47
+		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:19:19-50
+activity#com.team3.getjob.LanguagesActivity
+ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:20:9-55
+	android:name
+		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:20:19-52
+activity#com.team3.getjob.rank_filter
+ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:21:9-49
+	android:name
+		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:21:19-46
+activity#com.team3.getjob.Location
+ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:22:9-46
+	android:name
+		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:22:19-43
+activity#com.team3.getjob.Filter
+ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:23:9-43
+	android:name
+		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:23:19-41
+activity#com.team3.getjob.MainActivity
+ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:24:9-49
+	android:name
+		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:24:19-47
 uses-sdk
 INJECTED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml
