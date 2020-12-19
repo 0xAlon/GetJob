@@ -20,6 +20,8 @@ public class LanguagesActivity extends AppCompatActivity {
         CheckBox hebrewL = findViewById(R.id.Hebrew);
         CheckBox russianL = findViewById(R.id.Russian);
         ArrayList<String> languages = new ArrayList<>();
+
+
         englishL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,6 +57,19 @@ public class LanguagesActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LanguagesActivity.this, Filter.class);
+
+                startActivity(intent);
+            }
+        });
+
+
+        Button buttonSucV = (Button) findViewById(R.id.button_LAN_V);
+        button.setOnClickListener(new View.OnClickListener() {
+            ArrayList<String> finalLanguages = languages;
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LanguagesActivity.this, Filter.class);
+                intent.putExtra("ranks", finalLanguages);
                 startActivity(intent);
             }
         });

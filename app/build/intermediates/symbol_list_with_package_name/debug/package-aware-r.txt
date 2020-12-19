@@ -1730,6 +1730,8 @@ id button5
 id button6
 id button7
 id buttonPanel
+id buttonSucR
+id button_LAN_V
 id cache_measures
 id cancel_action
 id cancel_button

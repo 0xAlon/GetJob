@@ -22,7 +22,7 @@ public class rank_filter extends AppCompatActivity {
         CheckBox check3 = findViewById(R.id.checkBox7);
         CheckBox check4 = findViewById(R.id.checkBox8);
         CheckBox check5 = findViewById(R.id.checkBox9);
-        ArrayList<String>result=new ArrayList<>();
+        ArrayList<String>result = new ArrayList<String>();
 
         check1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,14 +72,13 @@ public class rank_filter extends AppCompatActivity {
 
 
         //Complete
-        Button complete = (Button) findViewById(R.id.button);
+        Button complete = (Button) findViewById(R.id.buttonSucR);
         complete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                StringBuilder str=new StringBuilder();
-                for(String s:result) {
-                    str.append(s).append("\n");
-                }
+                Intent intent = new Intent(rank_filter.this, Filter.class);
+                intent.putExtra("ranks", result);
+                startActivity(intent);
             }
         });
         //--------------------------------------------------------------------------

@@ -7,13 +7,29 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+
 public class Filter extends AppCompatActivity {
+    ArrayList<String> ranks;
+    ArrayList<String> languages;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_filter);
         Button button = (Button) findViewById(R.id.button4);
+
+        ArrayList<String> ranks = new ArrayList<String>();
+        ArrayList<String> languages = new ArrayList<String>();
+
+        Bundle extras = getIntent().getExtras();
+        if(extras != null)
+        {
+            ranks = extras.getStringArrayList("result");
+            languages = extras.getStringArrayList("languages");
+        }
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,11 +73,15 @@ public class Filter extends AppCompatActivity {
             }
         });
         Button BackToSearchWithFilters = (Button) findViewById(R.id.button2);
+        ArrayList<String> finalRanks = ranks;
+        ArrayList<String> finalLanguages = languages;
         BackToSearchWithFilters.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Add info to PullJobs tha will effect Database pull
                 Intent intent6 = new Intent(Filter.this, Jobs_Pull.class);
+                intent6.putExtra("ranks", finalRanks);
+                intent6.putExtra("languages", finalLanguages);
                 startActivity(intent6);
             }
         });
