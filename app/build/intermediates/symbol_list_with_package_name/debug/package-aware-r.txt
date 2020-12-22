@@ -45,6 +45,10 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
+array preloaded_fonts
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -1588,6 +1592,7 @@ drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_back
+drawable ic_delete
 drawable ic_image_1
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1627,6 +1632,8 @@ drawable notify_panel_notification_icon_bg
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font poppins
+font poppins_bold
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -1820,12 +1827,17 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id image_delete
 id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id job_date
+id job_title
 id jobdetail
 id jobdetail_field
+id jobs_pull_employer_frame
+id jobs_pull_frame
 id jobtitle
 id jobtitle_field
 id jumpToEnd
@@ -1840,9 +1852,11 @@ id light
 id line1
 id line3
 id linear
+id linearLayout
 id list
 id listMode
 id list_item
+id list_view
 id location
 id location_field
 id logout
@@ -2098,6 +2112,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_job_window
 layout activity_employee_profile
+layout activity_jobs__pull
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2116,6 +2131,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout employer_profile
+layout job_row
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2291,6 +2307,7 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
+style AppTheme
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -2976,6 +2993,16 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style back_button
+style button_1
+style button_2
+style button_3
+style button_4
+style image_1
+style text
+style text_box_1
+style text_box_2
+style text_field
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

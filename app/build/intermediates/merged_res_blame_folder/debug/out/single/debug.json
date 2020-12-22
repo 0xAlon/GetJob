@@ -4,8 +4,16 @@
         "source": "D:\\GetJob\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins_bold.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\font\\poppins_bold.xml"
+    },
+    {
         "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "D:\\GetJob\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_delete.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\drawable\\ic_delete.xml"
     },
     {
         "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_2.xml.flat",
@@ -40,6 +48,14 @@
         "source": "D:\\GetJob\\app\\src\\main\\res\\drawable\\button_4.xml"
     },
     {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_job_row.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\layout\\job_row.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_jobs__pull.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\layout\\activity_jobs__pull.xml"
+    },
+    {
         "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "D:\\GetJob\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
@@ -62,6 +78,10 @@
     {
         "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_image_1.xml.flat",
         "source": "D:\\GetJob\\app\\src\\main\\res\\drawable\\ic_image_1.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\font\\poppins.xml"
     },
     {
         "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_1.xml.flat",

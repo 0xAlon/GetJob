@@ -9,11 +9,11 @@ public class job_model {
     private String description;
     private String location;
     private String payment;
-    private int rank;
+    private String rank;
     private Date date;
     private ArrayList<String> languages;
 
-    public job_model(String title, String description, String location, String payment, int rank, Date date, ArrayList<String> languages) {
+    public job_model(String title, String description, String location, String payment, String rank, Date date, ArrayList<String> languages) {
         this.title = title;
         this.description = description;
         this.location = location;
@@ -22,7 +22,6 @@ public class job_model {
         this.date = date;
         this.languages = languages;
     }
-
 
     public job_model() {
     }
@@ -59,11 +58,11 @@ public class job_model {
         this.payment = payment;
     }
 
-    public double getRank() {
+    public String getRank() {
         return rank;
     }
 
-    public void setRank(int rank) {
+    public void setRank(String rank) {
         this.rank = rank;
     }
 

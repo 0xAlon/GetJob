@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context=".AddJobWindow">
+
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -24,7 +26,22 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="הוספת עבודה"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="110dp"
@@ -142,10 +159,12 @@
             android:layout_height="wrap_content"
             android:hint="שפה"
             android:inputType="text" />
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/confirm_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            style="@style/button_1"
+            android:layout_marginTop="10dp"
             android:text="אישור"
             />
 
