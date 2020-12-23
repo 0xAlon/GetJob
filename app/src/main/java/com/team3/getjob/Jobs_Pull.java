@@ -57,16 +57,7 @@ public class Jobs_Pull extends AppCompatActivity {
         ArrayList<String> languages = new ArrayList<String>();
         Context context = this;
 
-        //Pull extras from filter
-        Bundle extras = getIntent().getExtras();
-        if(extras != null)
-        {
-            ranks = extras.getStringArrayList("result");
-            languages = extras.getStringArrayList("languages");
-        }
 
-        Log.d("CheckCheck!!!", "Ranks: " + ranks);
-        Log.d("CheckCheck!!!", "Languages: " + languages);
 
         //Data Pull
         DataBasePull(id_list, temp_list, context);

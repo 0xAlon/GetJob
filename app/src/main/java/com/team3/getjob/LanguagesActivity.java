@@ -19,35 +19,37 @@ public class LanguagesActivity extends AppCompatActivity {
         CheckBox englishL = findViewById(R.id.English);
         CheckBox hebrewL = findViewById(R.id.Hebrew);
         CheckBox russianL = findViewById(R.id.Russian);
-        ArrayList<String> languages = new ArrayList<>();
+
+
+        //Add class implementation and add languages
 
 
         englishL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (englishL.isChecked())
-                    languages.add("English");
-                else
-                    languages.remove("English");
+                /*if (englishL.isChecked())
+                   // languages.add("English");
+               *//* else*//*
+                  //  languages.remove("English");*/
             }
         });
         hebrewL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (hebrewL.isChecked())
-                    languages.add("Hebrew");
+                /*if (hebrewL.isChecked())
+                   *//* languages.add("Hebrew");
                 else
-                    languages.remove("Hebrew");
+                    languages.remove("Hebrew");*/
             }
         });
 
         russianL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (russianL.isChecked())
-                    languages.add("Russia");
+                /*if (russianL.isChecked())
+                   *//* languages.add("Russia");
                 else
-                    languages.remove("Russian");
+                    languages.remove("Russian");*/
             }
         });
 
@@ -57,7 +59,6 @@ public class LanguagesActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LanguagesActivity.this, Filter.class);
-
                 startActivity(intent);
             }
         });
@@ -65,11 +66,9 @@ public class LanguagesActivity extends AppCompatActivity {
 
         Button buttonSucV = (Button) findViewById(R.id.button_LAN_V);
         button.setOnClickListener(new View.OnClickListener() {
-            ArrayList<String> finalLanguages = languages;
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LanguagesActivity.this, Filter.class);
-                intent.putExtra("ranks", finalLanguages);
                 startActivity(intent);
             }
         });

@@ -16,6 +16,8 @@ public class PaymentActivity extends AppCompatActivity {
         EditText low,high;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
+
+
         //option for cancel location filter and came back for filter menu
         Button button = (Button) findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
@@ -31,6 +33,8 @@ public class PaymentActivity extends AppCompatActivity {
         low=findViewById(R.id.editText);
         high=findViewById(R.id.editText1);
         Button buttonF = (Button) findViewById(R.id.button);
+
+
         buttonF.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

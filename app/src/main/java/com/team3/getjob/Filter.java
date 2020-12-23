@@ -20,15 +20,7 @@ public class Filter extends AppCompatActivity {
         setContentView(R.layout.activity_filter);
         Button button = (Button) findViewById(R.id.button4);
 
-        ArrayList<String> ranks = new ArrayList<String>();
-        ArrayList<String> languages = new ArrayList<String>();
 
-        Bundle extras = getIntent().getExtras();
-        if(extras != null)
-        {
-            ranks = extras.getStringArrayList("result");
-            languages = extras.getStringArrayList("languages");
-        }
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,6 +56,8 @@ public class Filter extends AppCompatActivity {
                 startActivity(intent4);
             }
         });
+
+
         Button BackToSearch = (Button) findViewById(R.id.button7);
         BackToSearch.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,16 +66,14 @@ public class Filter extends AppCompatActivity {
                 startActivity(intent5);
             }
         });
+
+
         Button BackToSearchWithFilters = (Button) findViewById(R.id.button2);
-        ArrayList<String> finalRanks = ranks;
-        ArrayList<String> finalLanguages = languages;
         BackToSearchWithFilters.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Add info to PullJobs tha will effect Database pull
                 Intent intent6 = new Intent(Filter.this, Jobs_Pull.class);
-                intent6.putExtra("ranks", finalRanks);
-                intent6.putExtra("languages", finalLanguages);
                 startActivity(intent6);
             }
         });

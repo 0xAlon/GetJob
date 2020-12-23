@@ -22,51 +22,52 @@ public class rank_filter extends AppCompatActivity {
         CheckBox check3 = findViewById(R.id.checkBox7);
         CheckBox check4 = findViewById(R.id.checkBox8);
         CheckBox check5 = findViewById(R.id.checkBox9);
-        ArrayList<String>result = new ArrayList<String>();
+
+        //Add class implementation
 
         check1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(check1.isChecked())
+                /*if(check1.isChecked())
                     result.add("1");
                 else
-                    result.remove("1");
+                    result.remove("1");*/
             }
         });
         check2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(check2.isChecked())
+                /*if(check2.isChecked())
                     result.add("2");
                 else
-                    result.remove("2");
+                    result.remove("2");*/
             }
         });
         check3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(check1.isChecked())
+               /* if(check1.isChecked())
                     result.add("3");
                 else
-                    result.remove("3");
+                    result.remove("3");*/
             }
         });
         check4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(check4.isChecked())
+                /*if(check4.isChecked())
                     result.add("4");
                 else
-                    result.remove("4");
+                    result.remove("4");*/
             }
         });
         check5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(check5.isChecked())
+               /* if(check5.isChecked())
                     result.add("5");
                 else
-                    result.remove("5");
+                    result.remove("5");*/
             }
         });
 
@@ -77,7 +78,6 @@ public class rank_filter extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(rank_filter.this, Filter.class);
-                intent.putExtra("ranks", result);
                 startActivity(intent);
             }
         });
@@ -93,7 +93,7 @@ public class rank_filter extends AppCompatActivity {
             }
         });
         //--------------------------------------------------------------------------
-    //need to add and think how to return this array of rank choces
+    //need to add and think how to return this array of rank chocks
     }
 }
 
