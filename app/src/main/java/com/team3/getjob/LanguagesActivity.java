@@ -78,7 +78,7 @@ public class LanguagesActivity extends AppCompatActivity {
 
 
         Button buttonSucV = (Button) findViewById(R.id.button_LAN_V);
-        button.setOnClickListener(new View.OnClickListener() {
+        buttonSucV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LanguagesActivity.this, Filter.class);

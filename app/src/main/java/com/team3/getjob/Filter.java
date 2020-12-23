@@ -72,12 +72,15 @@ public class Filter extends AppCompatActivity {
                     Filter_model.s_languages.clear();
                 }
 
-                if(Filter_model.s_languages != null)
+                if(Filter_model.s_ranks != null)
                 {
-                    Filter_model.s_languages.clear();
+                    Filter_model.s_ranks.clear();
                 }
 
+                Filter_model.Min_payment = null;
+                Filter_model.Max_payment = null;
 
+                //Go to jobs Pull
                 Intent intent5 = new Intent(Filter.this, Jobs_Pull.class);
                 startActivity(intent5);
             }

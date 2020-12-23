@@ -60,9 +60,11 @@ public class Jobs_Pull extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser currentUser = mAuth.getCurrentUser();
 
+
         //Add list for user applied jobs
 
         //Add button apply inside fragment jobs
+
 
         //Additional Setup
         List<String> id_list = new ArrayList<String>();
@@ -72,14 +74,18 @@ public class Jobs_Pull extends AppCompatActivity {
         Context context = this;
 
         //Filter and DataPull call
-        if(Filter_model.s_languages.size() != 0 || Filter_model.s_ranks.size() != 0)
+        if(Filter_model.s_languages.size() != 0 || Filter_model.s_ranks.size() != 0 || Filter_model.Min_payment != null || Filter_model.Max_payment != null)
         {
 
             //Setup
             ArrayList<String> temp_lang = Filter_model.s_languages;
             ArrayList<String> temp_ranks = Filter_model.s_ranks;
+            String MaxVAL = Filter_model.Max_payment;
+            String MinVal = Filter_model.Min_payment;
+            Log.d("PaymentCheck", "MinPayment" + MinVal);
+            Log.d("PaymentCheck", "MinPayment" + MaxVAL);
             //Data Pull WITH FILTERS
-            DataBasePull(id_list, temp_list, context, temp_lang, temp_ranks);
+            DataBasePull(id_list, temp_list, context, temp_lang, temp_ranks, MaxVAL, MinVal);
         }
         else
         {
@@ -94,7 +100,7 @@ public class Jobs_Pull extends AppCompatActivity {
         Filter_Button(filter_button);
     }
 
-    private void DataBasePull(List<String> id_list, ArrayList<job_model> temp_list, Context context, ArrayList<String> temp_lang, ArrayList<String> temp_ranks) {
+    private void DataBasePull(List<String> id_list, ArrayList<job_model> temp_list, Context context, ArrayList<String> temp_lang, ArrayList<String> temp_ranks, String MaxVal, String MinVal) {
         db.collection("Posts")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -108,7 +114,7 @@ public class Jobs_Pull extends AppCompatActivity {
                                     job_model jobs = document.toObject(job_model.class);
 
                                     //Check filter
-                                    if(Check_filter_lang(jobs, temp_lang) && Check_filter_rank(jobs, temp_ranks))
+                                    if(Check_filter_lang(jobs, temp_lang) && Check_filter_rank(jobs, temp_ranks) && Check_filter_payment(jobs, MaxVal, MinVal))
                                     {
                                         //Id list for future post click and fragment transition
                                         id_list.add(document.getId());
@@ -210,6 +216,15 @@ public class Jobs_Pull extends AppCompatActivity {
             }
         }
         return false;
+    }
+
+    private boolean Check_filter_payment(job_model jobs, String Max, String Min)
+    {
+        if(Max == null || Min == null) return true;
+        int check=Integer.parseInt(jobs.getPayment());
+        int low=Integer.parseInt(Min);
+        int high=Integer.parseInt(Max);
+        return (check >= low) && (check <= high);
     }
 
 }

@@ -13,13 +13,15 @@ public class PaymentActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        EditText low,high;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
 
+        //Setup-------------------------------------------------------------------------
+        EditText low,high;
 
         //option for cancel location filter and came back for filter menu
         Button button = (Button) findViewById(R.id.button2);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,12 +31,13 @@ public class PaymentActivity extends AppCompatActivity {
         });
         //---------------------------------------------------------------------------
 
-        //Let's Filter
+        //View setup
         low=findViewById(R.id.editText);
         high=findViewById(R.id.editText1);
         Button buttonF = (Button) findViewById(R.id.button);
 
 
+        //Apply button
         buttonF.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,15 +46,29 @@ public class PaymentActivity extends AppCompatActivity {
                 }else{
                     String lowF=low.getText().toString();
                     String highF=high.getText().toString();
-                    boolean x=CheckInput(lowF);
-                    boolean y=CheckInput(highF);
+                    /*boolean x=CheckInput(lowF);
+                    boolean y=CheckInput(highF);*/
+                    /*if (x && y){*/
+                    Filter_model.Max_payment = highF;
+                    Filter_model.Min_payment = lowF;
+
+                    Intent intent_Apply = new Intent(PaymentActivity.this, Filter.class);
+                    startActivity(intent_Apply);
+                    /*}*/
+
+
                 }
             }
         });
         //---------------------------------------------------------------------------
 
+
+        //Add button 2 X
+
     }
-    boolean CheckInput(String str){
+
+
+    /*boolean CheckInput(String str){
         return str.matches("[0-9]+") && str.length() > 2;
-    }
+    }*/
 }

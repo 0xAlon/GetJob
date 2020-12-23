@@ -8,6 +8,7 @@ public class Filter_model {
 
     public static ArrayList<String> s_languages = new ArrayList<String>();
     public static ArrayList<String> s_ranks = new ArrayList<String>();
-
+    public static String Max_payment;
+    public static String Min_payment;
 
 }
