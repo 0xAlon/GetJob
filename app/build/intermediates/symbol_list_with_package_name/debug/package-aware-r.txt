@@ -1593,6 +1593,7 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_back
 drawable ic_delete
+drawable ic_edit
 drawable ic_image_1
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1766,6 +1767,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id delete_post
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -1827,7 +1829,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id image_delete
 id info
 id invisible
 id italic
@@ -1933,6 +1934,7 @@ id rounded
 id row_index_key
 id salary
 id salary_field
+id save_edit
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2112,6 +2114,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_job_window
 layout activity_employee_profile
+layout activity_job_action
 layout activity_jobs__pull
 layout activity_main
 layout custom_dialog

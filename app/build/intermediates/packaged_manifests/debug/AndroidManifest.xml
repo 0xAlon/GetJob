@@ -24,6 +24,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.GetJob" >
+        <activity android:name="com.team3.getjob.JobAction" />
         <activity android:name="com.team3.getjob.EmployeeProfile" />
         <activity android:name="com.team3.getjob.AddJobWindow" />
         <activity android:name="com.team3.getjob.MainActivity" >

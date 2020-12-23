@@ -5,8 +5,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Adapter;
 import android.widget.AdapterView;
+import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SearchView;
@@ -23,8 +26,10 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
@@ -48,29 +53,23 @@ public class EmployerProfile extends AppCompatActivity {
     TextView location;
     FirebaseFirestore db;
     ListView mListView;
-    ImageView mDeleteImage;
+
+    public EmployerProfile() {
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.employer_profile);
 
         FirebaseApp.initializeApp(this);
         mAuth = FirebaseAuth.getInstance();
-
         user_name = (TextView) findViewById(R.id.user_name);
         email = (TextView) findViewById(R.id.email);
         phone_num = (TextView) findViewById(R.id.phone);
         id = (TextView) findViewById(R.id.company_name);
         location = (TextView) findViewById(R.id.location);
-
-        add_job_button = (Button) findViewById(R.id.addjob);
-        add_job_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openAddJobWindow();
-            }
-        });
 
         mListView = findViewById(R.id.list);
         db = FirebaseFirestore.getInstance();
@@ -83,9 +82,32 @@ public class EmployerProfile extends AppCompatActivity {
         //Data Pull
         DataBasePull(id_list, temp_list, context);
 
-        //Delete from database:
+        add_job_button = (Button) findViewById(R.id.addjob);
+        add_job_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAddJobWindow();
+                ((BaseAdapter) mListView.getAdapter()).notifyDataSetChanged();
+            }
+        });
 
+
+        //Delete from database:
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+                Intent intent = new Intent(EmployerProfile.this, JobAction.class);
+                intent.putExtra("keyName", id_list.get(position));
+                startActivity(intent);
+
+
+            }
+        });
     }
+
+
+
 
     @Override
     public void onStart() {
@@ -152,23 +174,6 @@ public class EmployerProfile extends AppCompatActivity {
                         } else {
                             Log.d("check", "Error getting documents: ", task.getException());
                         }
-                    }
-                });
-    }
-
-    private void deleteFromDB(FirebaseUser currentUser){
-        db.collection("Posts").document(String.valueOf(currentUser))
-                .delete()
-                .addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void aVoid) {
-                        Log.d(TAG, "DocumentSnapshot successfully deleted!");
-                    }
-                })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Log.w(TAG, "Error deleting document", e);
                     }
                 });
     }

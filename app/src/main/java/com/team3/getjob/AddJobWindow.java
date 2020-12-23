@@ -78,7 +78,10 @@ public class AddJobWindow extends AppCompatActivity implements View.OnClickListe
                             @Override
                             public void onSuccess(DocumentReference documentReference) {
                                 Log.d("check", "DocumentSnapshot written with ID: " + documentReference.getId());
+                                Intent myIntent = new Intent(v.getContext(), EmployerProfile.class);
+                                startActivity(myIntent);
                             }
+
                         })
                         .addOnFailureListener(new OnFailureListener() {
                             @Override
@@ -89,5 +92,8 @@ public class AddJobWindow extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
+
+
+
 
 }

@@ -56,6 +56,14 @@
         "source": "D:\\GetJob\\app\\src\\main\\res\\layout\\activity_jobs__pull.xml"
     },
     {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_edit.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\drawable\\ic_edit.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_job_action.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\layout\\activity_job_action.xml"
+    },
+    {
         "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "D:\\GetJob\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
