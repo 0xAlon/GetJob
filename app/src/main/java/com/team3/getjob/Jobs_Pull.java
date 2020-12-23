@@ -82,8 +82,7 @@ public class Jobs_Pull extends AppCompatActivity {
             ArrayList<String> temp_ranks = Filter_model.s_ranks;
             String MaxVAL = Filter_model.Max_payment;
             String MinVal = Filter_model.Min_payment;
-            Log.d("PaymentCheck", "MinPayment" + MinVal);
-            Log.d("PaymentCheck", "MinPayment" + MaxVAL);
+
             //Data Pull WITH FILTERS
             DataBasePull(id_list, temp_list, context, temp_lang, temp_ranks, MaxVAL, MinVal);
         }

@@ -1,16 +1,5 @@
 com/team3/getjob/BuildConfig.java
  com.team3.getjob.BuildConfig
-com/team3/getjob/Filter_model.java
- com.team3.getjob.Filter_model
-com/team3/getjob/jobs_adapter.java
- com.team3.getjob.jobs_adapter
-com/team3/getjob/job_model.java
- com.team3.getjob.job_model
-com/team3/getjob/jobs_pull_fragment.java
- com.team3.getjob.jobs_pull_fragment
- com.team3.getjob.jobs_pull_fragment$1
-com/team3/getjob/MainActivity.java
- com.team3.getjob.MainActivity
 com/team3/getjob/rank_filter.java
  com.team3.getjob.rank_filter
  com.team3.getjob.rank_filter$1
@@ -18,16 +7,14 @@ com/team3/getjob/rank_filter.java
  com.team3.getjob.rank_filter$3
  com.team3.getjob.rank_filter$4
  com.team3.getjob.rank_filter$5
+com/team3/getjob/jobs_adapter.java
+ com.team3.getjob.jobs_adapter
 com/team3/getjob/PaymentActivity.java
  com.team3.getjob.PaymentActivity
  com.team3.getjob.PaymentActivity$1
  com.team3.getjob.PaymentActivity$2
-com/team3/getjob/Jobs_Pull.java
- com.team3.getjob.Jobs_Pull
- com.team3.getjob.Jobs_Pull$1
- com.team3.getjob.Jobs_Pull$2
- com.team3.getjob.Jobs_Pull$3
- com.team3.getjob.Jobs_Pull$4
+com/team3/getjob/job_model.java
+ com.team3.getjob.job_model
 com/team3/getjob/Location.java
  com.team3.getjob.Location
  com.team3.getjob.Location$1
@@ -39,6 +26,10 @@ com/team3/getjob/Filter.java
  com.team3.getjob.Filter$4
  com.team3.getjob.Filter$5
  com.team3.getjob.Filter$6
+com/team3/getjob/Filter_model.java
+ com.team3.getjob.Filter_model
+com/team3/getjob/MainActivity.java
+ com.team3.getjob.MainActivity
 com/team3/getjob/LanguagesActivity.java
  com.team3.getjob.LanguagesActivity
  com.team3.getjob.LanguagesActivity$1
@@ -46,3 +37,13 @@ com/team3/getjob/LanguagesActivity.java
  com.team3.getjob.LanguagesActivity$3
  com.team3.getjob.LanguagesActivity$4
  com.team3.getjob.LanguagesActivity$5
+com/team3/getjob/Jobs_Pull.java
+ com.team3.getjob.Jobs_Pull
+ com.team3.getjob.Jobs_Pull$1
+ com.team3.getjob.Jobs_Pull$2
+ com.team3.getjob.Jobs_Pull$3
+ com.team3.getjob.Jobs_Pull$4
+com/team3/getjob/jobs_pull_fragment.java
+ com.team3.getjob.jobs_pull_fragment
+ com.team3.getjob.jobs_pull_fragment$1
+ com.team3.getjob.jobs_pull_fragment$2

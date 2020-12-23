@@ -1710,6 +1710,7 @@ id all
 id always
 id animateToEnd
 id animateToStart
+id apply
 id asConfigured
 id async
 id auto

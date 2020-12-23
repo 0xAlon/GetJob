@@ -1,6 +1,7 @@
 package com.team3.getjob;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -10,6 +11,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -35,6 +37,7 @@ public class jobs_pull_fragment extends Fragment {
     TextView description;
     TextView location;
     TextView payment;
+    Button apply;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -73,12 +76,15 @@ public class jobs_pull_fragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
         }
 
+        //Add post id to user array jobs
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        //SETUP
         View view = inflater.inflate(R.layout.fragment_jobs_pull_fragment, container, false);
         view = view.getRootView();
 
@@ -87,9 +93,31 @@ public class jobs_pull_fragment extends Fragment {
         TextView location =(TextView)view.findViewById(R.id.location_Full);
         TextView payment =(TextView)view.findViewById(R.id.payment_Full);
 
-
         db = FirebaseFirestore.getInstance();
 
+        //Fill data (DATABASE CALL)
+        FillPostData(title, description, location, payment);
+
+        //Apply add post id to user id
+        Button apply = (Button)view.findViewById(R.id.apply);
+        apply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+
+                Intent intent = new Intent(getActivity(), Jobs_Pull.class);
+                startActivity(intent);
+            }
+        });
+
+        // Inflate the layout for this fragment
+        return view;
+       // return inflater.inflate(R.layout.fragment_jobs_pull_fragment, container, false);
+
+    }
+
+    private void FillPostData(TextView title, TextView description, TextView location, TextView payment) {
         DocumentReference docRef = db.collection("Posts").document(mParam1); //mParam the postId from activity
         docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
@@ -114,11 +142,5 @@ public class jobs_pull_fragment extends Fragment {
                 }
             }
         });
-
-        // Inflate the layout for this fragment
-        return view;
-       // return inflater.inflate(R.layout.fragment_jobs_pull_fragment, container, false);
-
-
     }
 }
