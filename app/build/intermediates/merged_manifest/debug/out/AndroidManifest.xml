@@ -24,13 +24,22 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.GetJob" >
-        <activity android:name="com.team3.getjob.MainActivity" >
+        <activity android:name="com.team3.getjob.Jobs_Pull" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
+=======
+        <activity android:name="com.team3.getjob.PaymentActivity" />
+        <activity android:name="com.team3.getjob.LanguagesActivity" />
+        <activity android:name="com.team3.getjob.rank_filter" />
+        <activity android:name="com.team3.getjob.Location" />
+        <activity android:name="com.team3.getjob.Filter" />
+        <activity android:name="com.team3.getjob.MainActivity" />
+>>>>>>> PullWithFilters
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
             android:excludeFromRecents="true"

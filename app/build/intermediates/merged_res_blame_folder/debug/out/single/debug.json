@@ -1,25 +1,26 @@
 [
     {
-        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
-        "source": "/Users/alon/Documents/GetJob/app/src/main/res/layout/activity_main.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/alon/Documents/GetJob/app/src/main/res/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_jobs_pull_fragment.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\fragment_jobs_pull_fragment.xml"
     },
     {
-        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_location.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_location.xml"
     },
     {
-        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\background.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/drawable_background.xml.flat",
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/drawable/background.xml"
     },
@@ -30,16 +31,29 @@
     {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+=======
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_job_row.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\job_row.xml"
+>>>>>>> PullWithFilters
     },
     {
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+<<<<<<< HEAD
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/drawable_ic_nav_bar.xml.flat",
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/drawable/ic_nav_bar.xml"
     },
@@ -50,16 +64,21 @@
     {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+=======
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+>>>>>>> PullWithFilters
     },
     {
-        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rank_filter.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_rank_filter.xml"
     },
     {
-        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/alon/Documents/GetJob/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_languages.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_languages.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/menu_activity_base_drawer.xml.flat",
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/menu/activity_base_drawer.xml"
     },
@@ -70,13 +89,61 @@
     {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+=======
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_jobs__pull.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_jobs__pull.xml"
+>>>>>>> PullWithFilters
     },
     {
-        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icons8_checkmark__1_.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\icons8_checkmark__1_.xml"
+    },
+    {
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_payment.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_payment.xml"
+    },
+    {
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icons8_checkmark.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\icons8_checkmark.xml"
+    },
+    {
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icons8_delete.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\icons8_delete.xml"
+    },
+    {
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_filter.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_filter.xml"
+    },
+    {
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     }
 ]
