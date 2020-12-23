@@ -1,4 +1,4 @@
-package com.team3.getjob;
+package com.team3.getjob.Login;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
@@ -18,6 +17,8 @@ import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.team3.getjob.R;
+import com.team3.getjob.Utilities.Validation;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,6 +1,5 @@
-package com.team3.getjob;
+package com.team3.getjob.Login;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +14,7 @@ import androidx.fragment.app.FragmentManager;
 
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
+import com.team3.getjob.R;
 
 public class LoginFragment extends Fragment implements View.OnClickListener {
 

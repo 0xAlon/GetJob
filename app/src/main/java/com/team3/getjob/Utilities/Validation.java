@@ -1,4 +1,4 @@
-package com.team3.getjob;
+package com.team3.getjob.Utilities;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

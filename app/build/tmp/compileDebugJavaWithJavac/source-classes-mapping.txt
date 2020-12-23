@@ -1,32 +1,32 @@
-com/team3/getjob/MainActivity.java
- com.team3.getjob.MainActivity
 com/team3/getjob/BuildConfig.java
  com.team3.getjob.BuildConfig
-com/team3/getjob/RegisterUser.java
- com.team3.getjob.RegisterUser
- com.team3.getjob.RegisterUser$1
- com.team3.getjob.RegisterUser$2
- com.team3.getjob.RegisterUser$3
- com.team3.getjob.RegisterUser$4
- com.team3.getjob.RegisterUser$5
- com.team3.getjob.RegisterUser$6
- com.team3.getjob.RegisterUser$7
-com/team3/getjob/Validation.java
- com.team3.getjob.Validation
+com/team3/getjob/Utilities/Validation.java
+ com.team3.getjob.Utilities.Validation
+com/team3/getjob/Login/ForgotPassword.java
+ com.team3.getjob.Login.ForgotPassword
 com/team3/getjob/JobListActivity.java
  com.team3.getjob.JobListActivity
-com/team3/getjob/ForgotPassword.java
- com.team3.getjob.ForgotPassword
-com/team3/getjob/RegisterRecruiter.java
- com.team3.getjob.RegisterRecruiter
- com.team3.getjob.RegisterRecruiter$1
- com.team3.getjob.RegisterRecruiter$2
- com.team3.getjob.RegisterRecruiter$3
- com.team3.getjob.RegisterRecruiter$4
- com.team3.getjob.RegisterRecruiter$5
- com.team3.getjob.RegisterRecruiter$6
- com.team3.getjob.RegisterRecruiter$7
-com/team3/getjob/LoginFragment.java
- com.team3.getjob.LoginFragment
-com/team3/getjob/WelcomeActivity.java
- com.team3.getjob.WelcomeActivity
+com/team3/getjob/Login/RegisterRecruiter.java
+ com.team3.getjob.Login.RegisterRecruiter
+ com.team3.getjob.Login.RegisterRecruiter$1
+ com.team3.getjob.Login.RegisterRecruiter$2
+ com.team3.getjob.Login.RegisterRecruiter$3
+ com.team3.getjob.Login.RegisterRecruiter$4
+ com.team3.getjob.Login.RegisterRecruiter$5
+ com.team3.getjob.Login.RegisterRecruiter$6
+ com.team3.getjob.Login.RegisterRecruiter$7
+com/team3/getjob/Login/LoginFragment.java
+ com.team3.getjob.Login.LoginFragment
+com/team3/getjob/Login/RegisterUser.java
+ com.team3.getjob.Login.RegisterUser
+ com.team3.getjob.Login.RegisterUser$1
+ com.team3.getjob.Login.RegisterUser$2
+ com.team3.getjob.Login.RegisterUser$3
+ com.team3.getjob.Login.RegisterUser$4
+ com.team3.getjob.Login.RegisterUser$5
+ com.team3.getjob.Login.RegisterUser$6
+ com.team3.getjob.Login.RegisterUser$7
+com/team3/getjob/MainActivity.java
+ com.team3.getjob.MainActivity
+com/team3/getjob/Login/WelcomeActivity.java
+ com.team3.getjob.Login.WelcomeActivity

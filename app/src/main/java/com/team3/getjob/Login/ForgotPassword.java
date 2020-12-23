@@ -1,4 +1,4 @@
-package com.team3.getjob;
+package com.team3.getjob.Login;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -16,6 +16,8 @@ import androidx.fragment.app.FragmentManager;
 
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
+import com.team3.getjob.R;
+import com.team3.getjob.Utilities.Validation;
 
 public class ForgotPassword extends Fragment implements View.OnClickListener{
 

@@ -1,4 +1,4 @@
-package com.team3.getjob;
+package com.team3.getjob.Login;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,6 +12,7 @@ import androidx.fragment.app.FragmentManager;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.team3.getjob.R;
 
 public class WelcomeActivity extends Fragment implements View.OnClickListener{
 
@@ -40,7 +41,7 @@ public class WelcomeActivity extends Fragment implements View.OnClickListener{
         return view;
     }
 
-
+    // constructor
     public WelcomeActivity(FragmentManager fragmentManager) {
 
         FirebaseApp.initializeApp(getContext());
