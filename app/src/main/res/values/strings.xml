@@ -1,32 +1,3 @@
 <resources>
     <string name="app_name">GetJob</string>
-    <string name="try_description">Lorem Ipsum is simply dummy</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="filter">Filter</string>
-    <string name="complete">Complete</string>
-    <string name="Payment">Switch</string>
-    <string name="location_filter">Location Filter</string>
-    <string name="cancel_and_return_to_filter_menu">cancel and return to filter menu</string>
-    <string name="location">Location</string>
-    <string name="Rank">rank</string>
-    <string name="Rank_Filter">rank_filter</string>
-    <string name="average_score_5">Average score 5</string>
-    <string name="average_score_4">Average score 4</string>
-    <string name="average_score_3">Average score 3</string>
-    <string name="average_score_2">Average score 2</string>
-    <string name="average_score_1">Average score 1</string>
-    <string name="select_filter_options_and_press_complete">select filter options and press complete:</string>
-    <string name="languages">Language</string>
-    <string name="payment">Payment</string>
-    <string name="languages_filter">Languages Filter</string>
-    <string name="payment_filter">Payment Filter</string>
-    <string name="low">low</string>
-    <string name="enter_low_border">Enter low border</string>
-    <string name="enter_high_border">enter_high_border</string>
-    <string name="high">high</string>
-    <string name="english">English</string>
-    <string name="hebrew">Hebrew</string>
-    <string name="russian">Russian</string>
-
 </resources>

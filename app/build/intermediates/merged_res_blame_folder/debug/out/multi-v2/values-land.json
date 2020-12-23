@@ -1,24 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "/Users/alon/Documents/GetJob/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-<<<<<<< HEAD
                     "source": "/Users/alon/.gradle/caches/transforms-2/files-2.1/a662a09f936ef9769e962d90fad0478e/material-1.2.1/res/values-land/values-land.xml",
-=======
-                    "source": "C:\\Users\\97253\\.gradle\\caches\\transforms-2\\files-2.1\\5a0a5d253b938e8a0386b39b912ab5cf\\appcompat-1.2.0\\res\\values-land\\values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,125,196",
-                        "endColumns": "69,70,67",
-                        "endOffsets": "120,191,259"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\97253\\.gradle\\caches\\transforms-2\\files-2.1\\f8aaae792a30a1f56b0d58cd10f75c0e\\material-1.2.1\\res\\values-land\\values-land.xml",
->>>>>>> PullWithFilters
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,24,30",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

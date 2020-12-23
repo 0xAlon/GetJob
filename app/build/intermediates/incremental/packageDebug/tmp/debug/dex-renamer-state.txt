@@ -1,20 +1,10 @@
-<<<<<<< HEAD
 #Wed Dec 23 19:07:26 IST 2020
-=======
-#Wed Dec 23 19:18:36 IST 2020
->>>>>>> PullWithFilters
 path.2=classes2.dex
 path.1=classes.dex
 path.0=classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-<<<<<<< HEAD
 base.2=/Users/alon/Documents/GetJob/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
 base.1=/Users/alon/Documents/GetJob/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
 base.0=/Users/alon/Documents/GetJob/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-=======
-base.2=C\:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.1=C\:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
-base.0=C\:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
->>>>>>> PullWithFilters
