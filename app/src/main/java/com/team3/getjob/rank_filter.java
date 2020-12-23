@@ -17,57 +17,56 @@ public class rank_filter extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rank_filter);
-        CheckBox check1 = findViewById(R.id.checkBox);
-        CheckBox check2 = findViewById(R.id.checkBox6);
         CheckBox check3 = findViewById(R.id.checkBox7);
         CheckBox check4 = findViewById(R.id.checkBox8);
         CheckBox check5 = findViewById(R.id.checkBox9);
 
         //Add class implementation
 
-        check1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                /*if(check1.isChecked())
-                    result.add("1");
-                else
-                    result.remove("1");*/
-            }
-        });
-        check2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                /*if(check2.isChecked())
-                    result.add("2");
-                else
-                    result.remove("2");*/
-            }
-        });
+
         check3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               /* if(check1.isChecked())
-                    result.add("3");
-                else
-                    result.remove("3");*/
+                if(check3.isChecked()) {
+                    if (!Filter_model.s_ranks.contains("3")) {
+                        Filter_model.s_ranks.add("3");
+                    }
+
+                }
+                else{
+                    if (Filter_model.s_ranks.contains("3")) {
+                        Filter_model.s_ranks.remove("3");
+                    }
+                }
             }
         });
         check4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*if(check4.isChecked())
-                    result.add("4");
+                if (check4.isChecked()){
+                    if (!Filter_model.s_ranks.contains("4")) {
+                        Filter_model.s_ranks.add("4");
+                    }
+            }
                 else
-                    result.remove("4");*/
+                    if (Filter_model.s_ranks.contains("4")) {
+                        Filter_model.s_ranks.remove("4");
+                    }
             }
         });
         check5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               /* if(check5.isChecked())
-                    result.add("5");
-                else
-                    result.remove("5");*/
+               if(check5.isChecked()) {
+                   if (!Filter_model.s_ranks.contains("5")) {
+                       Filter_model.s_ranks.add("5");
+                   }
+               }
+                else {
+                   if (Filter_model.s_ranks.contains("5")) {
+                       Filter_model.s_ranks.remove("5");
+                   }
+               }
             }
         });
 
@@ -93,7 +92,6 @@ public class rank_filter extends AppCompatActivity {
             }
         });
         //--------------------------------------------------------------------------
-    //need to add and think how to return this array of rank chocks
     }
 }
 

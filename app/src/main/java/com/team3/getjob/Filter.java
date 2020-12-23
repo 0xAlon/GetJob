@@ -17,11 +17,12 @@ public class Filter extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //Setup
         setContentView(R.layout.activity_filter);
         Button button = (Button) findViewById(R.id.button4);
 
 
-
+        //Filter to location
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,6 +31,7 @@ public class Filter extends AppCompatActivity {
             }
         });
 
+        //Filter to rank
         Button rankB = (Button) findViewById(R.id.button5);
         rankB.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +41,7 @@ public class Filter extends AppCompatActivity {
             }
         });
 
+        //Filter to Languages
         Button LanguagesB = (Button) findViewById(R.id.button3);
         LanguagesB.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +51,7 @@ public class Filter extends AppCompatActivity {
             }
         });
 
+        //Filter to Payment
         Button PaymentB = (Button) findViewById(R.id.button6);
         PaymentB .setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,16 +62,28 @@ public class Filter extends AppCompatActivity {
         });
 
 
+        //Filter to jobsPull and cancel filters
         Button BackToSearch = (Button) findViewById(R.id.button7);
         BackToSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(Filter_model.s_languages != null)
+                {
+                    Filter_model.s_languages.clear();
+                }
+
+                if(Filter_model.s_languages != null)
+                {
+                    Filter_model.s_languages.clear();
+                }
+
+
                 Intent intent5 = new Intent(Filter.this, Jobs_Pull.class);
                 startActivity(intent5);
             }
         });
 
-
+        //Filter to jobsPull and Apply filters
         Button BackToSearchWithFilters = (Button) findViewById(R.id.button2);
         BackToSearchWithFilters.setOnClickListener(new View.OnClickListener() {
             @Override

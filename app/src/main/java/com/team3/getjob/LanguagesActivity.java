@@ -23,33 +23,46 @@ public class LanguagesActivity extends AppCompatActivity {
 
         //Add class implementation and add languages
 
-
         englishL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*if (englishL.isChecked())
-                   // languages.add("English");
-               *//* else*//*
-                  //  languages.remove("English");*/
+                if(!Filter_model.s_languages.contains("English"))
+                {
+                    Filter_model.s_languages.add("English");
+                }
+                else if(Filter_model.s_languages.contains("English"))
+                {
+                    Filter_model.s_languages.remove("English");
+                }
             }
         });
         hebrewL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*if (hebrewL.isChecked())
-                   *//* languages.add("Hebrew");
-                else
-                    languages.remove("Hebrew");*/
+                if(!Filter_model.s_languages.contains("Hebrew"))
+                {
+                    Filter_model.s_languages.add("Hebrew");
+                }
+                else if(Filter_model.s_languages.contains("Hebrew"))
+                {
+                    Filter_model.s_languages.remove("Hebrew");
+                }
             }
         });
 
         russianL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*if (russianL.isChecked())
-                   *//* languages.add("Russia");
-                else
-                    languages.remove("Russian");*/
+                if (russianL.isChecked())
+                    if(!Filter_model.s_languages.contains("Russian"))
+                    {
+                        Filter_model.s_languages.add("Russian");
+                    }
+
+                    else if(Filter_model.s_languages.contains("Russian"))
+                    {
+                        Filter_model.s_languages.remove("Russian");
+                    }
             }
         });
 
