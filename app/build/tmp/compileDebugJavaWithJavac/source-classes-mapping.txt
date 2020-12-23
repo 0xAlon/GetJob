@@ -4,3 +4,4 @@ com/team3/getjob/BaseActivity.java
  com.team3.getjob.BaseActivity
 com/team3/getjob/MainActivity.java
  com.team3.getjob.MainActivity
+ com.team3.getjob.MainActivity$1

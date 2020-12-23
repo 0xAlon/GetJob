@@ -1,6 +1,5 @@
 package com.team3.getjob;
 
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -24,7 +23,6 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
 
 
     private DrawerLayout drawer;
-    private int INTENT_CAMERA_CODE = 100;
     private String TAG = "BaseActivity";
     private FirebaseAuth mAuth;
     MenuItem name;
