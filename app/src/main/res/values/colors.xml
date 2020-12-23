@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="light_blue">#71C6FF</color>
     <color name="scrollView">#ffffff</color>
+    <color name="blueTitle">#2540D5</color>
+
 </resources>
