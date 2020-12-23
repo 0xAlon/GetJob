@@ -45,6 +45,10 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
+array preloaded_fonts
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -999,6 +1003,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gray
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color light_blue
@@ -1091,9 +1096,6 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
-color purple_200
-color purple_500
-color purple_700
 color radiobutton_themeable_attribute_color
 color ripple_material_dark
 color ripple_material_light
@@ -1107,8 +1109,6 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
-color teal_200
-color teal_700
 color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color tooltip_background_dark
@@ -1555,6 +1555,10 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable button_1
+drawable button_2
+drawable button_3
+drawable button_4
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1582,6 +1586,8 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_back
+drawable ic_image_1
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_checked_circle
@@ -1620,6 +1626,8 @@ drawable notify_panel_notification_icon_bg
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font poppins
+font poppins_bold
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -1688,8 +1696,12 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id address
+id address_field
 id adjust_height
 id adjust_width
+id age
+id age_field
 id alertTitle
 id aligned
 id all
@@ -1702,6 +1714,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id back
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -1729,6 +1742,8 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id company
+id company_field
 id confirm_button
 id container
 id content
@@ -1768,6 +1783,8 @@ id easeIn
 id easeInOut
 id easeOut
 id edit_query
+id email
+id email_field
 id end
 id enterAlways
 id enterAlwaysCollapsed
@@ -1784,6 +1801,7 @@ id fixed
 id flip
 id floating
 id forever
+id forget_password
 id ghost_view
 id ghost_view_holder
 id gone
@@ -1799,6 +1817,8 @@ id honorRequest
 id icon
 id icon_group
 id icon_only
+id id
+id id_field
 id ifRoom
 id ignore
 id ignoreRequest
@@ -1819,6 +1839,8 @@ id line3
 id linear
 id listMode
 id list_item
+id login
+id login_main_container
 id masked
 id message
 id middle
@@ -1852,8 +1874,11 @@ id mtrl_picker_text_input_range_end
 id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
+id name
+id name_field
 id navigation_header_container
 id never
+id next
 id noScroll
 id none
 id normal
@@ -1869,11 +1894,15 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id password
+id password_field
 id password_toggle
 id path
 id pathRelative
 id peekHeight
 id percent
+id phone
+id phone_field
 id pin
 id position
 id postLayout
@@ -1881,7 +1910,10 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id recruiter
 id rectangles
+id register
+id remember
 id reverseSawtooth
 id right
 id right_icon
@@ -1989,6 +2021,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id user
 id view_offset_helper
 id visible
 id wide
@@ -2058,6 +2091,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_job_list
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2075,6 +2109,11 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_forgot_password
+layout fragment_login
+layout fragment_register_recruiter
+layout fragment_register_user
+layout fragment_welcome
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2130,6 +2169,13 @@ layout text_view_without_line_height
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+string InvalidAge
+string InvalidEmail
+string InvalidId
+string InvalidLogin
+string InvalidName
+string InvalidPassword
+string InvalidPhone
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -2157,6 +2203,8 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string address
+string age
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -2183,6 +2231,8 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string company
+string create_profile
 string default_web_client_id
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -2196,7 +2246,9 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string id
 string item_view_role_description
+string mail
 string material_slider_range_end
 string material_slider_range_start
 string mtrl_badge_numberless_content_description
@@ -2234,14 +2286,26 @@ string mtrl_picker_toggle_to_calendar_input_mode
 string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
+string name
+string password
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string phone
 string project_id
+string remember
 string search_menu_title
 string status_bar_notification_info_overflow
+string text7
+string text8
+string text_1
+string text_2
+string text_3
+string text_4
+string text_5
+string text_6
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
@@ -2250,6 +2314,7 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
+style AppTheme
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -2935,6 +3000,16 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style back_button
+style button_1
+style button_2
+style button_3
+style button_4
+style image_1
+style text
+style text_box_1
+style text_box_2
+style text_field
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

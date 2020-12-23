@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:viewBindingIgnore="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back"
+            style="@style/back_button"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_back" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/text"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/name_field"
+            style="@style/text_field"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/password"
+            style="@style/text"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/password_field"
+            style="@style/text_field"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/email"
+            style="@style/text"
+            android:text="@string/mail" />
+
+        <EditText
+            android:id="@+id/email_field"
+            style="@style/text_field"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/address"
+            style="@style/text"
+            android:text="@string/address" />
+
+        <EditText
+            android:id="@+id/address_field"
+            style="@style/text_field"
+            android:inputType="textAutoCorrect" />
+
+        <TextView
+            android:id="@+id/phone"
+            style="@style/text"
+            android:text="@string/phone" />
+
+        <EditText
+            android:id="@+id/phone_field"
+            style="@style/text_field"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/id"
+            style="@style/text"
+            android:text="@string/id" />
+
+        <EditText
+            android:id="@+id/id_field"
+            style="@style/text_field"
+            android:inputType="numberSigned" />
+
+        <TextView
+            android:id="@+id/age"
+            style="@style/text"
+            android:text="@string/age" />
+
+        <EditText
+            android:id="@+id/age_field"
+            style="@style/text_field"
+            android:inputType="numberSigned" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/register"
+            style="@style/button_4"
+            android:text="@string/create_profile" />
+
+    </LinearLayout>
+</LinearLayout>
