@@ -118,12 +118,12 @@
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="124dp"
+            android:layout_width="154dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="130dp"
             android:layout_marginTop="20dp"
             android:backgroundTint="#0071C6FF"
-            android:text="@string/location"
+            android:text="@string/filter_by_age"
             android:textColor="#101010" />
     </LinearLayout>
 

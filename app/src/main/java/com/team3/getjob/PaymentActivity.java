@@ -34,7 +34,7 @@ public class PaymentActivity extends AppCompatActivity {
         //View setup
         low=findViewById(R.id.editText);
         high=findViewById(R.id.editText1);
-        Button buttonF = (Button) findViewById(R.id.button);
+        Button buttonF = (Button) findViewById(R.id.applyChanges);
 
 
         //Apply button

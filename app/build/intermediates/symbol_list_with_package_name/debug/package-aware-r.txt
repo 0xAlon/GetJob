@@ -1704,6 +1704,7 @@ id activity_chooser_view_content
 id add
 id adjust_height
 id adjust_width
+id ageFilter
 id alertTitle
 id aligned
 id all
@@ -1711,6 +1712,7 @@ id always
 id animateToEnd
 id animateToStart
 id apply
+id applyChanges
 id asConfigured
 id async
 id auto
@@ -1724,7 +1726,6 @@ id beginning
 id blocking
 id bottom
 id bounce
-id button
 id button2
 id button3
 id button4
@@ -2024,7 +2025,6 @@ id titleDividerNoCustom
 id title_full
 id title_template
 id toggle
-id toolbar
 id top
 id topPanel
 id touch_outside
@@ -2229,6 +2229,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string adult
 string app_name
 string appbar_scrolling_view_behavior
 string average_score_1
@@ -2271,6 +2272,7 @@ string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string filter
+string filter_by_age
 string firebase_database_url
 string gcm_defaultSenderId
 string google_api_key
@@ -2281,6 +2283,8 @@ string hebrew
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string high
+string i_am_under_18
+string i_m_under_18
 string icon_content_description
 string item_view_role_description
 string languages

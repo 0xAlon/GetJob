@@ -1,11 +1,5 @@
 package com.team3.getjob;
 
-import java.lang.reflect.Array;
-import java.sql.Time;
-import java.sql.Timestamp;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.time.DateTimeException;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -16,8 +10,25 @@ public class job_model {
     private String location;
     private String payment;
     private String rank;
+    private boolean ageAdult;
     private Date date;
     private ArrayList<String> languages;
+
+
+    public job_model(String title, String description, String location, String payment, String rank, boolean ageAdult, Date date, ArrayList<String> languages) {
+        this.title = title;
+        this.description = description;
+        this.location = location;
+        this.payment = payment;
+        this.rank = rank;
+        this.ageAdult = ageAdult;
+        this.date = date;
+        this.languages = languages;
+    }
+
+    public job_model() {
+    }
+
 
     public String getTitle() {
         return title;
@@ -75,19 +86,11 @@ public class job_model {
         this.languages = languages;
     }
 
-    public job_model(String title, String description, String location, String payment, String rank, Date date, ArrayList<String> languages) {
-        this.title = title;
-        this.description = description;
-        this.location = location;
-        this.payment = payment;
-        this.rank = rank;
-        this.date = date;
-        this.languages = languages;
+    public boolean isAgeAdult() {
+        return ageAdult;
     }
 
-
-    public job_model() {
+    public void setAgeAdult(boolean ageAdult) {
+        this.ageAdult = ageAdult;
     }
-
-
 }

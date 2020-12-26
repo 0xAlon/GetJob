@@ -24,6 +24,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="331dp"
@@ -31,7 +32,7 @@
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
 
-            android:text="@string/location_filter"
+            android:text="@string/filter_by_age"
             android:textSize="40sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -42,19 +43,20 @@
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/applyChanges"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginStart="44dp"
         android:backgroundTint="#FBFCFD"
         android:text="@string/complete"
         app:icon="@drawable/icons8_checkmark"
         app:iconGravity="end"
         app:iconTint="#03A9F4"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.167"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.878" />
+        app:layout_constraintTop_toBottomOf="@+id/ageFilter"
+        app:layout_constraintVertical_bias="0.795" />
 
     <Button
         android:id="@+id/button2"
@@ -66,21 +68,24 @@
         app:iconTint="#03A9F4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.808"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.949" />
+        app:layout_constraintHorizontal_bias="0.696"
+        app:layout_constraintStart_toEndOf="@+id/applyChanges"
+        app:layout_constraintTop_toBottomOf="@+id/ageFilter"
+        app:layout_constraintVertical_bias="0.795" />
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
+    <CheckBox
+        android:id="@+id/ageFilter"
+        android:layout_width="218dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="220dp"
+        android:text="@string/i_am_under_18"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="2dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

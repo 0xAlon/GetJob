@@ -28,5 +28,10 @@
     <string name="english">English</string>
     <string name="hebrew">Hebrew</string>
     <string name="russian">Russian</string>
+    <string name="i_m_under_18">I\'m under 18</string>
+    <string name="i_am_under_18">i am under 18</string>
+    <string name="adult">Adult</string>
+    <string name="filter_by_age">Filter by age</string>
+    <string name="filters">Filters</string>
 
 </resources>

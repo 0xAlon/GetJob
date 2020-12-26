@@ -79,6 +79,7 @@ public class Filter extends AppCompatActivity {
 
                 Filter_model.Min_payment = null;
                 Filter_model.Max_payment = null;
+                Filter_model.ageAdult=false;
 
                 //Go to jobs Pull
                 Intent intent5 = new Intent(Filter.this, Jobs_Pull.class);
@@ -91,7 +92,7 @@ public class Filter extends AppCompatActivity {
         BackToSearchWithFilters.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Add info to PullJobs tha will effect Database pull
+                //Add info to PullJobs that will effect Database pull
                 Intent intent6 = new Intent(Filter.this, Jobs_Pull.class);
                 startActivity(intent6);
             }

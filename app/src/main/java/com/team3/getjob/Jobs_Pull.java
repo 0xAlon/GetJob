@@ -1,42 +1,27 @@
 package com.team3.getjob;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SearchView;
-import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
-import com.google.api.LogDescriptor;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
-import java.io.File;
-import java.sql.Time;
-import java.sql.Timestamp;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class Jobs_Pull extends AppCompatActivity {
@@ -72,9 +57,9 @@ public class Jobs_Pull extends AppCompatActivity {
         ArrayList<String> ranks = new ArrayList<String>();
         ArrayList<String> languages = new ArrayList<String>();
         Context context = this;
-
+        Log.d("checkAge", "age vak is " + Filter_model.ageAdult);
         //Filter and DataPull call
-        if(Filter_model.s_languages.size() != 0 || Filter_model.s_ranks.size() != 0 || Filter_model.Min_payment != null || Filter_model.Max_payment != null)
+        if(Filter_model.s_languages.size() != 0 || Filter_model.s_ranks.size() != 0 || Filter_model.Min_payment != null || Filter_model.Max_payment != null || Filter_model.ageAdult)
         {
 
             //Setup
@@ -82,9 +67,9 @@ public class Jobs_Pull extends AppCompatActivity {
             ArrayList<String> temp_ranks = Filter_model.s_ranks;
             String MaxVAL = Filter_model.Max_payment;
             String MinVal = Filter_model.Min_payment;
-
+            boolean ageVal=Filter_model.ageAdult;
             //Data Pull WITH FILTERS
-            DataBasePull(id_list, temp_list, context, temp_lang, temp_ranks, MaxVAL, MinVal);
+            DataBasePull(id_list, temp_list, context, temp_lang, temp_ranks, MaxVAL, MinVal,ageVal);
         }
         else
         {
@@ -99,7 +84,7 @@ public class Jobs_Pull extends AppCompatActivity {
         Filter_Button(filter_button);
     }
 
-    private void DataBasePull(List<String> id_list, ArrayList<job_model> temp_list, Context context, ArrayList<String> temp_lang, ArrayList<String> temp_ranks, String MaxVal, String MinVal) {
+    private void DataBasePull(List<String> id_list, ArrayList<job_model> temp_list, Context context, ArrayList<String> temp_lang, ArrayList<String> temp_ranks, String MaxVal, String MinVal,boolean age) {
         db.collection("Posts")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -113,13 +98,13 @@ public class Jobs_Pull extends AppCompatActivity {
                                     job_model jobs = document.toObject(job_model.class);
 
                                     //Check filter
-                                    if(Check_filter_lang(jobs, temp_lang) && Check_filter_rank(jobs, temp_ranks) && Check_filter_payment(jobs, MaxVal, MinVal))
+                                if(Check_filter_lang(jobs, temp_lang) && Check_filter_rank(jobs, temp_ranks) && Check_filter_payment(jobs, MaxVal, MinVal) && Check_Filter_age(jobs,age))
                                     {
                                         //Id list for future post click and fragment transition
                                         id_list.add(document.getId());
 
                                         //fill list of jib objects
-                                        temp_list.add(new job_model(jobs.getTitle(),jobs.getDescription(), jobs.getLocation(), jobs.getPayment(),jobs.getRank(),jobs.getDate(),jobs.getLanguages()));
+                                        temp_list.add(new job_model(jobs.getTitle(),jobs.getDescription(), jobs.getLocation(), jobs.getPayment(),jobs.getRank() ,jobs.isAgeAdult(),jobs.getDate(),jobs.getLanguages()));
 
                                         //Show list of rows(jobs)
                                         jobs_adapter adapter = new jobs_adapter(context, temp_list);
@@ -153,7 +138,7 @@ public class Jobs_Pull extends AppCompatActivity {
                                 id_list.add(document.getId());
 
                                 //fill list of jib objects
-                                temp_list.add(new job_model(jobs.getTitle(),jobs.getDescription(), jobs.getLocation(), jobs.getPayment(),jobs.getRank(),jobs.getDate(),jobs.getLanguages()));
+                                temp_list.add(new job_model(jobs.getTitle(),jobs.getDescription(), jobs.getLocation(), jobs.getPayment(),jobs.getRank(), jobs.isAgeAdult(), jobs.getDate(),jobs.getLanguages()));
 
                                 //Show list of rows(jobs)
                                 jobs_adapter adapter = new jobs_adapter(context, temp_list);
@@ -226,4 +211,10 @@ public class Jobs_Pull extends AppCompatActivity {
         return (check >= low) && (check <= high);
     }
 
+    private boolean Check_Filter_age(job_model jobs,boolean age)
+    {
+        if(!age)
+            return true;
+        else return jobs.isAgeAdult() == age;
+    }
 }
