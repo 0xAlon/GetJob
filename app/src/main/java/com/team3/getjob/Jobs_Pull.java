@@ -7,7 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.SearchView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,7 +37,7 @@ public class Jobs_Pull extends AppCompatActivity {
         //Setup
         mListView = findViewById(R.id.list_view);
         db = FirebaseFirestore.getInstance();
-        SearchView filter_button = (SearchView) findViewById(R.id.jobs_search);
+        TextView filter_button = (TextView) findViewById(R.id.jobs_search);
         //User path
       /*  FirebaseApp.initializeApp(this);
         mAuth = FirebaseAuth.getInstance();
@@ -153,7 +153,7 @@ public class Jobs_Pull extends AppCompatActivity {
 
 
 
-    private void Filter_Button(SearchView filter_button) {
+    private void Filter_Button(TextView filter_button) {
         filter_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
