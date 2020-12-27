@@ -1,12 +1,7 @@
 package com.team3.getjob;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,15 +10,14 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
-
-import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -39,32 +33,24 @@ public class jobs_pull_fragment extends Fragment {
     TextView payment;
     Button apply;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+   //Setup
     private static final String ARG_PARAM1 = "PostId";
-   // private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
+    private static final String ARG_PARAM2 = "UserId";
+    private String mParam1;//PostId after OnCREATE
+    private String mParam3;//userId
     private job_model mParam2;
+
 
     public jobs_pull_fragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment jobs_pull_fragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static jobs_pull_fragment newInstance(String param1) {
+
+    public static jobs_pull_fragment newInstance(String param1, String param2) {
         jobs_pull_fragment fragment = new jobs_pull_fragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
+        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -74,9 +60,11 @@ public class jobs_pull_fragment extends Fragment {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam3 = getArguments().getString(ARG_PARAM2);
         }
 
         //Add post id to user array jobs
+
 
     }
 
@@ -93,27 +81,35 @@ public class jobs_pull_fragment extends Fragment {
         TextView location =(TextView)view.findViewById(R.id.location_Full);
         TextView payment =(TextView)view.findViewById(R.id.payment_Full);
 
+        //DATABASE REF
         db = FirebaseFirestore.getInstance();
 
         //Fill data (DATABASE CALL)
         FillPostData(title, description, location, payment);
+
 
         //Apply add post id to user id
         Button apply = (Button)view.findViewById(R.id.apply);
         apply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //CODE
 
 
+                //cahnge to user Id REAL!!!!!!!!!
 
+               /* DocumentReference usersRef = db.collection("Users").document(mParam1);
+
+                usersRef.update("jobs_buffer", FieldValue.arrayUnion(mParam1));
+*/
                 Intent intent = new Intent(getActivity(), Jobs_Pull.class);
                 startActivity(intent);
             }
         });
 
+
         // Inflate the layout for this fragment
         return view;
-       // return inflater.inflate(R.layout.fragment_jobs_pull_fragment, container, false);
 
     }
 
@@ -143,4 +139,7 @@ public class jobs_pull_fragment extends Fragment {
             }
         });
     }
+
+    //DataPull andUpdate
+
 }

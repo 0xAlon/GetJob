@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="Jobs_Pull"
+        android:text="@string/jobs_pull"
         android:textAlignment="center"
         android:textColor="#282f39"
         android:textSize="34sp"
@@ -32,8 +32,9 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/jobs_title"
-        app:layout_constraintVertical_bias="1.0" >
-        
+        app:layout_constraintVertical_bias="1.0"
+
+        >
     </SearchView>
 
     <ListView
@@ -48,7 +49,9 @@
         android:id="@+id/jobs_pull_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        />
+        >
+
+    </FrameLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -48,6 +48,10 @@
         "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icons8_filter_24.png.flat",
+        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\icons8_filter_24.png"
+    },
+    {
         "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_payment.xml.flat",
         "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\activity_payment.xml"
     },

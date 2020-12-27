@@ -1598,6 +1598,7 @@ drawable ic_mtrl_chip_close_circle
 drawable icons8_checkmark
 drawable icons8_checkmark__1_
 drawable icons8_delete
+drawable icons8_filter_24
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
 drawable material_ic_edit_black_24dp
@@ -2232,6 +2233,7 @@ string abc_toolbar_collapse_description
 string adult
 string app_name
 string appbar_scrolling_view_behavior
+string apply
 string average_score_1
 string average_score_2
 string average_score_3
@@ -2263,7 +2265,9 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string complete
+string date
 string default_web_client_id
+string description
 string english
 string enter_high_border
 string enter_low_border
@@ -2273,6 +2277,7 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string filter
 string filter_by_age
+string filters
 string firebase_database_url
 string gcm_defaultSenderId
 string google_api_key
@@ -2287,8 +2292,10 @@ string i_am_under_18
 string i_m_under_18
 string icon_content_description
 string item_view_role_description
+string jobs_pull
 string languages
 string languages_filter
+string loaction
 string location
 string location_filter
 string low
@@ -2341,6 +2348,7 @@ string russian
 string search_menu_title
 string select_filter_options_and_press_complete
 string status_bar_notification_info_overflow
+string title
 string try_description
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

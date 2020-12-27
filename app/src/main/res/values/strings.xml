@@ -8,7 +8,6 @@
     <string name="Payment">Switch</string>
     <string name="location_filter">Location Filter</string>
     <string name="cancel_and_return_to_filter_menu">cancel and return to filter menu</string>
-    <string name="location">Location</string>
     <string name="Rank">rank</string>
     <string name="Rank_Filter">rank_filter</string>
     <string name="average_score_5">Average score 5</string>
@@ -18,7 +17,6 @@
     <string name="average_score_1">Average score 1</string>
     <string name="select_filter_options_and_press_complete">select filter options and press complete:</string>
     <string name="languages">Language</string>
-    <string name="payment">Payment</string>
     <string name="languages_filter">Languages Filter</string>
     <string name="payment_filter">Payment Filter</string>
     <string name="low">low</string>
@@ -31,7 +29,15 @@
     <string name="i_m_under_18">I\'m under 18</string>
     <string name="i_am_under_18">i am under 18</string>
     <string name="adult">Adult</string>
-    <string name="filter_by_age">Filter by age</string>
+    <string name="filter_by_age">Age</string>
     <string name="filters">Filters</string>
+    <string name="jobs_pull">Jobs_Pull</string>
+    <string name="apply">Apply</string>
+    <string name="loaction">Loaction</string>
+    <string name="payment">Payment</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="location">Location</string>
+    <string name="date">Date</string>
 
 </resources>

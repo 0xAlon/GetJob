@@ -14,9 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -29,7 +27,7 @@ public class Jobs_Pull extends AppCompatActivity {
     FirebaseFirestore db;
     ListView mListView;
     private FirebaseAuth mAuth;
-
+    String userId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,11 +39,10 @@ public class Jobs_Pull extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
         SearchView filter_button = (SearchView) findViewById(R.id.jobs_search);
         //User path
-        FirebaseApp.initializeApp(this);
+      /*  FirebaseApp.initializeApp(this);
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser currentUser = mAuth.getCurrentUser();
-
-
+        userId = currentUser.getUid();*/
         //Add list for user applied jobs
 
         //Add button apply inside fragment jobs
@@ -58,6 +55,8 @@ public class Jobs_Pull extends AppCompatActivity {
         ArrayList<String> languages = new ArrayList<String>();
         Context context = this;
         Log.d("checkAge", "age vak is " + Filter_model.ageAdult);
+
+
         //Filter and DataPull call
         if(Filter_model.s_languages.size() != 0 || Filter_model.s_ranks.size() != 0 || Filter_model.Min_payment != null || Filter_model.Max_payment != null || Filter_model.ageAdult)
         {
@@ -168,7 +167,7 @@ public class Jobs_Pull extends AppCompatActivity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                jobs_pull_fragment jobsPullFragment = jobs_pull_fragment.newInstance(id_list.get(i));
+                jobs_pull_fragment jobsPullFragment = jobs_pull_fragment.newInstance(id_list.get(i), userId);
                 getSupportFragmentManager().beginTransaction().addToBackStack(null).add(R.id.jobs_pull_frame, jobsPullFragment).commit();
             }
         });

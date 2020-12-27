@@ -28,15 +28,18 @@ public class jobs_adapter extends BaseAdapter {
         return mDataSource.size();
     }
 
+
     @Override
     public job_model getItem(int position) {
         return mDataSource.get(position);
     }
 
+
     @Override
     public long getItemId(int position) {
         return position;
     }
+
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
