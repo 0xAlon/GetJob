@@ -37,9 +37,12 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
+<<<<<<< HEAD
             android:name="com.team3.getjob.JobListActivity"
             android:screenOrientation="portrait" />
         <activity
+=======
+>>>>>>> origin/Navigation-Drawer
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
             android:excludeFromRecents="true"
             android:exported="true"
@@ -101,6 +104,13 @@
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <!--
+                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+                clients to use it as well, by defining this registrar in their own core/common library.
+            -->
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
 

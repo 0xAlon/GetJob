@@ -1,5 +1,6 @@
 com/team3/getjob/BuildConfig.java
  com.team3.getjob.BuildConfig
+<<<<<<< HEAD
 com/team3/getjob/Utilities/Validation.java
  com.team3.getjob.Utilities.Validation
 com/team3/getjob/Login/ForgotPassword.java
@@ -30,3 +31,10 @@ com/team3/getjob/MainActivity.java
  com.team3.getjob.MainActivity
 com/team3/getjob/Login/WelcomeActivity.java
  com.team3.getjob.Login.WelcomeActivity
+=======
+com/team3/getjob/BaseActivity.java
+ com.team3.getjob.BaseActivity
+com/team3/getjob/MainActivity.java
+ com.team3.getjob.MainActivity
+ com.team3.getjob.MainActivity$1
+>>>>>>> origin/Navigation-Drawer

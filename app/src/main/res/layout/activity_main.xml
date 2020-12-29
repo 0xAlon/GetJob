@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     android:orientation="vertical"
     tools:context=".MainActivity"
     android:background="@drawable/background"
@@ -10,3 +11,18 @@
     tools:viewBindingIgnore="true" >
 
 </LinearLayout>
+=======
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/nav"
+        style="@style/back_button"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/ic_nav_bar" />
+
+</LinearLayout>
+
+
+>>>>>>> origin/Navigation-Drawer
