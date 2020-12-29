@@ -1,23 +1,13 @@
-com/team3/getjob/BuildConfig.java
- com.team3.getjob.BuildConfig
-<<<<<<< HEAD
+com/team3/getjob/databinding/ActivityBaseBinding.java
+ com.team3.getjob.databinding.ActivityBaseBinding
 com/team3/getjob/Utilities/Validation.java
  com.team3.getjob.Utilities.Validation
+com/team3/getjob/BuildConfig.java
+ com.team3.getjob.BuildConfig
+com/team3/getjob/databinding/AppBarBaseBinding.java
+ com.team3.getjob.databinding.AppBarBaseBinding
 com/team3/getjob/Login/ForgotPassword.java
  com.team3.getjob.Login.ForgotPassword
-com/team3/getjob/JobListActivity.java
- com.team3.getjob.JobListActivity
-com/team3/getjob/Login/RegisterRecruiter.java
- com.team3.getjob.Login.RegisterRecruiter
- com.team3.getjob.Login.RegisterRecruiter$1
- com.team3.getjob.Login.RegisterRecruiter$2
- com.team3.getjob.Login.RegisterRecruiter$3
- com.team3.getjob.Login.RegisterRecruiter$4
- com.team3.getjob.Login.RegisterRecruiter$5
- com.team3.getjob.Login.RegisterRecruiter$6
- com.team3.getjob.Login.RegisterRecruiter$7
-com/team3/getjob/Login/LoginFragment.java
- com.team3.getjob.Login.LoginFragment
 com/team3/getjob/Login/RegisterUser.java
  com.team3.getjob.Login.RegisterUser
  com.team3.getjob.Login.RegisterUser$1
@@ -27,14 +17,22 @@ com/team3/getjob/Login/RegisterUser.java
  com.team3.getjob.Login.RegisterUser$5
  com.team3.getjob.Login.RegisterUser$6
  com.team3.getjob.Login.RegisterUser$7
+com/team3/getjob/Login/RegisterRecruiter.java
+ com.team3.getjob.Login.RegisterRecruiter
+ com.team3.getjob.Login.RegisterRecruiter$1
+ com.team3.getjob.Login.RegisterRecruiter$2
+ com.team3.getjob.Login.RegisterRecruiter$3
+ com.team3.getjob.Login.RegisterRecruiter$4
+ com.team3.getjob.Login.RegisterRecruiter$5
+ com.team3.getjob.Login.RegisterRecruiter$6
+ com.team3.getjob.Login.RegisterRecruiter$7
+com/team3/getjob/JobListActivity.java
+ com.team3.getjob.JobListActivity
+com/team3/getjob/BaseActivity.java
+ com.team3.getjob.BaseActivity
+com/team3/getjob/Login/LoginFragment.java
+ com.team3.getjob.Login.LoginFragment
 com/team3/getjob/MainActivity.java
  com.team3.getjob.MainActivity
 com/team3/getjob/Login/WelcomeActivity.java
  com.team3.getjob.Login.WelcomeActivity
-=======
-com/team3/getjob/BaseActivity.java
- com.team3.getjob.BaseActivity
-com/team3/getjob/MainActivity.java
- com.team3.getjob.MainActivity
- com.team3.getjob.MainActivity$1
->>>>>>> origin/Navigation-Drawer

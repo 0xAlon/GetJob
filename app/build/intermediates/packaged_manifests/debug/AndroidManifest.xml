@@ -37,12 +37,9 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-<<<<<<< HEAD
             android:name="com.team3.getjob.JobListActivity"
             android:screenOrientation="portrait" />
         <activity
-=======
->>>>>>> origin/Navigation-Drawer
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
             android:excludeFromRecents="true"
             android:exported="true"

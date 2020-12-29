@@ -1,9 +1,9 @@
 package com.team3.getjob;
 
-<<<<<<< HEAD
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -48,13 +48,12 @@ public class MainActivity extends AppCompatActivity {
                     .addOnCompleteListener(task -> {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
-                                if (document.getData().get("UserType").equals("1")){
+                                if (document.getData().get("UserType").equals("1")) {
                                     //Intent intent = new Intent(this, EmployerProfile.class);
                                     //startActivity(intent);
-                                }
-                                else {
-                                    //Intent intent = new Intent(this, JobListActivity.class);
-                                    //startActivity(intent);
+                                } else {
+                                    /*Intent intent = new Intent(this, JobListActivity.class);
+                                    startActivity(intent);*/
                                 }
 
                             }
@@ -63,38 +62,5 @@ public class MainActivity extends AppCompatActivity {
                         }
                     });
         }
-=======
-import android.os.Bundle;
-import android.util.Log;
-import android.view.Gravity;
-import android.view.View;
-import android.widget.Button;
-
-import androidx.drawerlayout.widget.DrawerLayout;
-
-import com.google.android.material.navigation.NavigationView;
-
-public class MainActivity extends BaseActivity {
-
-    private String TAG = "MainActivity";
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        View rootView = getLayoutInflater().inflate(R.layout.activity_main, frameLayout);
-
-        View clickView = rootView.findViewById(R.id.nav);
-        clickView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-                drawer.openDrawer(Gravity.LEFT);
-
-            }
-        });
-
->>>>>>> origin/Navigation-Drawer
     }
-
-
 }

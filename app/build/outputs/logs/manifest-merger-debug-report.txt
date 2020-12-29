@@ -1,35 +1,20 @@
 -- Merging decision tree log ---
 manifest
-<<<<<<< HEAD
 ADDED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:2:1-31:12
 INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:2:1-31:12
 INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:2:1-31:12
 INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:2:1-31:12
 MERGED from [androidx.databinding:viewbinding:4.1.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/eec870e7a879d52aad89bd338666481d/jetified-viewbinding-4.1.1/AndroidManifest.xml:17:1-22:12
-=======
-ADDED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:2:1-21:12
->>>>>>> origin/Navigation-Drawer
 MERGED from [com.google.android.material:material:1.2.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/a662a09f936ef9769e962d90fad0478e/material-1.2.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/alon/.gradle/caches/transforms-2/files-2.1/e9a7396e1444c212720c909ece4c39d7/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/f65e7d690d0436991c66205f0487ed30/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:17:1-83:12
-<<<<<<< HEAD
-MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/7b396bb215b803305333f11cee85c0f1/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:2:1-26:12
-=======
 MERGED from [com.google.firebase:firebase-firestore:22.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/da9a738015686105134e56d02df1de05/jetified-firebase-firestore-22.0.1/AndroidManifest.xml:2:1-26:12
->>>>>>> origin/Navigation-Drawer
 MERGED from [com.google.firebase:firebase-analytics:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/1b3eddc6944e5ddf4cc599a4765ab5cc/jetified-firebase-analytics-18.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/a5038f937d1616c689aa6edabbcef8eb/jetified-firebase-auth-interop-19.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/9001e637591bf99550f9534257e99161/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:17:1-36:12
 MERGED from [com.google.firebase:firebase-installations:16.3.3] /Users/alon/.gradle/caches/transforms-2/files-2.1/57ed98315a90cce249437dd3ef44343c/jetified-firebase-installations-16.3.3/AndroidManifest.xml:2:1-23:12
-<<<<<<< HEAD
-MERGED from [com.google.firebase:firebase-common:19.4.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:15:1-40:12
-=======
 MERGED from [com.google.firebase:firebase-common:19.5.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/d783eb5e4d25e462c5ff8a9ddfc544e8/jetified-firebase-common-19.5.0/AndroidManifest.xml:15:1-49:12
->>>>>>> origin/Navigation-Drawer
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/e9b32f1278a4b3f1620db3345b7e4d0b/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/7e380442aa008f02ce976f99cab9e58a/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/c469f8778db9d7a8acc051b21b3c3ca4/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:2:1-7:12
@@ -63,11 +48,7 @@ MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/alon/.gradle/cache
 MERGED from [androidx.customview:customview:1.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/9a1b06c267579a91bb4231252b8deea4/customview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.3.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/cdfea8f3da9d3d8e26bbb73a40c2de98/core-1.3.1/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/8c32280e7ca510cc26504f44ad41608f/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
-<<<<<<< HEAD
-MERGED from [com.google.firebase:firebase-components:16.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/bc79581c4bd9e4058c17afc6098af6df/jetified-firebase-components-16.0.1/AndroidManifest.xml:15:1-23:12
-=======
 MERGED from [com.google.firebase:firebase-components:16.1.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/9c5efc998b3b3fda4e9566c0b82686cd/jetified-firebase-components-16.1.0/AndroidManifest.xml:15:1-23:12
->>>>>>> origin/Navigation-Drawer
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/9e093b173e0d75d429119beb7e212738/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/70dd64f3963e6f2d1be72ce921f5016a/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/ba607578b7f0b2be5a26f4a5663aaed8/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
@@ -79,19 +60,11 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/alon/.gradle/ca
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/1f88a34bd3df3bc12fd8542ddf50c1fa/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/55b73ed8661a8bc109a236a63617686e/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/57b5ae7b4c1e8222c5e1793edd39aefa/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-<<<<<<< HEAD
-MERGED from [com.google.firebase:protolite-well-known-types:17.1.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/3c410805b211f565ddf8d6b49f7dd616/jetified-protolite-well-known-types-17.1.0/AndroidManifest.xml:2:1-11:12
-MERGED from [io.grpc:grpc-android:1.28.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/47a9b793fb482438f4facbefe890c2a3/jetified-grpc-android-1.28.0/AndroidManifest.xml:2:1-13:12
-INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:2:1-31:12
-=======
 MERGED from [com.google.firebase:protolite-well-known-types:17.1.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/2b51011fe9aad965b6b85e03be54c687/jetified-protolite-well-known-types-17.1.1/AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.28.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/47a9b793fb482438f4facbefe890c2a3/jetified-grpc-android-1.28.0/AndroidManifest.xml:2:1-13:12
-INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:2:1-21:12
->>>>>>> origin/Navigation-Drawer
+INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:2:1-31:12
 	package
 		ADDED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:3:5-31
 		INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml
@@ -107,24 +80,15 @@ INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:2:1-
 	xmlns:android
 		ADDED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:2:11-69
 application
-<<<<<<< HEAD
 ADDED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:5:5-28:19
-=======
-ADDED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:5:5-19:19
->>>>>>> origin/Navigation-Drawer
 MERGED from [com.google.android.material:material:1.2.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/a662a09f936ef9769e962d90fad0478e/material-1.2.1/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/a662a09f936ef9769e962d90fad0478e/material-1.2.1/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/alon/.gradle/caches/transforms-2/files-2.1/e9a7396e1444c212720c909ece4c39d7/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/alon/.gradle/caches/transforms-2/files-2.1/e9a7396e1444c212720c909ece4c39d7/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:26:5-81:19
 MERGED from [com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:26:5-81:19
-<<<<<<< HEAD
-MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/7b396bb215b803305333f11cee85c0f1/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:16:5-24:19
-MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/7b396bb215b803305333f11cee85c0f1/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:16:5-24:19
-=======
 MERGED from [com.google.firebase:firebase-firestore:22.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/da9a738015686105134e56d02df1de05/jetified-firebase-firestore-22.0.1/AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.firebase:firebase-firestore:22.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/da9a738015686105134e56d02df1de05/jetified-firebase-firestore-22.0.1/AndroidManifest.xml:16:5-24:19
->>>>>>> origin/Navigation-Drawer
 MERGED from [com.google.firebase:firebase-analytics:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/1b3eddc6944e5ddf4cc599a4765ab5cc/jetified-firebase-analytics-18.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/1b3eddc6944e5ddf4cc599a4765ab5cc/jetified-firebase-analytics-18.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/a5038f937d1616c689aa6edabbcef8eb/jetified-firebase-auth-interop-19.0.0/AndroidManifest.xml:7:5-8:19
@@ -133,13 +97,8 @@ MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /Users
 MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/9001e637591bf99550f9534257e99161/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:26:5-34:19
 MERGED from [com.google.firebase:firebase-installations:16.3.3] /Users/alon/.gradle/caches/transforms-2/files-2.1/57ed98315a90cce249437dd3ef44343c/jetified-firebase-installations-16.3.3/AndroidManifest.xml:13:5-21:19
 MERGED from [com.google.firebase:firebase-installations:16.3.3] /Users/alon/.gradle/caches/transforms-2/files-2.1/57ed98315a90cce249437dd3ef44343c/jetified-firebase-installations-16.3.3/AndroidManifest.xml:13:5-21:19
-<<<<<<< HEAD
-MERGED from [com.google.firebase:firebase-common:19.4.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:25:5-38:19
-MERGED from [com.google.firebase:firebase-common:19.4.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:25:5-38:19
-=======
 MERGED from [com.google.firebase:firebase-common:19.5.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/d783eb5e4d25e462c5ff8a9ddfc544e8/jetified-firebase-common-19.5.0/AndroidManifest.xml:25:5-47:19
 MERGED from [com.google.firebase:firebase-common:19.5.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/d783eb5e4d25e462c5ff8a9ddfc544e8/jetified-firebase-common-19.5.0/AndroidManifest.xml:25:5-47:19
->>>>>>> origin/Navigation-Drawer
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/bb3efe1c93dad9ff04b281495cf52648/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/bb3efe1c93dad9ff04b281495cf52648/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/d92a27efcac738b4f280b9ad0c07bda7/jetified-play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
@@ -210,11 +169,8 @@ uses-sdk
 INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml
 INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml
-<<<<<<< HEAD
 MERGED from [androidx.databinding:viewbinding:4.1.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/eec870e7a879d52aad89bd338666481d/jetified-viewbinding-4.1.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.databinding:viewbinding:4.1.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/eec870e7a879d52aad89bd338666481d/jetified-viewbinding-4.1.1/AndroidManifest.xml:20:5-44
-=======
->>>>>>> origin/Navigation-Drawer
 MERGED from [com.google.android.material:material:1.2.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/a662a09f936ef9769e962d90fad0478e/material-1.2.1/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.2.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/a662a09f936ef9769e962d90fad0478e/material-1.2.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/alon/.gradle/caches/transforms-2/files-2.1/e9a7396e1444c212720c909ece4c39d7/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
@@ -223,13 +179,8 @@ MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/alon/.gradle/caches/tran
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/f65e7d690d0436991c66205f0487ed30/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:21:5-44
-<<<<<<< HEAD
-MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/7b396bb215b803305333f11cee85c0f1/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/7b396bb215b803305333f11cee85c0f1/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:7:5-9:41
-=======
 MERGED from [com.google.firebase:firebase-firestore:22.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/da9a738015686105134e56d02df1de05/jetified-firebase-firestore-22.0.1/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-firestore:22.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/da9a738015686105134e56d02df1de05/jetified-firebase-firestore-22.0.1/AndroidManifest.xml:7:5-9:41
->>>>>>> origin/Navigation-Drawer
 MERGED from [com.google.firebase:firebase-analytics:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/1b3eddc6944e5ddf4cc599a4765ab5cc/jetified-firebase-analytics-18.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/1b3eddc6944e5ddf4cc599a4765ab5cc/jetified-firebase-analytics-18.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/a5038f937d1616c689aa6edabbcef8eb/jetified-firebase-auth-interop-19.0.0/AndroidManifest.xml:5:5-44
@@ -238,13 +189,8 @@ MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /Users
 MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/9001e637591bf99550f9534257e99161/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-installations:16.3.3] /Users/alon/.gradle/caches/transforms-2/files-2.1/57ed98315a90cce249437dd3ef44343c/jetified-firebase-installations-16.3.3/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-installations:16.3.3] /Users/alon/.gradle/caches/transforms-2/files-2.1/57ed98315a90cce249437dd3ef44343c/jetified-firebase-installations-16.3.3/AndroidManifest.xml:6:5-8:41
-<<<<<<< HEAD
-MERGED from [com.google.firebase:firebase-common:19.4.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.firebase:firebase-common:19.4.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:20:5-22:41
-=======
 MERGED from [com.google.firebase:firebase-common:19.5.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/d783eb5e4d25e462c5ff8a9ddfc544e8/jetified-firebase-common-19.5.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-common:19.5.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/d783eb5e4d25e462c5ff8a9ddfc544e8/jetified-firebase-common-19.5.0/AndroidManifest.xml:20:5-22:41
->>>>>>> origin/Navigation-Drawer
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/e9b32f1278a4b3f1620db3345b7e4d0b/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/e9b32f1278a4b3f1620db3345b7e4d0b/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/7e380442aa008f02ce976f99cab9e58a/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
@@ -311,13 +257,8 @@ MERGED from [androidx.core:core:1.3.1] /Users/alon/.gradle/caches/transforms-2/f
 MERGED from [androidx.core:core:1.3.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/cdfea8f3da9d3d8e26bbb73a40c2de98/core-1.3.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/8c32280e7ca510cc26504f44ad41608f/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/8c32280e7ca510cc26504f44ad41608f/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-<<<<<<< HEAD
-MERGED from [com.google.firebase:firebase-components:16.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/bc79581c4bd9e4058c17afc6098af6df/jetified-firebase-components-16.0.1/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-components:16.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/bc79581c4bd9e4058c17afc6098af6df/jetified-firebase-components-16.0.1/AndroidManifest.xml:19:5-21:41
-=======
 MERGED from [com.google.firebase:firebase-components:16.1.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/9c5efc998b3b3fda4e9566c0b82686cd/jetified-firebase-components-16.1.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-components:16.1.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/9c5efc998b3b3fda4e9566c0b82686cd/jetified-firebase-components-16.1.0/AndroidManifest.xml:19:5-21:41
->>>>>>> origin/Navigation-Drawer
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/9e093b173e0d75d429119beb7e212738/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/9e093b173e0d75d429119beb7e212738/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/70dd64f3963e6f2d1be72ce921f5016a/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
@@ -340,13 +281,8 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/alon/.gradle/caches/t
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/55b73ed8661a8bc109a236a63617686e/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/57b5ae7b4c1e8222c5e1793edd39aefa/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/57b5ae7b4c1e8222c5e1793edd39aefa/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
-<<<<<<< HEAD
-MERGED from [com.google.firebase:protolite-well-known-types:17.1.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/3c410805b211f565ddf8d6b49f7dd616/jetified-protolite-well-known-types-17.1.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:protolite-well-known-types:17.1.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/3c410805b211f565ddf8d6b49f7dd616/jetified-protolite-well-known-types-17.1.0/AndroidManifest.xml:7:5-9:41
-=======
 MERGED from [com.google.firebase:protolite-well-known-types:17.1.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/2b51011fe9aad965b6b85e03be54c687/jetified-protolite-well-known-types-17.1.1/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:protolite-well-known-types:17.1.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/2b51011fe9aad965b6b85e03be54c687/jetified-protolite-well-known-types-17.1.1/AndroidManifest.xml:7:5-9:41
->>>>>>> origin/Navigation-Drawer
 MERGED from [io.grpc:grpc-android:1.28.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/47a9b793fb482438f4facbefe890c2a3/jetified-grpc-android-1.28.0/AndroidManifest.xml:7:5-9:41
 MERGED from [io.grpc:grpc-android:1.28.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/47a9b793fb482438f4facbefe890c2a3/jetified-grpc-android-1.28.0/AndroidManifest.xml:7:5-9:41
 INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml
@@ -361,13 +297,8 @@ INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from [com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:23:5-67
-<<<<<<< HEAD
-MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/7b396bb215b803305333f11cee85c0f1/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:14:5-67
-MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/7b396bb215b803305333f11cee85c0f1/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:14:5-67
-=======
 MERGED from [com.google.firebase:firebase-firestore:22.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/da9a738015686105134e56d02df1de05/jetified-firebase-firestore-22.0.1/AndroidManifest.xml:14:5-67
 MERGED from [com.google.firebase:firebase-firestore:22.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/da9a738015686105134e56d02df1de05/jetified-firebase-firestore-22.0.1/AndroidManifest.xml:14:5-67
->>>>>>> origin/Navigation-Drawer
 MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/9001e637591bf99550f9534257e99161/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:22:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/9001e637591bf99550f9534257e99161/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-installations:16.3.3] /Users/alon/.gradle/caches/transforms-2/files-2.1/57ed98315a90cce249437dd3ef44343c/jetified-firebase-installations-16.3.3/AndroidManifest.xml:11:5-67
@@ -382,13 +313,8 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.0] /U
 		ADDED from [com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:23:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:24:5-79
-<<<<<<< HEAD
-MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/7b396bb215b803305333f11cee85c0f1/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:13:5-79
-MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/7b396bb215b803305333f11cee85c0f1/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:13:5-79
-=======
 MERGED from [com.google.firebase:firebase-firestore:22.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/da9a738015686105134e56d02df1de05/jetified-firebase-firestore-22.0.1/AndroidManifest.xml:13:5-79
 MERGED from [com.google.firebase:firebase-firestore:22.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/da9a738015686105134e56d02df1de05/jetified-firebase-firestore-22.0.1/AndroidManifest.xml:13:5-79
->>>>>>> origin/Navigation-Drawer
 MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/9001e637591bf99550f9534257e99161/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/9001e637591bf99550f9534257e99161/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-installations:16.3.3] /Users/alon/.gradle/caches/transforms-2/files-2.1/57ed98315a90cce249437dd3ef44343c/jetified-firebase-installations-16.3.3/AndroidManifest.xml:10:5-79
@@ -467,27 +393,12 @@ ADDED from [com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches
 		ADDED from [com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:69:25-86
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:74:9-80:19
-<<<<<<< HEAD
-MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/7b396bb215b803305333f11cee85c0f1/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:17:9-23:19
-MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/7b396bb215b803305333f11cee85c0f1/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:17:9-23:19
-=======
 MERGED from [com.google.firebase:firebase-firestore:22.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/da9a738015686105134e56d02df1de05/jetified-firebase-firestore-22.0.1/AndroidManifest.xml:17:9-23:19
 MERGED from [com.google.firebase:firebase-firestore:22.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/da9a738015686105134e56d02df1de05/jetified-firebase-firestore-22.0.1/AndroidManifest.xml:17:9-23:19
->>>>>>> origin/Navigation-Drawer
 MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/9001e637591bf99550f9534257e99161/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:27:9-33:19
 MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/9001e637591bf99550f9534257e99161/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:27:9-33:19
 MERGED from [com.google.firebase:firebase-installations:16.3.3] /Users/alon/.gradle/caches/transforms-2/files-2.1/57ed98315a90cce249437dd3ef44343c/jetified-firebase-installations-16.3.3/AndroidManifest.xml:14:9-20:19
 MERGED from [com.google.firebase:firebase-installations:16.3.3] /Users/alon/.gradle/caches/transforms-2/files-2.1/57ed98315a90cce249437dd3ef44343c/jetified-firebase-installations-16.3.3/AndroidManifest.xml:14:9-20:19
-<<<<<<< HEAD
-MERGED from [com.google.firebase:firebase-common:19.4.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:33:9-37:35
-MERGED from [com.google.firebase:firebase-common:19.4.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:33:9-37:35
-	android:exported
-		ADDED from [com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:76:13-37
-	tools:targetApi
-		ADDED from [com.google.firebase:firebase-common:19.4.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:37:13-32
-	android:directBootAware
-		ADDED from [com.google.firebase:firebase-common:19.4.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:35:13-43
-=======
 MERGED from [com.google.firebase:firebase-common:19.5.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/d783eb5e4d25e462c5ff8a9ddfc544e8/jetified-firebase-common-19.5.0/AndroidManifest.xml:33:9-46:19
 MERGED from [com.google.firebase:firebase-common:19.5.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/d783eb5e4d25e462c5ff8a9ddfc544e8/jetified-firebase-common-19.5.0/AndroidManifest.xml:33:9-46:19
 	android:exported
@@ -496,7 +407,6 @@ MERGED from [com.google.firebase:firebase-common:19.5.0] /Users/alon/.gradle/cac
 		ADDED from [com.google.firebase:firebase-common:19.5.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/d783eb5e4d25e462c5ff8a9ddfc544e8/jetified-firebase-common-19.5.0/AndroidManifest.xml:37:13-32
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:19.5.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/d783eb5e4d25e462c5ff8a9ddfc544e8/jetified-firebase-common-19.5.0/AndroidManifest.xml:35:13-43
->>>>>>> origin/Navigation-Drawer
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:75:13-84
 meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
@@ -506,19 +416,11 @@ ADDED from [com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:78:17-109
 meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
-<<<<<<< HEAD
-ADDED from [com.google.firebase:firebase-firestore:22.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/7b396bb215b803305333f11cee85c0f1/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:20:13-22:85
-	android:value
-		ADDED from [com.google.firebase:firebase-firestore:22.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/7b396bb215b803305333f11cee85c0f1/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:22:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-firestore:22.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/7b396bb215b803305333f11cee85c0f1/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:21:17-111
-=======
 ADDED from [com.google.firebase:firebase-firestore:22.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/da9a738015686105134e56d02df1de05/jetified-firebase-firestore-22.0.1/AndroidManifest.xml:20:13-22:85
 	android:value
 		ADDED from [com.google.firebase:firebase-firestore:22.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/da9a738015686105134e56d02df1de05/jetified-firebase-firestore-22.0.1/AndroidManifest.xml:22:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-firestore:22.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/da9a738015686105134e56d02df1de05/jetified-firebase-firestore-22.0.1/AndroidManifest.xml:21:17-111
->>>>>>> origin/Navigation-Drawer
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.android.gms:play-services-measurement-api:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/9001e637591bf99550f9534257e99161/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:24:5-68
 MERGED from [com.google.android.gms:play-services-measurement:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:25:5-68
@@ -542,19 +444,6 @@ ADDED from [com.google.firebase:firebase-installations:16.3.3] /Users/alon/.grad
 	android:name
 		ADDED from [com.google.firebase:firebase-installations:16.3.3] /Users/alon/.gradle/caches/transforms-2/files-2.1/57ed98315a90cce249437dd3ef44343c/jetified-firebase-installations-16.3.3/AndroidManifest.xml:18:17-127
 provider#com.google.firebase.provider.FirebaseInitProvider
-<<<<<<< HEAD
-ADDED from [com.google.firebase:firebase-common:19.4.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:26:9-31:39
-	android:authorities
-		ADDED from [com.google.firebase:firebase-common:19.4.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:28:13-72
-	android:exported
-		ADDED from [com.google.firebase:firebase-common:19.4.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:30:13-37
-	android:directBootAware
-		ADDED from [com.google.firebase:firebase-common:19.4.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:29:13-43
-	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:19.4.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:31:13-36
-	android:name
-		ADDED from [com.google.firebase:firebase-common:19.4.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/5500978cd02395a8bf5bbed55985b128/jetified-firebase-common-19.4.0/AndroidManifest.xml:27:13-77
-=======
 ADDED from [com.google.firebase:firebase-common:19.5.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/d783eb5e4d25e462c5ff8a9ddfc544e8/jetified-firebase-common-19.5.0/AndroidManifest.xml:26:9-31:39
 	android:authorities
 		ADDED from [com.google.firebase:firebase-common:19.5.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/d783eb5e4d25e462c5ff8a9ddfc544e8/jetified-firebase-common-19.5.0/AndroidManifest.xml:28:13-72
@@ -572,7 +461,6 @@ ADDED from [com.google.firebase:firebase-common:19.5.0] /Users/alon/.gradle/cach
 		ADDED from [com.google.firebase:firebase-common:19.5.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/d783eb5e4d25e462c5ff8a9ddfc544e8/jetified-firebase-common-19.5.0/AndroidManifest.xml:45:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-common:19.5.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/d783eb5e4d25e462c5ff8a9ddfc544e8/jetified-firebase-common-19.5.0/AndroidManifest.xml:44:17-121
->>>>>>> origin/Navigation-Drawer
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:17.1.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/d92a27efcac738b4f280b9ad0c07bda7/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
 	android:exported

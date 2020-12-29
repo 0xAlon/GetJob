@@ -1880,12 +1880,8 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
 id name
-<<<<<<< HEAD
 id name_field
-=======
-id nav
 id nav_view
->>>>>>> origin/Navigation-Drawer
 id navigation_header_container
 id never
 id next
@@ -2102,11 +2098,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-<<<<<<< HEAD
-layout activity_job_list
-=======
 layout activity_base
->>>>>>> origin/Navigation-Drawer
+layout activity_job_list
 layout activity_main
 layout app_bar_base
 layout custom_dialog
@@ -3018,7 +3011,6 @@ style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
 style back_button
-<<<<<<< HEAD
 style button_1
 style button_2
 style button_3
@@ -3028,8 +3020,6 @@ style text
 style text_box_1
 style text_box_2
 style text_field
-=======
->>>>>>> origin/Navigation-Drawer
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

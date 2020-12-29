@@ -1,5 +1,6 @@
 package com.team3.getjob.Login;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -79,8 +80,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
         mAuth.signInWithEmailAndPassword(email.getText().toString(), password.getText().toString())
                 .addOnCompleteListener(getActivity(), task -> {
                     if (task.isSuccessful()) {
-                        /*
-                        Intent intent = new Intent(getContext(), JobPoll.class);
+                        /*Intent intent = new Intent(getContext(), JobListActivity.class);
                         startActivity(intent);*/
                     } else {
                         Toast.makeText(getContext(), InvalidLogin, Toast.LENGTH_SHORT).show();

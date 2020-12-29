@@ -12,6 +12,7 @@ import androidx.fragment.app.FragmentManager;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.team3.getjob.BaseActivity;
 import com.team3.getjob.R;
 
 public class WelcomeActivity extends Fragment implements View.OnClickListener{

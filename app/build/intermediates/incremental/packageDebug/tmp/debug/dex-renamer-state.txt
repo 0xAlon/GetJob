@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-#Wed Dec 23 21:35:26 IST 2020
-=======
-#Sun Dec 27 21:36:48 IST 2020
->>>>>>> origin/Navigation-Drawer
+#Tue Dec 29 22:45:29 IST 2020
 path.2=classes2.dex
 path.1=classes.dex
 path.0=classes.dex
