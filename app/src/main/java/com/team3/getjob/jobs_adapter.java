@@ -2,12 +2,10 @@ package com.team3.getjob;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -48,7 +46,7 @@ public class jobs_adapter extends BaseAdapter {
 //Change id for yours !!!!!
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        @SuppressLint("ViewHolder") View rowItem = mInflater.inflate(R.layout.job_row, parent, false);
+        @SuppressLint("ViewHolder") View rowItem = mInflater.inflate(R.layout.job_row_profile, parent, false);
         TextView title =(TextView) rowItem.findViewById(R.id.job_title);
         TextView date =(TextView) rowItem.findViewById(R.id.job_date);
         job_model jobs = getItem(position);//this one should stay always!!!!
