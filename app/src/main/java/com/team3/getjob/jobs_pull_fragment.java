@@ -130,6 +130,9 @@ public class jobs_pull_fragment extends Fragment {
 
                                     userRef.update("Jobs", FieldValue.arrayUnion(mParam1));
 
+                                    //Add userUid to post
+                                    DocumentReference docRef = db.collection("Posts").document(mParam1);
+                                    docRef.update("Users", FieldValue.arrayUnion(mParam3));
                                 }
 
                             } else {

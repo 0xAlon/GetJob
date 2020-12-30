@@ -52,8 +52,6 @@ public class Jobs_Pull extends BaseActivity {
         });
 
 
-
-
         //Setup
         mListView = findViewById(R.id.list_view);
         db = FirebaseFirestore.getInstance();
@@ -124,7 +122,7 @@ public class Jobs_Pull extends BaseActivity {
                                         id_list.add(document.getId());
 
                                         //fill list of jib objects
-                                        temp_list.add(new job_model(jobs.getTitle(),jobs.getDescription(), jobs.getLocation(), jobs.getPayment(),jobs.getRank() ,jobs.isAgeAdult(),jobs.getDate(),jobs.getLanguages()));
+                                        temp_list.add(new job_model(jobs.getTitle(),jobs.getDescription(), jobs.getLocation(), jobs.getPayment(),jobs.getRank() ,jobs.isAgeAdult(),jobs.getDate(),jobs.getLanguages(), jobs.getUsers()));
 
                                         //Show list of rows(jobs)
                                         jobs_adapter adapter = new jobs_adapter(context, temp_list);
@@ -158,7 +156,7 @@ public class Jobs_Pull extends BaseActivity {
                                 id_list.add(document.getId());
 
                                 //fill list of jib objects
-                                temp_list.add(new job_model(jobs.getTitle(),jobs.getDescription(), jobs.getLocation(), jobs.getPayment(),jobs.getRank(), jobs.isAgeAdult(), jobs.getDate(),jobs.getLanguages()));
+                                temp_list.add(new job_model(jobs.getTitle(),jobs.getDescription(), jobs.getLocation(), jobs.getPayment(),jobs.getRank(), jobs.isAgeAdult(), jobs.getDate(),jobs.getLanguages(), jobs.getUsers()));
 
                                 //Show list of rows(jobs)
                                 jobs_adapter adapter = new jobs_adapter(context, temp_list);

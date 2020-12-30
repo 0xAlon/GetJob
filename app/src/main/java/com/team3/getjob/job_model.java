@@ -13,9 +13,9 @@ public class job_model {
     private boolean ageAdult;
     private Date date;
     private ArrayList<String> languages;
+    private ArrayList<String> users;
 
-
-    public job_model(String title, String description, String location, String payment, String rank, boolean ageAdult, Date date, ArrayList<String> languages) {
+    public job_model(String title, String description, String location, String payment, String rank, boolean ageAdult, Date date, ArrayList<String> languages, ArrayList<String> users) {
         this.title = title;
         this.description = description;
         this.location = location;
@@ -24,6 +24,7 @@ public class job_model {
         this.ageAdult = ageAdult;
         this.date = date;
         this.languages = languages;
+        this.users = users;
     }
 
     public job_model() {
@@ -92,5 +93,13 @@ public class job_model {
 
     public void setAgeAdult(boolean ageAdult) {
         this.ageAdult = ageAdult;
+    }
+
+    public ArrayList<String> getUsers() {
+        return users;
+    }
+
+    public void setUsers(ArrayList<String> users) {
+        this.users = users;
     }
 }
