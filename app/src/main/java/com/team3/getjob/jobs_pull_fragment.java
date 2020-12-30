@@ -97,17 +97,6 @@ public class jobs_pull_fragment extends Fragment {
         FillPostData(title, description, location, payment);
 
 
-        @SuppressLint("WrongViewCast") Button nav = (Button)view.findViewById(R.id.nav);
-        View finalView = view;
-        apply.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                DrawerLayout drawer = (DrawerLayout) finalView.findViewById(R.id.drawer_layout);
-                drawer.openDrawer(Gravity.LEFT);
-            }
-        });
-
-
         //Apply add post id to user id
         Button apply = (Button)view.findViewById(R.id.apply);
         apply.setOnClickListener(new View.OnClickListener() {
