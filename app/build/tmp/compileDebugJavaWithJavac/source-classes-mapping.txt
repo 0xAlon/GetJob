@@ -1,9 +1,10 @@
 com/team3/getjob/databinding/JobRowBinding.java
  com.team3.getjob.databinding.JobRowBinding
-com/team3/getjob/EmployeeProfile.java
- com.team3.getjob.EmployeeProfile
- com.team3.getjob.EmployeeProfile$1
- com.team3.getjob.EmployeeProfile$2
+com/team3/getjob/AddJobWindow.java
+ com.team3.getjob.AddJobWindow
+ com.team3.getjob.AddJobWindow$1
+ com.team3.getjob.AddJobWindow$2
+ com.team3.getjob.AddJobWindow$3
 com/team3/getjob/databinding/JobRowProfileBinding.java
  com.team3.getjob.databinding.JobRowProfileBinding
 com/team3/getjob/rank_filter.java
@@ -24,8 +25,13 @@ com/team3/getjob/EditProfile.java
  com.team3.getjob.EditProfile$3$2
  com.team3.getjob.EditProfile$4
  com.team3.getjob.EditProfile$4$1
-com/team3/getjob/databinding/ActivityJobActionBinding.java
- com.team3.getjob.databinding.ActivityJobActionBinding
+com/team3/getjob/Jobs_Pull.java
+ com.team3.getjob.Jobs_Pull
+ com.team3.getjob.Jobs_Pull$1
+ com.team3.getjob.Jobs_Pull$2
+ com.team3.getjob.Jobs_Pull$3
+ com.team3.getjob.Jobs_Pull$4
+ com.team3.getjob.Jobs_Pull$5
 com/team3/getjob/Login/LoginFragment.java
  com.team3.getjob.Login.LoginFragment
 com/team3/getjob/JobAction.java
@@ -38,13 +44,10 @@ com/team3/getjob/JobAction.java
  com.team3.getjob.JobAction$4
  com.team3.getjob.JobAction$4$1
  com.team3.getjob.JobAction$4$2
-com/team3/getjob/Jobs_Pull.java
- com.team3.getjob.Jobs_Pull
- com.team3.getjob.Jobs_Pull$1
- com.team3.getjob.Jobs_Pull$2
- com.team3.getjob.Jobs_Pull$3
- com.team3.getjob.Jobs_Pull$4
- com.team3.getjob.Jobs_Pull$5
+com/team3/getjob/EmployeeProfile.java
+ com.team3.getjob.EmployeeProfile
+ com.team3.getjob.EmployeeProfile$1
+ com.team3.getjob.EmployeeProfile$2
 com/team3/getjob/databinding/EmployerProfileBinding.java
  com.team3.getjob.databinding.EmployerProfileBinding
 com/team3/getjob/databinding/ActivityRankFilterBinding.java
@@ -72,8 +75,9 @@ com/team3/getjob/Utilities/Validation.java
  com.team3.getjob.Utilities.Validation
 com/team3/getjob/databinding/ActivityLocationBinding.java
  com.team3.getjob.databinding.ActivityLocationBinding
-com/team3/getjob/job_model.java
- com.team3.getjob.job_model
+com/team3/getjob/About.java
+ com.team3.getjob.About
+ com.team3.getjob.About$1
 com/team3/getjob/BuildConfig.java
  com.team3.getjob.BuildConfig
 com/team3/getjob/databinding/ActivityJobsPullBinding.java
@@ -95,15 +99,18 @@ com/team3/getjob/Login/RegisterRecruiter.java
  com.team3.getjob.Login.RegisterRecruiter$5
  com.team3.getjob.Login.RegisterRecruiter$6
  com.team3.getjob.Login.RegisterRecruiter$7
-com/team3/getjob/Filter_model.java
- com.team3.getjob.Filter_model
+com/team3/getjob/BaseActivity.java
+ com.team3.getjob.BaseActivity
 com/team3/getjob/databinding/ActivityAboutBinding.java
  com.team3.getjob.databinding.ActivityAboutBinding
 com/team3/getjob/jobs_adapter.java
  com.team3.getjob.jobs_adapter
-com/team3/getjob/About.java
- com.team3.getjob.About
- com.team3.getjob.About$1
+com/team3/getjob/EmployerProfile.java
+ com.team3.getjob.EmployerProfile
+ com.team3.getjob.EmployerProfile$1
+ com.team3.getjob.EmployerProfile$2
+ com.team3.getjob.EmployerProfile$3
+ com.team3.getjob.EmployerProfile$4
 com/team3/getjob/Location.java
  com.team3.getjob.Location
  com.team3.getjob.Location$1
@@ -134,18 +141,11 @@ com/team3/getjob/Login/RegisterUser.java
  com.team3.getjob.Login.RegisterUser$5
  com.team3.getjob.Login.RegisterUser$6
  com.team3.getjob.Login.RegisterUser$7
+com/team3/getjob/Filter_model.java
+ com.team3.getjob.Filter_model
 com/team3/getjob/MainActivity.java
  com.team3.getjob.MainActivity
-com/team3/getjob/AddJobWindow.java
- com.team3.getjob.AddJobWindow
- com.team3.getjob.AddJobWindow$1
- com.team3.getjob.AddJobWindow$2
- com.team3.getjob.AddJobWindow$3
-com/team3/getjob/EmployerProfile.java
- com.team3.getjob.EmployerProfile
- com.team3.getjob.EmployerProfile$1
- com.team3.getjob.EmployerProfile$2
- com.team3.getjob.EmployerProfile$3
- com.team3.getjob.EmployerProfile$4
-com/team3/getjob/BaseActivity.java
- com.team3.getjob.BaseActivity
+com/team3/getjob/databinding/ActivityJobActionBinding.java
+ com.team3.getjob.databinding.ActivityJobActionBinding
+com/team3/getjob/job_model.java
+ com.team3.getjob.job_model
