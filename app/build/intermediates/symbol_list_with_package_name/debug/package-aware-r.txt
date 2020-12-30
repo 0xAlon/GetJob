@@ -1193,6 +1193,7 @@ dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
+dimen app_bar_height
 dimen appcompat_dialog_background_inset
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
@@ -1253,6 +1254,7 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -1450,6 +1452,7 @@ dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
 dimen test_mtrl_calendar_day_cornerSize
+dimen text_margin
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1587,6 +1590,12 @@ drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_back
+<<<<<<< HEAD
+=======
+drawable ic_delete
+drawable ic_edit
+drawable ic_excel
+>>>>>>> origin/ArtiomHackathon
 drawable ic_image_1
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1700,16 +1709,24 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_settings
 id action_text
 id actions
 id activity_chooser_view_content
 id add
+<<<<<<< HEAD
+=======
+id addjob
+>>>>>>> origin/ArtiomHackathon
 id address
 id address_field
 id adjust_height
 id adjust_width
 id age
+<<<<<<< HEAD
 id ageFilter
+=======
+>>>>>>> origin/ArtiomHackathon
 id age_field
 id alertTitle
 id aligned
@@ -1764,8 +1781,13 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+<<<<<<< HEAD
 id company
 id company_field
+=======
+id company_name
+id companyname
+>>>>>>> origin/ArtiomHackathon
 id confirm_button
 id container
 id content
@@ -1776,11 +1798,15 @@ id custom
 id customPanel
 id cut
 id dark
+id date
+id date_field
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id delete_post
+id delete_user
 id deltaRelative
 id dependency_ordering
 id description_Full
@@ -1815,6 +1841,7 @@ id email_field
 id end
 id enterAlways
 id enterAlwaysCollapsed
+id excel_button
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1856,15 +1883,27 @@ id invisible
 id italic
 id item_touch_helper_previous_elevation
 id job_date
+<<<<<<< HEAD
 id job_description
 id job_list
 id job_location
 id job_title
 id jobs_pull_frame
 id jobs_search
+=======
+id job_title
+id jobdetail
+id jobdetail_field
+id jobs_pull_employer_frame
+id jobs_pull_frame
+id jobtitle
+id jobtitle_field
+>>>>>>> origin/ArtiomHackathon
 id jumpToEnd
 id jumpToStart
 id labeled
+id languages
+id languages_field
 id largeLabel
 id layout
 id left
@@ -1873,6 +1912,7 @@ id line1
 id line3
 id linear
 id linearLayout
+<<<<<<< HEAD
 id linearLayout2
 id linearLayout3
 id linearLayout4
@@ -1882,6 +1922,15 @@ id list_view
 id location_Full
 id login
 id login_main_container
+=======
+id list
+id listMode
+id list_item
+id list_view
+id location
+id location_field
+id logout
+>>>>>>> origin/ArtiomHackathon
 id masked
 id message
 id middle
@@ -1917,8 +1966,11 @@ id mtrl_picker_title_text
 id multiply
 id name
 id name_field
+<<<<<<< HEAD
 id nav
 id nav_view
+=======
+>>>>>>> origin/ArtiomHackathon
 id navigation_header_container
 id never
 id next
@@ -1929,6 +1981,8 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id off
+id old_password
+id old_password_field
 id on
 id outline
 id packed
@@ -1965,6 +2019,10 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id salary
+id salary_field
+id save_edit
+id save_edit_profile
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2037,9 +2095,18 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+<<<<<<< HEAD
 id textView
 id textView2
 id textView5
+=======
+id textView11
+id textView13
+id textView2
+id textView3
+id textView7
+id textView9
+>>>>>>> origin/ArtiomHackathon
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -2071,7 +2138,11 @@ id uniform
 id unlabeled
 id up
 id useLogo
+<<<<<<< HEAD
 id user
+=======
+id user_name
+>>>>>>> origin/ArtiomHackathon
 id view_offset_helper
 id visible
 id wide
@@ -2141,6 +2212,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+<<<<<<< HEAD
 layout activity_about
 layout activity_base
 layout activity_filter
@@ -2148,6 +2220,13 @@ layout activity_job_list
 layout activity_jobs__pull
 layout activity_languages
 layout activity_location
+=======
+layout activity_add_job_window
+layout activity_edit_profile
+layout activity_employee_profile
+layout activity_job_action
+layout activity_jobs__pull
+>>>>>>> origin/ArtiomHackathon
 layout activity_main
 layout activity_payment
 layout activity_rank_filter
@@ -2168,12 +2247,16 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+<<<<<<< HEAD
 layout fragment_forgot_password
 layout fragment_jobs_pull_fragment
 layout fragment_login
 layout fragment_register_recruiter
 layout fragment_register_user
 layout fragment_welcome
+=======
+layout employer_profile
+>>>>>>> origin/ArtiomHackathon
 layout job_row
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
@@ -2227,7 +2310,11 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+<<<<<<< HEAD
 menu activity_base_drawer
+=======
+menu menu_scrolling
+>>>>>>> origin/ArtiomHackathon
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -2268,9 +2355,13 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+<<<<<<< HEAD
 string address
 string adult
 string age
+=======
+string action_settings
+>>>>>>> origin/ArtiomHackathon
 string app_name
 string appbar_scrolling_view_behavior
 string apply
@@ -2335,6 +2426,7 @@ string i_m_under_18
 string icon_content_description
 string id
 string item_view_role_description
+<<<<<<< HEAD
 string jobs_pull
 string languages
 string languages_filter
@@ -2343,6 +2435,9 @@ string location
 string location_filter
 string low
 string mail
+=======
+string large_text
+>>>>>>> origin/ArtiomHackathon
 string material_slider_range_end
 string material_slider_range_start
 string mtrl_badge_numberless_content_description
@@ -2396,6 +2491,7 @@ string russian
 string search_menu_title
 string select_filter_options_and_press_complete
 string status_bar_notification_info_overflow
+<<<<<<< HEAD
 string test
 string text7
 string text8
@@ -2407,6 +2503,9 @@ string text_5
 string text_6
 string title
 string try_description
+=======
+string title_activity_scrolling
+>>>>>>> origin/ArtiomHackathon
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
@@ -2821,6 +2920,9 @@ style Theme_Design_Light_BottomSheetDialog
 style Theme_Design_Light_NoActionBar
 style Theme_Design_NoActionBar
 style Theme_GetJob
+style Theme_GetJob_AppBarOverlay
+style Theme_GetJob_NoActionBar
+style Theme_GetJob_PopupOverlay
 style Theme_MaterialComponents
 style Theme_MaterialComponents_BottomSheetDialog
 style Theme_MaterialComponents_Bridge

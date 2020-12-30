@@ -40,6 +40,7 @@ com/team3/getjob/databinding/AppBarBaseBinding.java
  com.team3.getjob.databinding.AppBarBaseBinding
 com/team3/getjob/BuildConfig.java
  com.team3.getjob.BuildConfig
+<<<<<<< HEAD
 com/team3/getjob/databinding/ActivityJobsPullBinding.java
  com.team3.getjob.databinding.ActivityJobsPullBinding
 com/team3/getjob/databinding/ActivityPaymentBinding.java
@@ -65,10 +66,18 @@ com/team3/getjob/databinding/ActivityAboutBinding.java
  com.team3.getjob.databinding.ActivityAboutBinding
 com/team3/getjob/databinding/FragmentJobsPullFragmentBinding.java
  com.team3.getjob.databinding.FragmentJobsPullFragmentBinding
+=======
+com/team3/getjob/AddJobWindow.java
+ com.team3.getjob.AddJobWindow
+ com.team3.getjob.AddJobWindow$1
+ com.team3.getjob.AddJobWindow$2
+ com.team3.getjob.AddJobWindow$3
+>>>>>>> origin/ArtiomHackathon
 com/team3/getjob/jobs_adapter.java
  com.team3.getjob.jobs_adapter
 com/team3/getjob/job_model.java
  com.team3.getjob.job_model
+<<<<<<< HEAD
 com/team3/getjob/Login/LoginFragment.java
  com.team3.getjob.Login.LoginFragment
 com/team3/getjob/BaseActivity.java
@@ -82,6 +91,39 @@ com/team3/getjob/Login/RegisterUser.java
  com.team3.getjob.Login.RegisterUser$5
  com.team3.getjob.Login.RegisterUser$6
  com.team3.getjob.Login.RegisterUser$7
+=======
+com/team3/getjob/EmployerProfile.java
+ com.team3.getjob.EmployerProfile
+ com.team3.getjob.EmployerProfile$1
+ com.team3.getjob.EmployerProfile$2
+ com.team3.getjob.EmployerProfile$3
+ com.team3.getjob.EmployerProfile$4
+com/team3/getjob/JobAction.java
+ com.team3.getjob.JobAction
+ com.team3.getjob.JobAction$1
+ com.team3.getjob.JobAction$2
+ com.team3.getjob.JobAction$3
+ com.team3.getjob.JobAction$3$1
+ com.team3.getjob.JobAction$3$2
+ com.team3.getjob.JobAction$4
+ com.team3.getjob.JobAction$4$1
+ com.team3.getjob.JobAction$4$2
+com/team3/getjob/EmployeeProfile.java
+ com.team3.getjob.EmployeeProfile
+ com.team3.getjob.EmployeeProfile$1
+ com.team3.getjob.EmployeeProfile$2
+com/team3/getjob/EditProfile.java
+ com.team3.getjob.EditProfile
+ com.team3.getjob.EditProfile$1
+ com.team3.getjob.EditProfile$2
+ com.team3.getjob.EditProfile$2$1
+ com.team3.getjob.EditProfile$2$2
+ com.team3.getjob.EditProfile$3
+ com.team3.getjob.EditProfile$3$1
+ com.team3.getjob.EditProfile$3$2
+ com.team3.getjob.EditProfile$4
+ com.team3.getjob.EditProfile$4$1
+>>>>>>> origin/ArtiomHackathon
 com/team3/getjob/MainActivity.java
  com.team3.getjob.MainActivity
 com/team3/getjob/Filter.java

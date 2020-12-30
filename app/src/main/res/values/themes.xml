@@ -15,7 +15,18 @@
         <item name="colorControlHighlight">@color/light_blue</item>
     </style>
 
+<<<<<<< HEAD
 
 
 
+=======
+    <style name="Theme.GetJob.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.GetJob.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.GetJob.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+>>>>>>> origin/ArtiomHackathon
 </resources>

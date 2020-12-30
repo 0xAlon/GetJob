@@ -1,0 +1,142 @@
+[
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins_bold.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\font\\poppins_bold.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_delete.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\drawable\\ic_delete.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_2.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\drawable\\button_2.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_back.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\drawable\\ic_back.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_scrolling.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\menu\\menu_scrolling.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_employer_profile.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\layout\\employer_profile.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_4.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\drawable\\button_4.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_edit_profile.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\layout\\activity_edit_profile.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_job_row.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\layout\\job_row.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_jobs__pull.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\layout\\activity_jobs__pull.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_edit.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\drawable\\ic_edit.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_job_action.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\layout\\activity_job_action.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_excel.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\drawable\\ic_excel.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_employee_profile.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\layout\\activity_employee_profile.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_image_1.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\drawable\\ic_image_1.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\font\\poppins.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_1.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\drawable\\button_1.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_job_window.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\layout\\activity_add_job_window.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_3.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\drawable\\button_3.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\drawable\\background.xml"
+    },
+    {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\layout\\activity_main.xml"
+    }
+]

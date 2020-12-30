@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GetJob">
+        <activity android:name=".EditProfile" />
+        <activity
+            android:name=".JobAction"
+            android:parentActivityName=".EmployerProfile" />
+        <activity android:name=".EmployeeProfile" />
+        <activity
+            android:name=".AddJobWindow"
+            android:parentActivityName=".EmployerProfile" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,6 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
@@ -48,6 +57,11 @@
             android:name=".About"
             android:screenOrientation="portrait" />
 
+=======
+        <activity
+            android:name=".EmployerProfile"
+            android:screenOrientation="portrait" />
+>>>>>>> origin/ArtiomHackathon
     </application>
 
 

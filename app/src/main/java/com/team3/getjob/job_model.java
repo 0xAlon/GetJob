@@ -10,27 +10,42 @@ public class job_model {
     private String location;
     private String payment;
     private String rank;
+<<<<<<< HEAD
     private boolean ageAdult;
     private Date date;
     private ArrayList<String> languages;
     private ArrayList<String> users;
 
     public job_model(String title, String description, String location, String payment, String rank, boolean ageAdult, Date date, ArrayList<String> languages, ArrayList<String> users) {
+=======
+    private Date date;
+    private ArrayList<String> languages;
+
+    public job_model(String title, String description, String location, String payment, String rank, Date date, ArrayList<String> languages) {
+>>>>>>> origin/ArtiomHackathon
         this.title = title;
         this.description = description;
         this.location = location;
         this.payment = payment;
         this.rank = rank;
+<<<<<<< HEAD
         this.ageAdult = ageAdult;
         this.date = date;
         this.languages = languages;
         this.users = users;
+=======
+        this.date = date;
+        this.languages = languages;
+>>>>>>> origin/ArtiomHackathon
     }
 
     public job_model() {
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/ArtiomHackathon
     public String getTitle() {
         return title;
     }
@@ -87,6 +102,7 @@ public class job_model {
         this.languages = languages;
     }
 
+<<<<<<< HEAD
     public boolean isAgeAdult() {
         return ageAdult;
     }
@@ -102,4 +118,8 @@ public class job_model {
     public void setUsers(ArrayList<String> users) {
         this.users = users;
     }
+=======
+
+
+>>>>>>> origin/ArtiomHackathon
 }
