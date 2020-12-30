@@ -1,29 +1,33 @@
 com/team3/getjob/BuildConfig.java
  com.team3.getjob.BuildConfig
-com/team3/getjob/job_model.java
- com.team3.getjob.job_model
-com/team3/getjob/jobs_adapter.java
- com.team3.getjob.jobs_adapter
-com/team3/getjob/EmployeeProfile.java
- com.team3.getjob.EmployeeProfile
- com.team3.getjob.EmployeeProfile$1
 com/team3/getjob/AddJobWindow.java
  com.team3.getjob.AddJobWindow
  com.team3.getjob.AddJobWindow$1
  com.team3.getjob.AddJobWindow$2
+ com.team3.getjob.AddJobWindow$3
+com/team3/getjob/jobs_adapter.java
+ com.team3.getjob.jobs_adapter
 com/team3/getjob/EmployerProfile.java
  com.team3.getjob.EmployerProfile
  com.team3.getjob.EmployerProfile$1
  com.team3.getjob.EmployerProfile$2
  com.team3.getjob.EmployerProfile$3
+ com.team3.getjob.EmployerProfile$4
 com/team3/getjob/JobAction.java
  com.team3.getjob.JobAction
  com.team3.getjob.JobAction$1
  com.team3.getjob.JobAction$2
- com.team3.getjob.JobAction$2$1
- com.team3.getjob.JobAction$2$2
  com.team3.getjob.JobAction$3
  com.team3.getjob.JobAction$3$1
  com.team3.getjob.JobAction$3$2
+ com.team3.getjob.JobAction$4
+ com.team3.getjob.JobAction$4$1
+ com.team3.getjob.JobAction$4$2
+com/team3/getjob/job_model.java
+ com.team3.getjob.job_model
+com/team3/getjob/EmployeeProfile.java
+ com.team3.getjob.EmployeeProfile
+ com.team3.getjob.EmployeeProfile$1
+ com.team3.getjob.EmployeeProfile$2
 com/team3/getjob/MainActivity.java
  com.team3.getjob.MainActivity

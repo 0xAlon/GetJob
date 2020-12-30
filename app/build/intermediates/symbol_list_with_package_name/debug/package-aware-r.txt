@@ -1594,6 +1594,7 @@ drawable googleg_standard_color_18
 drawable ic_back
 drawable ic_delete
 drawable ic_edit
+drawable ic_excel
 drawable ic_image_1
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1796,6 +1797,7 @@ id email
 id end
 id enterAlways
 id enterAlwaysCollapsed
+id excel_button
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu

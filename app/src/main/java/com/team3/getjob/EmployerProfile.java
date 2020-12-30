@@ -1,8 +1,12 @@
 package com.team3.getjob;
+import android.Manifest;
+import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.View;
 import android.widget.Adapter;
@@ -18,6 +22,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -36,6 +41,10 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.storage.StorageReference;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -46,6 +55,7 @@ public class EmployerProfile extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private String TAG="EmployerProfile";
     private Button add_job_button;
+    private Button logout;
     TextView user_name;
     TextView email;
     TextView phone_num;
@@ -78,6 +88,14 @@ public class EmployerProfile extends AppCompatActivity {
         ArrayList<job_model> temp_list = new ArrayList<job_model>();
         Context context = this;
 
+        //logout button
+        logout=(Button)findViewById(R.id.logout);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SingOut();
+            }
+        });
 
         //Data Pull
         DataBasePull(id_list, temp_list, context);
@@ -178,5 +196,57 @@ public class EmployerProfile extends AppCompatActivity {
                 });
     }
 
+    public void SingOut() {
+        FirebaseAuth.getInstance().signOut();
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+    }
+
+//    public void DataToExcel()
+//    {
+//        if (ActivityCompat.checkSelfPermission(context, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+//                != PackageManager.PERMISSION_GRANTED) {
+//
+//            ActivityCompat.requestPermissions((Activity) context,
+//                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+//
+//            return;
+//        }
+//        Workbook workbook = new XSSFWorkbook();
+//        Sheet sheet = workbook.createSheet("Users"); //Creating a sheet
+//
+//        for(int  i=0; i<userProfilesWithFilter.size(); i++){
+//
+//            Row row = sheet.createRow(i);
+//            row.createCell(CELL_INDEX_0).setCellValue(VALUE_YOU_WANT_TO_KEEP_ON_1ST_COLUMN);
+//            row.createCell(CELL_INDEX_1).setCellValue(VALUE_YOU_WANT_TO_KEEP_ON_2ND_COLUMN);
+//        }
+//
+//        String fileName = "FileName.xlsx"; //Name of the file
+//
+//        String extStorageDirectory = Environment.getExternalStorageDirectory()
+//                .toString();
+//        File folder = new File(extStorageDirectory, "FolderName");// Name of the folder you want to keep your file in the local storage.
+//        folder.mkdir(); //creating the folder
+//        File file = new File(folder, fileName);
+//        try {
+//            file.createNewFile(); // creating the file inside the folder
+//        } catch (IOException e1) {
+//            e1.printStackTrace();
+//        }
+//
+//        try {
+//            FileOutputStream fileOut = new FileOutputStream(file); //Opening the file
+//            workbook.write(fileOut); //Writing all your row column inside the file
+//            fileOut.close(); //closing the file and done
+//
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
 }

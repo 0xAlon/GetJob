@@ -159,13 +159,21 @@
 
     </LinearLayout>
 
+
+    <ImageButton
+        android:id="@+id/excel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        app:srcCompat="@drawable/ic_excel" />
+
     <ListView
         android:id="@+id/list"
         android:layout_width="wrap_content"
         android:layout_height="120dp"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="40dp"
-        android:lineSpacingExtra="10sp">
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="10dp">
     </ListView>
 
     <com.google.android.material.button.MaterialButton
@@ -174,10 +182,18 @@
         android:layout_marginTop="40dp"
         android:text="הוסף" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logout"
+        style="@style/button_1"
+        android:layout_marginTop="20dp"
+        android:text="יציאה" />
+
     <FrameLayout
         android:id="@+id/jobs_pull_employer_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+
 
 </LinearLayout>

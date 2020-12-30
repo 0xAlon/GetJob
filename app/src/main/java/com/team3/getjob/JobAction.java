@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -41,6 +42,7 @@ public class JobAction extends AppCompatActivity {
     TextView phone;
     TextView languages;
     TextView job_detail;
+    ImageButton back;
     private String postId = null;
     public JobAction() {}
 
@@ -58,7 +60,14 @@ public class JobAction extends AppCompatActivity {
         phone = (TextView) findViewById(R.id.phone_field);
         languages = (TextView) findViewById(R.id.languages_field);
         job_detail = (TextView) findViewById(R.id.jobdetail_field);
-
+        back=(ImageButton) findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JobAction.this, EmployerProfile.class);
+                startActivity(intent);
+            }
+        });
 
         FirebaseApp.initializeApp(this);
         FirebaseFirestore db = FirebaseFirestore.getInstance();

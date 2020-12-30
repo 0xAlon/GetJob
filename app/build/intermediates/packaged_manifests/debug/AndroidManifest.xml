@@ -24,9 +24,13 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.GetJob" >
-        <activity android:name="com.team3.getjob.JobAction" />
+        <activity
+            android:name="com.team3.getjob.JobAction"
+            android:parentActivityName="com.team3.getjob.EmployerProfile" />
         <activity android:name="com.team3.getjob.EmployeeProfile" />
-        <activity android:name="com.team3.getjob.AddJobWindow" />
+        <activity
+            android:name="com.team3.getjob.AddJobWindow"
+            android:parentActivityName="com.team3.getjob.EmployerProfile" />
         <activity android:name="com.team3.getjob.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

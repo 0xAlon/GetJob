@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -32,6 +33,7 @@ public class AddJobWindow extends AppCompatActivity implements View.OnClickListe
     TextView languages;
     TextView job_detail;
     Button confirm_button;
+    ImageButton back;
 
     @SuppressLint({"WrongViewCast", "RestrictedApi"})
     @Override
@@ -48,6 +50,14 @@ public class AddJobWindow extends AppCompatActivity implements View.OnClickListe
         job_detail = (TextView) findViewById(R.id.jobdetail_field);
         confirm_button=findViewById(R.id.confirm_button);
         confirm_button.setOnClickListener(this);
+        back=(ImageButton) findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AddJobWindow.this, EmployerProfile.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -55,9 +65,6 @@ public class AddJobWindow extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.back:
-                getFragmentManager().popBackStackImmediate();
-                break;
 
             case R.id.confirm_button:
                 FirebaseFirestore db=FirebaseFirestore.getInstance();

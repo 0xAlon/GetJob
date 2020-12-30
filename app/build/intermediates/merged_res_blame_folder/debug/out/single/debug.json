@@ -72,6 +72,10 @@
         "source": "D:\\GetJob\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_excel.xml.flat",
+        "source": "D:\\GetJob\\app\\src\\main\\res\\drawable\\ic_excel.xml"
+    },
+    {
         "merged": "D:\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_employee_profile.xml.flat",
         "source": "D:\\GetJob\\app\\src\\main\\res\\layout\\activity_employee_profile.xml"
     },
