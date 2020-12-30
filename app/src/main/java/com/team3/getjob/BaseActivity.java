@@ -82,8 +82,12 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
         if (id == R.id.profile) {
 
         } else if (id == R.id.job_list) {
+            Intent intent = new Intent(this, Jobs_Pull.class);
+            startActivity(intent);
 
         } else if (id == R.id.about) {
+            Intent intent = new Intent(this, About.class);
+            startActivity(intent);
 
         } else if (id == R.id.git){
             String url = "https://github.com/0xAlon/GetJob";

@@ -2037,6 +2037,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
+id textView2
 id textView5
 id text_input_end_icon
 id text_input_start_icon
@@ -2138,6 +2139,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_about
 layout activity_base
 layout activity_filter
 layout activity_job_list
@@ -2392,6 +2394,7 @@ string russian
 string search_menu_title
 string select_filter_options_and_press_complete
 string status_bar_notification_info_overflow
+string test
 string text7
 string text8
 string text_1

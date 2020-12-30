@@ -33,6 +33,8 @@ public class Jobs_Pull extends BaseActivity {
     private FirebaseAuth mAuth;
     String userId;
 
+    public  Jobs_Pull(){ }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +50,8 @@ public class Jobs_Pull extends BaseActivity {
 
             }
         });
+
+
 
 
         //Setup

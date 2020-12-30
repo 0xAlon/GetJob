@@ -202,9 +202,8 @@ public class RegisterUser extends Fragment implements View.OnClickListener {
                                             .add(userData)
                                             .addOnSuccessListener(documentReference -> {
                                                 Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
-                                                    Intent intent = new Intent(getContext(), Jobs_Pull.class);
-                                                    intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
-                                                    startActivity(intent);
+                                                Intent intent = new Intent(getActivity(), Jobs_Pull.class);
+                                                startActivity(intent);
                                             })
                                             .addOnFailureListener(e -> Log.w(TAG, "Error adding document", e));
                                 }

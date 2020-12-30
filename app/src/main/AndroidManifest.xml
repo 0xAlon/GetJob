@@ -44,6 +44,10 @@
             android:name=".rank_filter"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name=".About"
+            android:screenOrientation="portrait" />
+
     </application>
 
 

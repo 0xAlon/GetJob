@@ -55,6 +55,9 @@
             android:name="com.team3.getjob.rank_filter"
             android:screenOrientation="portrait" />
         <activity
+            android:name="com.team3.getjob.About"
+            android:screenOrientation="portrait" />
+        <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
             android:excludeFromRecents="true"
             android:exported="true"

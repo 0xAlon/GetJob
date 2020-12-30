@@ -64,5 +64,6 @@
     <string name="description">Description</string>
     <string name="location">Location</string>
     <string name="date">Date</string>
+    <string name="test">פלטפורמה למציאת עבודה ופרסום משרות לפרקי זמן קצרים. הפלטפורמה נועדה לחבר בין מחפשי עבודה כתוצאה מאבטלה הגוברת במשק שנגרמה עקב הקורונה. האפליקציה מותאמת ונגישה לכל אדם, מציגה לוח משרות עם אופציות מגוונות לסינון כדי למצוא את המשרה המתאימה ביותר לאדם והחזרתו למעגל העבודה.</string>
 
 </resources>

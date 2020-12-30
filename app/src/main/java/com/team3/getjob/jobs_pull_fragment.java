@@ -1,8 +1,10 @@
 package com.team3.getjob;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +13,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -92,6 +95,17 @@ public class jobs_pull_fragment extends Fragment {
 
         //Fill data (DATABASE CALL)
         FillPostData(title, description, location, payment);
+
+
+        @SuppressLint("WrongViewCast") Button nav = (Button)view.findViewById(R.id.nav);
+        View finalView = view;
+        apply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DrawerLayout drawer = (DrawerLayout) finalView.findViewById(R.id.drawer_layout);
+                drawer.openDrawer(Gravity.LEFT);
+            }
+        });
 
 
         //Apply add post id to user id
