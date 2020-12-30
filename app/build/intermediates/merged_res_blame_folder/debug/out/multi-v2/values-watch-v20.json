@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\GetJob\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
+            "outputFile": "/Users/alon/Documents/GetJob/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\art\\.gradle\\caches\\transforms-2\\files-2.1\\f65e7d690d0436991c66205f0487ed30\\appcompat-1.2.0\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "/Users/alon/.gradle/caches/transforms-2/files-2.1/f65e7d690d0436991c66205f0487ed30/appcompat-1.2.0/res/values-watch-v20/values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

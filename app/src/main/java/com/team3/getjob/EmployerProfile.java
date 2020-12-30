@@ -1,4 +1,5 @@
 package com.team3.getjob;
+
 import android.Manifest;
 import android.app.Activity;
 import android.app.ListActivity;
@@ -8,6 +9,7 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.AdapterView;
@@ -23,6 +25,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -50,10 +53,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class EmployerProfile extends AppCompatActivity {
+public class EmployerProfile extends BaseActivity {
 
     private FirebaseAuth mAuth;
-    private String TAG="EmployerProfile";
+    private String TAG = "EmployerProfile";
     private Button add_job_button;
     private Button logout;
     TextView user_name;
@@ -71,7 +74,19 @@ public class EmployerProfile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.employer_profile);
+        //setContentView(R.layout.employer_profile);
+
+        View rootView = getLayoutInflater().inflate(R.layout.employer_profile, frameLayout);
+
+        /*View clickView = rootView.findViewById(R.id.nav);
+        clickView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+                drawer.openDrawer(Gravity.LEFT);
+
+            }
+        });*/
 
         FirebaseApp.initializeApp(this);
         mAuth = FirebaseAuth.getInstance();
@@ -89,7 +104,7 @@ public class EmployerProfile extends AppCompatActivity {
         Context context = this;
 
         //logout button
-        logout=(Button)findViewById(R.id.logout);
+        logout = (Button) findViewById(R.id.logout);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -123,7 +138,7 @@ public class EmployerProfile extends AppCompatActivity {
             }
         });
     }
-    
+
 
     @Override
     public void onStart() {
@@ -132,11 +147,11 @@ public class EmployerProfile extends AppCompatActivity {
         updateFields(currentUser);
     }
 
-    private void updateFields(FirebaseUser currentUser){
+    private void updateFields(FirebaseUser currentUser) {
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-        db.collection("Users").whereEqualTo("Uid", "W4CyywCheWVdQfpTLocUC8Kfysj1")
+        db.collection("Users").whereEqualTo("Uid", currentUser.getUid())
                 .get()
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
@@ -161,9 +176,8 @@ public class EmployerProfile extends AppCompatActivity {
                 });
     }
 
-    public void openAddJobWindow()
-    {
-        Intent intent = new Intent(this,AddJobWindow.class);
+    public void openAddJobWindow() {
+        Intent intent = new Intent(this, AddJobWindow.class);
         startActivity(intent);
     }
 
@@ -181,7 +195,8 @@ public class EmployerProfile extends AppCompatActivity {
                                 //Fill the class with data!!!!!
                                 job_model jobs = document.toObject(job_model.class);
                                 id_list.add(document.getId());
-                                temp_list.add(new job_model(jobs.getTitle(),jobs.getDescription(), jobs.getLocation(), jobs.getPayment(),jobs.getRank(),jobs.getDate(),jobs.getLanguages()));
+                                //temp_list.add(new job_model(jobs.getTitle(),jobs.getDescription(), jobs.getLocation(), jobs.getPayment(),jobs.getRank(),jobs.getDate(),jobs.getLanguages()));
+                                temp_list.add(new job_model(jobs.getTitle(), jobs.getDescription(), jobs.getLocation(), jobs.getPayment(), jobs.getRank(), jobs.isAgeAdult(), jobs.getDate(), jobs.getLanguages(), jobs.getUsers()));
                                 jobs_adapter adapter = new jobs_adapter(context, temp_list);
 
                                 //Set data to list view!!!!

@@ -1590,12 +1590,9 @@ drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_back
-<<<<<<< HEAD
-=======
 drawable ic_delete
 drawable ic_edit
 drawable ic_excel
->>>>>>> origin/ArtiomHackathon
 drawable ic_image_1
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1714,19 +1711,13 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-<<<<<<< HEAD
-=======
 id addjob
->>>>>>> origin/ArtiomHackathon
 id address
 id address_field
 id adjust_height
 id adjust_width
 id age
-<<<<<<< HEAD
 id ageFilter
-=======
->>>>>>> origin/ArtiomHackathon
 id age_field
 id alertTitle
 id aligned
@@ -1781,13 +1772,10 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id collapseActionView
-<<<<<<< HEAD
 id company
 id company_field
-=======
 id company_name
 id companyname
->>>>>>> origin/ArtiomHackathon
 id confirm_button
 id container
 id content
@@ -1883,22 +1871,17 @@ id invisible
 id italic
 id item_touch_helper_previous_elevation
 id job_date
-<<<<<<< HEAD
 id job_description
 id job_list
 id job_location
-id job_title
-id jobs_pull_frame
-id jobs_search
-=======
 id job_title
 id jobdetail
 id jobdetail_field
 id jobs_pull_employer_frame
 id jobs_pull_frame
+id jobs_search
 id jobtitle
 id jobtitle_field
->>>>>>> origin/ArtiomHackathon
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -1912,25 +1895,19 @@ id line1
 id line3
 id linear
 id linearLayout
-<<<<<<< HEAD
 id linearLayout2
 id linearLayout3
 id linearLayout4
-id listMode
-id list_item
-id list_view
-id location_Full
-id login
-id login_main_container
-=======
 id list
 id listMode
 id list_item
 id list_view
 id location
+id location_Full
 id location_field
+id login
+id login_main_container
 id logout
->>>>>>> origin/ArtiomHackathon
 id masked
 id message
 id middle
@@ -1966,11 +1943,8 @@ id mtrl_picker_title_text
 id multiply
 id name
 id name_field
-<<<<<<< HEAD
 id nav
 id nav_view
-=======
->>>>>>> origin/ArtiomHackathon
 id navigation_header_container
 id never
 id next
@@ -2095,18 +2069,14 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-<<<<<<< HEAD
 id textView
-id textView2
-id textView5
-=======
 id textView11
 id textView13
 id textView2
 id textView3
+id textView5
 id textView7
 id textView9
->>>>>>> origin/ArtiomHackathon
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -2138,11 +2108,8 @@ id uniform
 id unlabeled
 id up
 id useLogo
-<<<<<<< HEAD
 id user
-=======
 id user_name
->>>>>>> origin/ArtiomHackathon
 id view_offset_helper
 id visible
 id wide
@@ -2212,21 +2179,17 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-<<<<<<< HEAD
 layout activity_about
+layout activity_add_job_window
 layout activity_base
+layout activity_edit_profile
+layout activity_employee_profile
 layout activity_filter
+layout activity_job_action
 layout activity_job_list
 layout activity_jobs__pull
 layout activity_languages
 layout activity_location
-=======
-layout activity_add_job_window
-layout activity_edit_profile
-layout activity_employee_profile
-layout activity_job_action
-layout activity_jobs__pull
->>>>>>> origin/ArtiomHackathon
 layout activity_main
 layout activity_payment
 layout activity_rank_filter
@@ -2247,17 +2210,15 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-<<<<<<< HEAD
+layout employer_profile
 layout fragment_forgot_password
 layout fragment_jobs_pull_fragment
 layout fragment_login
 layout fragment_register_recruiter
 layout fragment_register_user
 layout fragment_welcome
-=======
-layout employer_profile
->>>>>>> origin/ArtiomHackathon
 layout job_row
+layout job_row_profile
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2310,11 +2271,8 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
-<<<<<<< HEAD
 menu activity_base_drawer
-=======
 menu menu_scrolling
->>>>>>> origin/ArtiomHackathon
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -2355,13 +2313,10 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
-<<<<<<< HEAD
+string action_settings
 string address
 string adult
 string age
-=======
-string action_settings
->>>>>>> origin/ArtiomHackathon
 string app_name
 string appbar_scrolling_view_behavior
 string apply
@@ -2426,18 +2381,15 @@ string i_m_under_18
 string icon_content_description
 string id
 string item_view_role_description
-<<<<<<< HEAD
 string jobs_pull
 string languages
 string languages_filter
+string large_text
 string loaction
 string location
 string location_filter
 string low
 string mail
-=======
-string large_text
->>>>>>> origin/ArtiomHackathon
 string material_slider_range_end
 string material_slider_range_start
 string mtrl_badge_numberless_content_description
@@ -2491,7 +2443,6 @@ string russian
 string search_menu_title
 string select_filter_options_and_press_complete
 string status_bar_notification_info_overflow
-<<<<<<< HEAD
 string test
 string text7
 string text8
@@ -2502,10 +2453,8 @@ string text_4
 string text_5
 string text_6
 string title
-string try_description
-=======
 string title_activity_scrolling
->>>>>>> origin/ArtiomHackathon
+string try_description
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

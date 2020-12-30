@@ -83,7 +83,7 @@ public class EmployeeProfile extends AppCompatActivity {
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         post_apply=new ArrayList<String>();
-        db.collection("Users").whereEqualTo("Uid", "mkcBs142KqSfFfNCfMqkp4XyqeL2")
+        db.collection("Users").whereEqualTo("Uid", currentUser.getUid())
                 .get()
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
@@ -128,7 +128,8 @@ public class EmployeeProfile extends AppCompatActivity {
                                     //Fill the class with data!!!!!
                                     job_model jobs = document.toObject(job_model.class);
                                     id_list.add(document.getId());
-                                    temp_list.add(new job_model(jobs.getTitle(),jobs.getDescription(), jobs.getLocation(), jobs.getPayment(),jobs.getRank(),jobs.getDate(),jobs.getLanguages()));
+                                    //temp_list.add(new job_model(jobs.getTitle(),jobs.getDescription(), jobs.getLocation(), jobs.getPayment(),jobs.getRank(),jobs.getDate(),jobs.getLanguages()));
+                                    temp_list.add(new job_model(jobs.getTitle(),jobs.getDescription(), jobs.getLocation(), jobs.getPayment(),jobs.getRank() ,jobs.isAgeAdult(),jobs.getDate(),jobs.getLanguages(), jobs.getUsers()));
                                     jobs_adapter adapter = new jobs_adapter(context, temp_list);
 
                                     //Set data to list view!!!!

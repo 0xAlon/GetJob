@@ -7,8 +7,6 @@
     android:background="@drawable/background"
     tools:context=".Jobs_Pull">
 
-
-<<<<<<< HEAD
     <ImageButton
         android:id="@+id/nav"
         style="@style/back_button"
@@ -37,33 +35,18 @@
         app:layout_constraintVertical_bias="1.0" />
 
 
-=======
-  //You need This list view just change Id / AND PUT IT WHERE YOU NEEED	
->>>>>>> origin/ArtiomHackathon
     <ListView
         android:id="@+id/list_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="160dp"
-<<<<<<< HEAD
         android:layout_marginHorizontal="20dp" />
 
     <FrameLayout
         android:id="@+id/jobs_pull_frame"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"/>
 
-    </FrameLayout>
-=======
-        android:layout_marginHorizontal="20dp"
-        />
-
-  <FrameLayout
-      android:id="@+id/jobs_pull_frame"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      app:layout_constraintEnd_toEndOf="parent" />
->>>>>>> origin/ArtiomHackathon
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

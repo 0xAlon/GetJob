@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">GetJob</string>
-<<<<<<< HEAD
     <string name="text_1">שלום, נעים להכיר אותך!</string>
     <string name="text_2">התחל להתנסות בחוויה חדשה</string>
     <string name="text_3">יצירת פרופיל משתמש</string>
@@ -67,7 +66,6 @@
     <string name="date">Date</string>
     <string name="test">פלטפורמה למציאת עבודה ופרסום משרות לפרקי זמן קצרים. הפלטפורמה נועדה לחבר בין מחפשי עבודה כתוצאה מאבטלה הגוברת במשק שנגרמה עקב הקורונה. האפליקציה מותאמת ונגישה לכל אדם, מציגה לוח משרות עם אופציות מגוונות לסינון כדי למצוא את המשרה המתאימה ביותר לאדם והחזרתו למעגל העבודה.</string>
 
-=======
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
@@ -159,5 +157,4 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
->>>>>>> origin/ArtiomHackathon
 </resources>

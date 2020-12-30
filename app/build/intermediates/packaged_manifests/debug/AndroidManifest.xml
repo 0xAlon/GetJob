@@ -45,7 +45,6 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-<<<<<<< HEAD
             android:name="com.team3.getjob.Jobs_Pull"
             android:screenOrientation="portrait" />
         <activity
@@ -65,9 +64,9 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.team3.getjob.About"
-=======
+            android:screenOrientation="portrait" />
+        <activity
             android:name="com.team3.getjob.EmployerProfile"
->>>>>>> origin/ArtiomHackathon
             android:screenOrientation="portrait" />
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
@@ -127,15 +126,12 @@
                 android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
-<<<<<<< HEAD
-=======
                 android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
->>>>>>> origin/ArtiomHackathon
                 android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data

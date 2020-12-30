@@ -25,6 +25,7 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
     private DrawerLayout drawer;
     private String TAG = "BaseActivity";
     private FirebaseAuth mAuth;
+    private String userType;
     MenuItem name;
     MenuItem type;
 
@@ -95,12 +96,15 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
                                     switch (String.valueOf(document.getData().get("UserType"))){
                                         case "1":
                                             type.setTitle("נער");
+                                            userType = "1";
                                             break;
                                         case "2":
                                             type.setTitle("מחפש עבודה");
+                                            userType = "2";
                                             break;
                                         case "3":
                                             type.setTitle("מגייס");
+                                            userType = "3";
                                             break;
                                         default:
                                             break;
@@ -123,6 +127,14 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         if (id == R.id.profile) {
+            if (userType.equals("1") || userType.equals("2")){
+                Intent intent = new Intent(this, EmployeeProfile.class);
+                startActivity(intent);
+            }
+            else{
+                Intent intent = new Intent(this, EmployerProfile.class);
+                startActivity(intent);
+            }
 
         } else if (id == R.id.job_list) {
             Intent intent = new Intent(this, Jobs_Pull.class);

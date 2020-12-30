@@ -39,6 +39,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="com.team3.getjob.Jobs_Pull"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.team3.getjob.Filter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.team3.getjob.Location"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.team3.getjob.PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.team3.getjob.LanguagesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.team3.getjob.rank_filter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.team3.getjob.About"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.team3.getjob.EmployerProfile"
             android:screenOrientation="portrait" />
@@ -110,6 +136,13 @@
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <!--
+                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+                clients to use it as well, by defining this registrar in their own core/common library.
+            -->
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
 

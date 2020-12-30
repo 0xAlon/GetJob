@@ -76,8 +76,13 @@ public class AddJobWindow extends AppCompatActivity implements View.OnClickListe
 
                 Date temp_date = new Date();
 
-                job_model jobs = new job_model(job_title.getText().toString(),job_detail.getText().toString(),
-                        location.getText().toString(), String.valueOf(salary.getText()), "0", temp_date ,temp_lang);
+                /*job_model jobs = new job_model(job_title.getText().toString(),job_detail.getText(),
+                        location.getText().toString(), salary.getText(), "0", temp_date ,temp_lang, null);*/
+
+
+                job_model jobs = new job_model(job_title.getText().toString(),job_detail.getText().toString(), location.getText().toString(), salary.getText().toString(),"0" ,true,temp_date,temp_lang, null);
+
+
 
                 db.collection("Posts")
                         .add(jobs)

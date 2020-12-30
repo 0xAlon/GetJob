@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-<<<<<<< HEAD
 
         FirebaseApp.initializeApp(this);
         mAuth = FirebaseAuth.getInstance();
@@ -63,14 +62,5 @@ public class MainActivity extends AppCompatActivity {
                         }
                     });
         }
-=======
-//        Intent intent = new Intent(this, EmployerProfile.class);
-//        startActivity(intent);
-//        Intent intent = new Intent(this, EmployeeProfile.class);
-//        startActivity(intent);
-        Intent intent = new Intent(this, EditProfile.class);
-        startActivity(intent);
->>>>>>> origin/ArtiomHackathon
     }
-
 }
