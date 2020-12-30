@@ -11,7 +11,12 @@
                     android:title=""
                     android:enabled="false"
                     android:layout_gravity="left">
-
+                </item>
+                <item
+                    android:id="@+id/type"
+                    android:title=""
+                    android:enabled="false"
+                    android:layout_gravity="left">
                 </item>
             </group>
         </menu>
@@ -21,6 +26,9 @@
         <item
             android:id="@+id/profile"
             android:title="פרופיל" />
+        <item
+            android:id="@+id/edit"
+            android:title="עריכת פרטים" />
         <item
             android:id="@+id/job_list"
             android:title="לוח משרות" />

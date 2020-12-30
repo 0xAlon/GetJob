@@ -26,6 +26,7 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
     private String TAG = "BaseActivity";
     private FirebaseAuth mAuth;
     MenuItem name;
+    MenuItem type;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +41,10 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
 
         Menu menu = navigationView.getMenu();
         name = menu.findItem(R.id.name);
+        type = menu.findItem(R.id.type);
 
         initUserName();
+        initUserType();
     }
 
     private void initUserName() {
@@ -74,6 +77,46 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
+    private void initUserType() {
+
+        FirebaseApp.initializeApp(this);
+        mAuth = FirebaseAuth.getInstance();
+
+
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+        if (currentUser != null){
+            db.collection("Users").whereEqualTo("Uid", currentUser.getUid())
+                    .get()
+                    .addOnCompleteListener(task -> {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                    switch (String.valueOf(document.getData().get("UserType"))){
+                                        case "1":
+                                            type.setTitle("נער");
+                                            break;
+                                        case "2":
+                                            type.setTitle("מחפש עבודה");
+                                            break;
+                                        case "3":
+                                            type.setTitle("מגייס");
+                                            break;
+                                        default:
+                                            break;
+                                    }
+                            }
+                        } else {
+                            Log.d(TAG, "Error getting documents: ", task.getException());
+                        }
+                    });
+
+        }
+        else{
+            name.setTitle("Error getting Name");
+        }
+    }
+
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
@@ -88,6 +131,8 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.about) {
             Intent intent = new Intent(this, About.class);
             startActivity(intent);
+
+        } else if (id == R.id.edit) {
 
         } else if (id == R.id.git){
             String url = "https://github.com/0xAlon/GetJob";

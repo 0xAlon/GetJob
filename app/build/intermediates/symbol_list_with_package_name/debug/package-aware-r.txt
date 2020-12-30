@@ -1806,6 +1806,7 @@ id dropdown_menu
 id easeIn
 id easeInOut
 id easeOut
+id edit
 id editText
 id editText1
 id edit_query
@@ -2064,6 +2065,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id type
 id unchecked
 id uniform
 id unlabeled
