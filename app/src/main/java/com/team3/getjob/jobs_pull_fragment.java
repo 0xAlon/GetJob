@@ -17,8 +17,13 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -96,12 +101,32 @@ public class jobs_pull_fragment extends Fragment {
             public void onClick(View v) {
                 //CODE
 
+                //Add post id to user jobs
+                db.collection("Users").whereEqualTo("Uid", mParam3)
+                        .get()
+                        .addOnCompleteListener(task -> {
+                            if (task.isSuccessful()) {
+                                String doc_id;
+                                for (QueryDocumentSnapshot document : task.getResult()) {
+                                    Log.d("TAG", document.getId());
 
-                Query usersRef = db.collection("Users").whereEqualTo("Uid",mParam3);
-               // usersRef.update("jobs_buffer", FieldValue.arrayUnion(mParam1));
-                Log.d("MPARAM1", "onClick: " + mParam3);
-                Log.d("usersRef", "onClick: " + usersRef.);
+                                    //Add post id to user jobs
+                                    doc_id = document.getId();
+                                    DocumentReference userRef = db.collection("Users").document(doc_id);
 
+                                    userRef.update("Jobs", FieldValue.arrayUnion(mParam1));
+
+                                }
+
+                            } else {
+                                Log.d("TAG", "Error getting documents: ", task.getException());
+
+                            }
+                        });
+
+
+
+                //Back to filter
                 Intent intent = new Intent(getActivity(), Jobs_Pull.class);
                 startActivity(intent);
             }
