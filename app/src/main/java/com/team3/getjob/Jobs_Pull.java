@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -11,10 +12,13 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -35,15 +39,27 @@ public class Jobs_Pull extends BaseActivity {
         //setContentView(R.layout.activity_jobs__pull);
         View rootView = getLayoutInflater().inflate(R.layout.activity_jobs__pull, frameLayout);
 
+        View clickView = rootView.findViewById(R.id.nav);
+        clickView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+                drawer.openDrawer(Gravity.LEFT);
+
+            }
+        });
+
+
         //Setup
         mListView = findViewById(R.id.list_view);
         db = FirebaseFirestore.getInstance();
         TextView filter_button = (TextView) findViewById(R.id.jobs_search);
+
         //User path
-      /*  FirebaseApp.initializeApp(this);
+        FirebaseApp.initializeApp(this);
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        userId = currentUser.getUid();*/
+        userId = currentUser.getUid();
         //Add list for user applied jobs
 
         //Add button apply inside fragment jobs

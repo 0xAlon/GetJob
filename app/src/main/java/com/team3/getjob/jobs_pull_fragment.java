@@ -18,6 +18,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -96,12 +97,11 @@ public class jobs_pull_fragment extends Fragment {
                 //CODE
 
 
-                //cahnge to user Id REAL!!!!!!!!!
+                Query usersRef = db.collection("Users").whereEqualTo("Uid",mParam3);
+               // usersRef.update("jobs_buffer", FieldValue.arrayUnion(mParam1));
+                Log.d("MPARAM1", "onClick: " + mParam3);
+                Log.d("usersRef", "onClick: " + usersRef.);
 
-               /* DocumentReference usersRef = db.collection("Users").document(mParam1);
-
-                usersRef.update("jobs_buffer", FieldValue.arrayUnion(mParam1));
-*/
                 Intent intent = new Intent(getActivity(), Jobs_Pull.class);
                 startActivity(intent);
             }

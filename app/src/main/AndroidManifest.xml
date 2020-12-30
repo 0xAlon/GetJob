@@ -21,11 +21,27 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name=".JobListActivity"
+            android:name=".Jobs_Pull"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".Jobs_Pull"
+            android:name=".Filter"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Location"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".PaymentActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".LanguagesActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".rank_filter"
             android:screenOrientation="portrait" />
 
     </application>
