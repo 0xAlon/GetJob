@@ -22,7 +22,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Jobs_Pull extends AppCompatActivity {
+public class Jobs_Pull extends BaseActivity {
 
     FirebaseFirestore db;
     ListView mListView;
@@ -32,7 +32,8 @@ public class Jobs_Pull extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_jobs__pull);
+        //setContentView(R.layout.activity_jobs__pull);
+        View rootView = getLayoutInflater().inflate(R.layout.activity_jobs__pull, frameLayout);
 
         //Setup
         mListView = findViewById(R.id.list_view);

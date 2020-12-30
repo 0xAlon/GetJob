@@ -1,5 +1,6 @@
 package com.team3.getjob.Login;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -17,6 +18,7 @@ import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.team3.getjob.Jobs_Pull;
 import com.team3.getjob.R;
 import com.team3.getjob.Utilities.Validation;
 
@@ -200,10 +202,9 @@ public class RegisterUser extends Fragment implements View.OnClickListener {
                                             .add(userData)
                                             .addOnSuccessListener(documentReference -> {
                                                 Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
-                                                    /*
-                                                    Intent intent = new Intent(getContext(), JobListActivity.class);
+                                                    Intent intent = new Intent(getContext(), Jobs_Pull.class);
                                                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
-                                                    startActivity(intent);*/
+                                                    startActivity(intent);
                                             })
                                             .addOnFailureListener(e -> Log.w(TAG, "Error adding document", e));
                                 }

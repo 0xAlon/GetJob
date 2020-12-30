@@ -15,6 +15,7 @@ import androidx.fragment.app.FragmentManager;
 
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
+import com.team3.getjob.Jobs_Pull;
 import com.team3.getjob.R;
 
 public class LoginFragment extends Fragment implements View.OnClickListener {
@@ -80,8 +81,8 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
         mAuth.signInWithEmailAndPassword(email.getText().toString(), password.getText().toString())
                 .addOnCompleteListener(getActivity(), task -> {
                     if (task.isSuccessful()) {
-                        /*Intent intent = new Intent(getContext(), JobListActivity.class);
-                        startActivity(intent);*/
+                        Intent intent = new Intent(getContext(), Jobs_Pull.class);
+                        startActivity(intent);
                     } else {
                         Toast.makeText(getContext(), InvalidLogin, Toast.LENGTH_SHORT).show();
                     }

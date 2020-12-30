@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">GetJob</string>
-<<<<<<< HEAD
     <string name="text_1">שלום, נעים להכיר אותך!</string>
     <string name="text_2">התחל להתנסות בחוויה חדשה</string>
     <string name="text_3">יצירת פרופיל משתמש</string>
@@ -26,7 +25,6 @@
     <string name="InvalidAge">גיל לא תקין</string>
     <string name="InvalidPhone">מספר טלפון לא תקין</string>
     <string name="InvalidLogin">מייל או סיסמה לא נכונים</string>
-=======
     <string name="try_description">Lorem Ipsum is simply dummy</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -67,5 +65,4 @@
     <string name="location">Location</string>
     <string name="date">Date</string>
 
->>>>>>> origin/PullWithFilters
 </resources>

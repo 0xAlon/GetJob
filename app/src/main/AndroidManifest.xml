@@ -24,6 +24,9 @@
             android:name=".JobListActivity"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name=".Jobs_Pull"
+            android:screenOrientation="portrait" />
 
     </application>
 

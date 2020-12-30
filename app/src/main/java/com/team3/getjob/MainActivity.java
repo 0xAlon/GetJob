@@ -52,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
                                     //Intent intent = new Intent(this, EmployerProfile.class);
                                     //startActivity(intent);
                                 } else {
-                                    /*Intent intent = new Intent(this, JobListActivity.class);
-                                    startActivity(intent);*/
+                                    Intent intent = new Intent(this, Jobs_Pull.class);
+                                    startActivity(intent);
                                 }
 
                             }
