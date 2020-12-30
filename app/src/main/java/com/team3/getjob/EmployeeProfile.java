@@ -94,8 +94,7 @@ public class EmployeeProfile extends AppCompatActivity {
                             list.add(String.valueOf(document.getData().get("Email")));
                             list.add(String.valueOf(document.getData().get("PhoneNumber")));
                             list.add(String.valueOf(document.getData().get("Address")));
-                            post_apply.add(String.valueOf(document.getData().get("Jobs")));
-
+                            post_apply=(ArrayList<String>) document.getData().get("Jobs");
                         }
                         user_name.setText(String.valueOf(list.get(0)));
                         email.setText(String.valueOf(list.get(1)));
@@ -124,17 +123,7 @@ public class EmployeeProfile extends AppCompatActivity {
                                 Log.d("check", document.getId() + " => " + document.getData());
                                 Log.d("CHECK", "updateFields: "+post_apply);
 
-
-                               // Log.d(TAG,post_apply.get(0));
-                                /*for (int i = 0 ; i < post_apply.get(0).length(); i++){
-                                    if (post_apply. == document.getId()){
-
-                                    }
-                                }*/
-
-
-                                if(post_apply.get(0).contains(document.getId())){
-
+                                if(post_apply.contains(document.getId())){
                                     //Log.d("test -----> ",document.getId());
                                     //Fill the class with data!!!!!
                                     job_model jobs = document.toObject(job_model.class);

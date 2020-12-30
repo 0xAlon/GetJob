@@ -12,7 +12,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 //        Intent intent = new Intent(this, EmployerProfile.class);
 //        startActivity(intent);
-        Intent intent = new Intent(this, EmployeeProfile.class);
+//        Intent intent = new Intent(this, EmployeeProfile.class);
+//        startActivity(intent);
+        Intent intent = new Intent(this, EditProfile.class);
         startActivity(intent);
     }
 

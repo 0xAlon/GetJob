@@ -64,7 +64,7 @@ public class JobAction extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(JobAction.this, EmployerProfile.class);
+                Intent intent = new Intent(JobAction.this, MainActivity.class);
                 startActivity(intent);
             }
         });
@@ -115,7 +115,7 @@ public class JobAction extends AppCompatActivity {
                             @Override
                             public void onSuccess(Void aVoid) {
                                 Log.d("TAG", "DocumentSnapshot successfully updated!");
-                                Intent intent = new Intent(JobAction.this,EmployerProfile.class);
+                                Intent intent = new Intent(JobAction.this,MainActivity.class);
                                 startActivity(intent);
                             }
                         })
@@ -139,7 +139,7 @@ public class JobAction extends AppCompatActivity {
                             @Override
                             public void onSuccess(Void aVoid) {
                                 Log.d("TAG", "DocumentSnapshot successfully deleted!");
-                                Intent intent = new Intent(JobAction.this,EmployerProfile.class);
+                                Intent intent = new Intent(JobAction.this,MainActivity.class);
                                 startActivity(intent);
                             }
                         })

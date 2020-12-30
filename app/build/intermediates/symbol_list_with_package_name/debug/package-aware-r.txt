@@ -1198,6 +1198,7 @@ dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
+dimen app_bar_height
 dimen appcompat_dialog_background_inset
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
@@ -1258,6 +1259,7 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -1455,6 +1457,7 @@ dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
 dimen test_mtrl_calendar_day_cornerSize
+dimen text_margin
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1700,11 +1703,14 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_settings
 id action_text
 id actions
 id activity_chooser_view_content
 id add
 id addjob
+id address
+id address_field
 id adjust_height
 id adjust_width
 id age
@@ -1769,6 +1775,7 @@ id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
 id delete_post
+id delete_user
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -1794,6 +1801,7 @@ id easeInOut
 id easeOut
 id edit_query
 id email
+id email_field
 id end
 id enterAlways
 id enterAlwaysCollapsed
@@ -1827,6 +1835,7 @@ id icon
 id icon_group
 id icon_only
 id id
+id id_field
 id ifRoom
 id ignore
 id ignoreRequest
@@ -1896,6 +1905,8 @@ id mtrl_picker_text_input_range_end
 id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
+id name
+id name_field
 id navigation_header_container
 id never
 id noScroll
@@ -1905,6 +1916,8 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id off
+id old_password
+id old_password_field
 id on
 id outline
 id packed
@@ -1913,6 +1926,8 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id password
+id password_field
 id password_toggle
 id path
 id pathRelative
@@ -1937,6 +1952,7 @@ id row_index_key
 id salary
 id salary_field
 id save_edit
+id save_edit_profile
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2115,6 +2131,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_job_window
+layout activity_edit_profile
 layout activity_employee_profile
 layout activity_job_action
 layout activity_jobs__pull
@@ -2189,6 +2206,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu menu_scrolling
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -2219,6 +2237,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string action_settings
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -2259,6 +2278,7 @@ string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string large_text
 string material_slider_range_end
 string material_slider_range_start
 string mtrl_badge_numberless_content_description
@@ -2304,6 +2324,7 @@ string path_password_strike_through
 string project_id
 string search_menu_title
 string status_bar_notification_info_overflow
+string title_activity_scrolling
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
@@ -2718,6 +2739,9 @@ style Theme_Design_Light_BottomSheetDialog
 style Theme_Design_Light_NoActionBar
 style Theme_Design_NoActionBar
 style Theme_GetJob
+style Theme_GetJob_AppBarOverlay
+style Theme_GetJob_NoActionBar
+style Theme_GetJob_PopupOverlay
 style Theme_MaterialComponents
 style Theme_MaterialComponents_BottomSheetDialog
 style Theme_MaterialComponents_Bridge

@@ -123,9 +123,7 @@ public class EmployerProfile extends AppCompatActivity {
             }
         });
     }
-
-
-
+    
 
     @Override
     public void onStart() {
