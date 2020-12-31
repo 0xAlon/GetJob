@@ -13,13 +13,23 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
+import com.google.firebase.firestore.SetOptions;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class AddJobWindow extends AppCompatActivity implements View.OnClickListener {
 
@@ -34,12 +44,18 @@ public class AddJobWindow extends AppCompatActivity implements View.OnClickListe
     TextView job_detail;
     Button confirm_button;
     ImageButton back;
+    private FirebaseAuth mAuth;
 
     @SuppressLint({"WrongViewCast", "RestrictedApi"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_job_window);
+        //test
+        FirebaseApp.initializeApp(this);
+        mAuth = FirebaseAuth.getInstance();
+
+
         job_title = (EditText) findViewById(R.id.jobtitle_field);
         salary = (TextView) findViewById(R.id.salary_field);
         date = (TextView) findViewById(R.id.date_field);
@@ -89,8 +105,9 @@ public class AddJobWindow extends AppCompatActivity implements View.OnClickListe
                         .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                             @Override
                             public void onSuccess(DocumentReference documentReference) {
-                                Log.d("check", "DocumentSnapshot written with ID: " + documentReference.getId());
-                                Intent myIntent = new Intent(v.getContext(), EmployerProfile.class);
+                                Log.d("AddJobWindow", "DocumentSnapshot written with ID: " + documentReference.getId());
+                                addToMyJobs(documentReference.getId());
+                                Intent myIntent = new Intent(v.getContext(), MainActivity.class);
                                 startActivity(myIntent);
                             }
 
@@ -105,7 +122,32 @@ public class AddJobWindow extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    public void addToMyJobs(String postID) {
+        Log.d("addToMyJobs", "get in");
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        //test
+        FirebaseUser currentUser = mAuth.getCurrentUser();
 
+        db.collection("Users")
+                .whereEqualTo("Uid", currentUser.getUid())
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                Log.d("TAG", document.getId() + " => " + document.getData());
 
+                                DocumentReference ref = db.collection("Users").document(document.getId());
+                                ref.update("MyJobs", FieldValue.arrayUnion(postID));
+                            }
+                        } else {
+                            Log.d("TAG", "Error getting documents: ", task.getException());
+                        }
+                    }
+                });
+
+    }
 
 }
+

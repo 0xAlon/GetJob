@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Documents.GetJob.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Documents.GetJob.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/GetJob.iml" filepath="$PROJECT_DIR$/.idea/modules/GetJob.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/GetJob.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/GetJob.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/getJob.GetJob.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/getJob.GetJob.app.iml" />
     </modules>
   </component>
 </project>

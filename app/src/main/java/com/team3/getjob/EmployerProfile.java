@@ -62,10 +62,13 @@ public class EmployerProfile extends BaseActivity {
     TextView user_name;
     TextView email;
     TextView phone_num;
-    TextView id;
+    TextView company_name;
     TextView location;
+    ImageButton back;
+    ImageButton excel_button;
     FirebaseFirestore db;
     ListView mListView;
+    ArrayList<String> my_posts;
 
     public EmployerProfile() {
     }
@@ -93,15 +96,23 @@ public class EmployerProfile extends BaseActivity {
         user_name = (TextView) findViewById(R.id.user_name);
         email = (TextView) findViewById(R.id.email);
         phone_num = (TextView) findViewById(R.id.phone);
-        id = (TextView) findViewById(R.id.company_name);
+        company_name = (TextView) findViewById(R.id.company_name);
         location = (TextView) findViewById(R.id.location);
+        //back
+        back=(ImageButton) findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EmployerProfile.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         mListView = findViewById(R.id.list);
         db = FirebaseFirestore.getInstance();
 
-        List<String> id_list = new ArrayList<String>();
-        ArrayList<job_model> temp_list = new ArrayList<job_model>();
-        Context context = this;
+
 
         //logout button
         logout = (Button) findViewById(R.id.logout);
@@ -113,6 +124,9 @@ public class EmployerProfile extends BaseActivity {
         });
 
         //Data Pull
+        List<String> id_list = new ArrayList<String>();
+        ArrayList<job_model> temp_list = new ArrayList<job_model>();
+        Context context = this;
         DataBasePull(id_list, temp_list, context);
 
         add_job_button = (Button) findViewById(R.id.addjob);
@@ -137,6 +151,15 @@ public class EmployerProfile extends BaseActivity {
 
             }
         });
+
+        //download to excel
+//        excel_button=(ImageButton) findViewById(R.id.excel_button);
+//        excel_button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
     }
 
 
@@ -150,7 +173,7 @@ public class EmployerProfile extends BaseActivity {
     private void updateFields(FirebaseUser currentUser) {
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-
+        my_posts=new ArrayList<String>();
         db.collection("Users").whereEqualTo("Uid", currentUser.getUid())
                 .get()
                 .addOnCompleteListener(task -> {
@@ -161,13 +184,15 @@ public class EmployerProfile extends BaseActivity {
                             list.add(String.valueOf(document.getData().get("Name")));
                             list.add(String.valueOf(document.getData().get("Email")));
                             list.add(String.valueOf(document.getData().get("PhoneNumber")));
-                            list.add(String.valueOf(document.getData().get("Company ")));
-                            list.add(String.valueOf(document.getData().get("Address ")));
+                            list.add(String.valueOf(document.getData().get("Company")));
+                            list.add(String.valueOf(document.getData().get("Address")));
+                            my_posts=(ArrayList<String>) document.getData().get("MyJobs");
                         }
+                        Log.d("CHECK", "my_post: "+my_posts);
                         user_name.setText(String.valueOf(list.get(0)));
                         email.setText(String.valueOf(list.get(1)));
                         phone_num.setText(String.valueOf(list.get(2)));
-                        id.setText(String.valueOf(list.get(3)));
+                        company_name.setText(String.valueOf(list.get(3)));
                         location.setText(String.valueOf(list.get(4)));
 
                     } else {
@@ -191,16 +216,20 @@ public class EmployerProfile extends BaseActivity {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 Log.d("check", document.getId() + " => " + document.getData());
+                                Log.d("CHECK", "DataBasePull: "+my_posts);
 
-                                //Fill the class with data!!!!!
-                                job_model jobs = document.toObject(job_model.class);
-                                id_list.add(document.getId());
-                                //temp_list.add(new job_model(jobs.getTitle(),jobs.getDescription(), jobs.getLocation(), jobs.getPayment(),jobs.getRank(),jobs.getDate(),jobs.getLanguages()));
-                                temp_list.add(new job_model(jobs.getTitle(), jobs.getDescription(), jobs.getLocation(), jobs.getPayment(), jobs.getRank(), jobs.isAgeAdult(), jobs.getDate(), jobs.getLanguages(), jobs.getUsers()));
-                                jobs_adapter adapter = new jobs_adapter(context, temp_list);
+                                if(my_posts.contains(document.getId())){
+                                    //Log.d("test -----> ",document.getId());
+                                    //Fill the class with data!!!!!
+                                    job_model jobs = document.toObject(job_model.class);
+                                    id_list.add(document.getId());
+                                    //temp_list.add(new job_model(jobs.getTitle(),jobs.getDescription(), jobs.getLocation(), jobs.getPayment(),jobs.getRank(),jobs.getDate(),jobs.getLanguages()));
+                                    temp_list.add(new job_model(jobs.getTitle(),jobs.getDescription(), jobs.getLocation(), jobs.getPayment(),jobs.getRank() ,jobs.isAgeAdult(),jobs.getDate(),jobs.getLanguages(), jobs.getUsers()));
+                                    jobs_adapter adapter = new jobs_adapter(context, temp_list);
 
-                                //Set data to list view!!!!
-                                mListView.setAdapter(adapter);
+                                    //Set data to list view!!!!
+                                    mListView.setAdapter(adapter);
+                                }
                             }
                         } else {
                             Log.d("check", "Error getting documents: ", task.getException());
@@ -216,50 +245,5 @@ public class EmployerProfile extends BaseActivity {
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
-
-//    public void DataToExcel()
-//    {
-//        if (ActivityCompat.checkSelfPermission(context, Manifest.permission.WRITE_EXTERNAL_STORAGE)
-//                != PackageManager.PERMISSION_GRANTED) {
-//
-//            ActivityCompat.requestPermissions((Activity) context,
-//                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
-//
-//            return;
-//        }
-//        Workbook workbook = new XSSFWorkbook();
-//        Sheet sheet = workbook.createSheet("Users"); //Creating a sheet
-//
-//        for(int  i=0; i<userProfilesWithFilter.size(); i++){
-//
-//            Row row = sheet.createRow(i);
-//            row.createCell(CELL_INDEX_0).setCellValue(VALUE_YOU_WANT_TO_KEEP_ON_1ST_COLUMN);
-//            row.createCell(CELL_INDEX_1).setCellValue(VALUE_YOU_WANT_TO_KEEP_ON_2ND_COLUMN);
-//        }
-//
-//        String fileName = "FileName.xlsx"; //Name of the file
-//
-//        String extStorageDirectory = Environment.getExternalStorageDirectory()
-//                .toString();
-//        File folder = new File(extStorageDirectory, "FolderName");// Name of the folder you want to keep your file in the local storage.
-//        folder.mkdir(); //creating the folder
-//        File file = new File(folder, fileName);
-//        try {
-//            file.createNewFile(); // creating the file inside the folder
-//        } catch (IOException e1) {
-//            e1.printStackTrace();
-//        }
-//
-//        try {
-//            FileOutputStream fileOut = new FileOutputStream(file); //Opening the file
-//            workbook.write(fileOut); //Writing all your row column inside the file
-//            fileOut.close(); //closing the file and done
-//
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
 
 }

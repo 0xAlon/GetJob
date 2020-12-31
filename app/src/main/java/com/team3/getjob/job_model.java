@@ -10,6 +10,7 @@ public class job_model {
     private String location;
     private String payment;
     private String rank;
+    private String Uid;
     private boolean ageAdult;
     private Date date;
     private ArrayList<String> languages;
