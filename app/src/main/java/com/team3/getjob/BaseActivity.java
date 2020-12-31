@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.widget.FrameLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
@@ -28,6 +29,8 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
     private String userType;
     MenuItem name;
     MenuItem type;
+    MenuItem logout;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +46,7 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
         Menu menu = navigationView.getMenu();
         name = menu.findItem(R.id.name);
         type = menu.findItem(R.id.type);
+        logout = menu.findItem(R.id.logout);
 
         initUserName();
         initUserType();
@@ -57,7 +61,7 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
         FirebaseUser currentUser = mAuth.getCurrentUser();
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-        if (currentUser != null){
+        if (currentUser != null) {
             db.collection("Users").whereEqualTo("Uid", currentUser.getUid())
                     .get()
                     .addOnCompleteListener(task -> {
@@ -72,8 +76,7 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
                         }
                     });
 
-        }
-        else{
+        } else {
             name.setTitle("Error getting Name");
         }
     }
@@ -87,36 +90,35 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
         FirebaseUser currentUser = mAuth.getCurrentUser();
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-        if (currentUser != null){
+        if (currentUser != null) {
             db.collection("Users").whereEqualTo("Uid", currentUser.getUid())
                     .get()
                     .addOnCompleteListener(task -> {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
-                                    switch (String.valueOf(document.getData().get("UserType"))){
-                                        case "1":
-                                            type.setTitle("נער");
-                                            userType = "1";
-                                            break;
-                                        case "2":
-                                            type.setTitle("מחפש עבודה");
-                                            userType = "2";
-                                            break;
-                                        case "3":
-                                            type.setTitle("מגייס");
-                                            userType = "3";
-                                            break;
-                                        default:
-                                            break;
-                                    }
+                                switch (String.valueOf(document.getData().get("UserType"))) {
+                                    case "1":
+                                        type.setTitle("נער");
+                                        userType = "1";
+                                        break;
+                                    case "2":
+                                        type.setTitle("מחפש עבודה");
+                                        userType = "2";
+                                        break;
+                                    case "3":
+                                        type.setTitle("מגייס");
+                                        userType = "3";
+                                        break;
+                                    default:
+                                        break;
+                                }
                             }
                         } else {
                             Log.d(TAG, "Error getting documents: ", task.getException());
                         }
                     });
 
-        }
-        else{
+        } else {
             name.setTitle("Error getting Name");
         }
     }
@@ -127,11 +129,10 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         if (id == R.id.profile) {
-            if (userType.equals("1") || userType.equals("2")){
+            if (userType.equals("1") || userType.equals("2")) {
                 Intent intent = new Intent(this, EmployeeProfile.class);
                 startActivity(intent);
-            }
-            else{
+            } else {
                 Intent intent = new Intent(this, EmployerProfile.class);
                 startActivity(intent);
             }
@@ -144,15 +145,28 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
             Intent intent = new Intent(this, About.class);
             startActivity(intent);
 
-        } else if (id == R.id.edit) {
+        } else if (id == R.id.logout) {
+            SingOut();
 
-        } else if (id == R.id.git){
+        } else if (id == R.id.edit) {
+            Intent intent = new Intent(this, EditProfile.class);
+            startActivity(intent);
+
+        } else if (id == R.id.git) {
             String url = "https://github.com/0xAlon/GetJob";
             Intent browserIntent =
                     new Intent(Intent.ACTION_VIEW, Uri.parse(url));
             startActivity(browserIntent);
         }
-            //drawer.closeDrawer(GravityCompat.START);
+        //drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void SingOut() {
+        FirebaseAuth.getInstance().signOut();
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
     }
 }

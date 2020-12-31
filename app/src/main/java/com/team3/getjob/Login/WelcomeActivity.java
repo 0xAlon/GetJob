@@ -5,27 +5,24 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.team3.getjob.BaseActivity;
 import com.team3.getjob.R;
 
-public class WelcomeActivity extends Fragment implements View.OnClickListener{
+public class WelcomeActivity extends Fragment implements View.OnClickListener {
 
-    private FirebaseAuth mAuth;
+    public FirebaseAuth mAuth;
     private FragmentManager fragmentManager;
     private static final String TAG = "LoginFragment";
     private View binding;
 
     @Override
-    public View onCreateView (LayoutInflater inflater,
-                              ViewGroup container,
-                              Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater,
+                             ViewGroup container,
+                             Bundle savedInstanceState) {
         binding = inflater.inflate(R.layout.fragment_welcome, container, false);
         View view = binding.getRootView();
 

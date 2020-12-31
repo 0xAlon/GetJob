@@ -46,4 +46,26 @@
         </menu>
     </item>
 
+    <group android:checkableBehavior="single">
+        <item
+            android:title=""
+            android:enabled="false"
+            android:layout_gravity="left">
+        </item>
+        <item
+            android:title=""
+            android:enabled="false"
+            android:layout_gravity="left">
+        </item>
+        <item
+            android:title=""
+            android:enabled="false"
+            android:layout_gravity="left">
+        </item>
+        <item
+            android:id="@+id/logout"
+            android:title="התנתק" />
+
+    </group>
+
 </menu>
