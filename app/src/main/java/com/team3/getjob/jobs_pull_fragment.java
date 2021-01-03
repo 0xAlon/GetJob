@@ -1,6 +1,5 @@
 package com.team3.getjob;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -15,6 +14,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -22,11 +22,8 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -42,16 +39,17 @@ public class jobs_pull_fragment extends Fragment {
     TextView payment;
     Button apply;
 
-   //Setup
+    //Setup
     private static final String ARG_PARAM1 = "PostId";
     private static final String ARG_PARAM2 = "UserId";
     private String mParam1;//PostId after OnCREATE
     private String mParam3;//userId
     private job_model mParam2;
+    private FragmentManager fragmentManager;
 
 
     public jobs_pull_fragment() {
-        // Required empty public constructor
+        this.fragmentManager = fragmentManager;
     }
 
 
@@ -85,10 +83,10 @@ public class jobs_pull_fragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_jobs_pull_fragment, container, false);
         view = view.getRootView();
 
-        TextView title =(TextView)view.findViewById(R.id.title_full);
-        TextView description =(TextView)view.findViewById(R.id.description_Full);
-        TextView location =(TextView)view.findViewById(R.id.location_Full);
-        TextView payment =(TextView)view.findViewById(R.id.payment_Full);
+        TextView title = (TextView) view.findViewById(R.id.title_full);
+        TextView description = (TextView) view.findViewById(R.id.description_Full);
+        TextView location = (TextView) view.findViewById(R.id.location_Full);
+        TextView payment = (TextView) view.findViewById(R.id.payment_Full);
 
         //DATABASE REF
         db = FirebaseFirestore.getInstance();
@@ -97,8 +95,18 @@ public class jobs_pull_fragment extends Fragment {
         FillPostData(title, description, location, payment);
 
 
+        View clickView = view.findViewById(R.id.nav);
+        clickView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DrawerLayout drawer = getActivity().findViewById(R.id.drawer_layout);
+                drawer.openDrawer(Gravity.LEFT);
+            }
+        });
+
+
         //Apply add post id to user id
-        Button apply = (Button)view.findViewById(R.id.apply);
+        Button apply = (Button) view.findViewById(R.id.apply);
         apply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -130,8 +138,6 @@ public class jobs_pull_fragment extends Fragment {
                             }
                         });
 
-
-
                 //Back to filter
                 Intent intent = new Intent(getActivity(), Jobs_Pull.class);
                 startActivity(intent);
@@ -160,9 +166,9 @@ public class jobs_pull_fragment extends Fragment {
                         location.setText(jobs_post.getLocation());
                         payment.setText(jobs_post.getPayment());
 
-                        Log.d("CHECK","Title nEW" + title.getText());
+                        Log.d("CHECK", "Title nEW" + title.getText());
                     } else {
-                        Log.d("CHECK" ,"No such document");
+                        Log.d("CHECK", "No such document");
                     }
                 } else {
                     Log.d("CHECK", "get failed with ", task.getException());

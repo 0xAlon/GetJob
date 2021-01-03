@@ -2,7 +2,9 @@ package com.team3.getjob.Login;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
 import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,9 +13,11 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
@@ -22,6 +26,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.team3.getjob.Jobs_Pull;
 import com.team3.getjob.R;
+import com.team3.getjob.Utilities.Validation;
 
 public class LoginFragment extends Fragment implements View.OnClickListener {
 
@@ -58,6 +63,22 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
 
         password = (TextView) view.findViewById(R.id.password_field);
         email = (TextView) view.findViewById(R.id.email_field);
+
+        email = (TextView) view.findViewById(R.id.email_field);
+        email.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {
+                if (!Validation.isEmailValid(email.getText().toString())) {
+                    email.setError(getString(R.string.InvalidEmail));
+                }
+            }
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+        });
+
         return view;
     }
 
