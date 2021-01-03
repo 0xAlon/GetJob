@@ -10,25 +10,10 @@
     >
 
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="193dp"
-        android:layout_height="88dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/Rank_Filter"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-         />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="310dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="180dp"
         android:orientation="vertical">
 
         <CheckBox
@@ -37,7 +22,7 @@
             android:layout_height="53dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:text="@string/average_score_3"
+            android:text="דירוג - 3"
             android:textAlignment="center"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -52,7 +37,7 @@
             android:layout_height="53dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:text="@string/average_score_4"
+            android:text="דירוג - 4"
             android:textAlignment="center"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -62,16 +47,13 @@
             app:layout_constraintVertical_bias="0.656" />
 
 
-
-
-
         <CheckBox
             android:id="@+id/checkBox9"
             android:layout_width="283dp"
             android:layout_height="53dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:text="@string/average_score_5"
+            android:text="דירוג - 5"
             android:textAlignment="center"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -82,7 +64,6 @@
 
 
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -2069,7 +2069,6 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView
 id textView11
 id textView13
 id textView2
@@ -2365,6 +2364,7 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string filter
 string filter_by_age
+string filter_page
 string filters
 string firebase_database_url
 string gcm_defaultSenderId
@@ -2376,7 +2376,6 @@ string hebrew
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string high
-string i_am_under_18
 string i_m_under_18
 string icon_content_description
 string id

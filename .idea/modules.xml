@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/GetJob.iml" filepath="$PROJECT_DIR$/.idea/modules/GetJob.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/GetJob.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/GetJob.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/The-sufferers.GetJob.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/The-sufferers.GetJob.app.iml" />
     </modules>
   </component>
 </project>

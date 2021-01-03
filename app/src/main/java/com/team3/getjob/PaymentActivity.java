@@ -44,31 +44,18 @@ public class PaymentActivity extends AppCompatActivity {
                 if(low.getText().toString().isEmpty() || high.getText().toString().isEmpty()){
                     Toast.makeText(PaymentActivity.this,"Empty",Toast.LENGTH_LONG).show();
                 }else{
-                    String lowF=low.getText().toString();
-                    String highF=high.getText().toString();
-                    /*boolean x=CheckInput(lowF);
-                    boolean y=CheckInput(highF);*/
-                    /*if (x && y){*/
+                    String lowF = low.getText().toString();
+                    String highF = high.getText().toString();
                     Filter_model.Max_payment = highF;
                     Filter_model.Min_payment = lowF;
 
                     Intent intent_Apply = new Intent(PaymentActivity.this, Filter.class);
                     startActivity(intent_Apply);
-                    /*}*/
-
 
                 }
             }
         });
-        //---------------------------------------------------------------------------
-
-
-        //Add button 2 X
 
     }
 
-
-    /*boolean CheckInput(String str){
-        return str.matches("[0-9]+") && str.length() > 2;
-    }*/
 }

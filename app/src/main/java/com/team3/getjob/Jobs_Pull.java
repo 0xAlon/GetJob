@@ -85,6 +85,7 @@ public class Jobs_Pull extends BaseActivity {
             ArrayList<String> temp_ranks = Filter_model.s_ranks;
             String MaxVAL = Filter_model.Max_payment;
             String MinVal = Filter_model.Min_payment;
+            Log.d("CheckPay", MaxVAL);
             boolean ageVal=Filter_model.ageAdult;
             //Data Pull WITH FILTERS
             DataBasePull(id_list, temp_list, context, temp_lang, temp_ranks, MaxVAL, MinVal,ageVal);
