@@ -18,6 +18,7 @@
         <item>@font/poppins</item>
         <item>@font/poppins_bold</item>
     </array>
+<<<<<<< HEAD
     <string-array name="rank_values">
         <item>1</item>
         <item>2</item>
@@ -26,6 +27,8 @@
         <item>5</item>
 
     </string-array>
+=======
+>>>>>>> FinalArtiom
     <attr format="reference" name="animate_relativeTo"/>
     <attr format="reference" name="appBarLayoutStyle"/>
     <attr format="enum" name="arcMode">
@@ -1070,7 +1073,10 @@
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
     <string name="filter">Filter</string>
     <string name="filter_by_age">Age</string>
+<<<<<<< HEAD
     <string name="filter_page">סינון</string>
+=======
+>>>>>>> FinalArtiom
     <string name="filters">Filters</string>
     <string name="firebase_database_url" translatable="false">https://getjob-fee75.firebaseio.com</string>
     <string name="gcm_defaultSenderId" translatable="false">724156354427</string>
@@ -1082,7 +1088,12 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string name="high">high</string>
+<<<<<<< HEAD
     <string name="i_m_under_18">עבודות לנוער</string>
+=======
+    <string name="i_am_under_18">i am under 18</string>
+    <string name="i_m_under_18">I\'m under 18</string>
+>>>>>>> FinalArtiom
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
     <string name="id">מספר תעודת זהות</string>
     <string name="item_view_role_description">Tab</string>
@@ -3775,6 +3786,13 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" ns2:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+<<<<<<< HEAD
+=======
+
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="colorControlActivated">@color/light_blue</item>
+        <item name="colorControlHighlight">@color/light_blue</item>
+>>>>>>> FinalArtiom
     </style>
     <style name="Theme.GetJob.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="Theme.GetJob.NoActionBar">
@@ -3891,6 +3909,7 @@
     <style name="ThemeOverlay.AppCompat.Dialog" parent="Base.ThemeOverlay.AppCompat.Dialog"/>
     <style name="ThemeOverlay.AppCompat.Dialog.Alert" parent="Base.ThemeOverlay.AppCompat.Dialog.Alert"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
+<<<<<<< HEAD
     <style name="ThemeOverlay.AppCompat.navTheme">
 
         <!-- Color of text and icon when SELECTED -->
@@ -3900,6 +3919,8 @@
         <item name="colorControlHighlight">#71C6FF</item>
 
     </style>
+=======
+>>>>>>> FinalArtiom
     <style name="ThemeOverlay.Design.TextInputEditText" parent=""/>
     <style name="ThemeOverlay.MaterialComponents" parent="ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.MaterialComponents.ActionBar" parent="ThemeOverlay.AppCompat.ActionBar"/>
@@ -4943,7 +4964,10 @@
     </style>
     <style name="text_field">
         <item name="android:layout_width">fill_parent</item>
+<<<<<<< HEAD
         <item name="backgroundTint">@color/light_blue</item>
+=======
+>>>>>>> FinalArtiom
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:textColor">@color/black</item>
@@ -4951,6 +4975,7 @@
         <item name="android:ems">10</item>
         <item name="android:textSize">13sp</item>
         <item name="colorControlNormal">#c5c5c5</item>
+<<<<<<< HEAD
         <item name="android:textCursorDrawable">@drawable/cursor</item>
         <item name="colorControlActivated">@color/light_blue</item>
         <item name="colorControlHighlight">@color/light_blue</item>
@@ -4962,6 +4987,11 @@
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">16sp</item>
     </style>
+=======
+        <item name="colorControlActivated">@color/light_blue</item>
+        <item name="colorControlHighlight">@color/light_blue</item>
+    </style>
+>>>>>>> FinalArtiom
     <declare-styleable name="ActionBar">
         <!-- The type of navigation to use. -->
         <attr name="navigationMode">

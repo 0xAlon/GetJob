@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -33,6 +34,7 @@ public class EmployeeProfile extends AppCompatActivity {
     TextView phone_num;
     TextView location;
     ListView mListView;
+    ImageButton back;
     FirebaseFirestore db;
     ArrayList<String> post_apply;
 
@@ -60,6 +62,16 @@ public class EmployeeProfile extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 SingOut();
+            }
+        });
+
+        //back
+        back=(ImageButton) findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EmployeeProfile.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }

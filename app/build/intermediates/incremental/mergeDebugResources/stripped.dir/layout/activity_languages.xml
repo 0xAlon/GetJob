@@ -7,12 +7,53 @@
     android:background="@drawable/background"
     tools:context=".LanguagesActivity">
 
+<<<<<<< HEAD
+=======
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="324dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="80dp"
+
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="180dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="331dp"
+            android:layout_height="56dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+
+            android:text="@string/languages_filter"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.425"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023" />
+    </LinearLayout>
+
+>>>>>>> FinalArtiom
 
     <Button
         android:id="@+id/button_LAN_V"
         android:layout_width="70dp"
         android:layout_height="70dp"
+<<<<<<< HEAD
         android:layout_marginStart="52dp"
+=======
+        android:layout_marginStart="56dp"
+>>>>>>> FinalArtiom
         android:backgroundTint="#F7FBFD"
         android:fontFamily="sans-serif-light"
         app:icon="@drawable/icons8_checkmark"
@@ -22,7 +63,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+<<<<<<< HEAD
         app:layout_constraintVertical_bias="0.693" />
+=======
+        app:layout_constraintVertical_bias="0.652" />
+>>>>>>> FinalArtiom
 
     <Button
         android:id="@+id/button2"
@@ -34,17 +79,30 @@
         app:iconTint="@color/light_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
         app:layout_constraintHorizontal_bias="0.753"
         app:layout_constraintStart_toEndOf="@+id/button_LAN_V"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
         app:layout_constraintVertical_bias="0.693" />
+=======
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toEndOf="@+id/button_LAN_V"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.652" />
+>>>>>>> FinalArtiom
 
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="303dp"
+<<<<<<< HEAD
         android:layout_height="wrap_content"
         android:layout_marginTop="376dp"
         android:orientation="vertical"
+=======
+        android:layout_height="338dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+>>>>>>> FinalArtiom
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -56,10 +114,16 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
+<<<<<<< HEAD
             android:text="עברית"
             android:textAlignment="center"
             android:textSize="22sp"
             android:textStyle="bold"
+=======
+            android:text="@string/hebrew"
+            android:textAlignment="center"
+            android:textSize="24sp"
+>>>>>>> FinalArtiom
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -72,10 +136,16 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
+<<<<<<< HEAD
             android:text="אנגלית"
             android:textAlignment="center"
             android:textSize="22sp"
             android:textStyle="bold"
+=======
+            android:text="@string/english"
+            android:textAlignment="center"
+            android:textSize="24sp"
+>>>>>>> FinalArtiom
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -88,10 +158,16 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
+<<<<<<< HEAD
             android:text="רוסית"
             android:textAlignment="center"
             android:textSize="22sp"
             android:textStyle="bold"
+=======
+            android:text="@string/russian"
+            android:textAlignment="center"
+            android:textSize="24sp"
+>>>>>>> FinalArtiom
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -99,6 +175,7 @@
             app:layout_constraintVertical_bias="0.532" />
     </LinearLayout>
 
+<<<<<<< HEAD
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="198dp"
@@ -111,5 +188,7 @@
         app:layout_constraintVertical_bias="0.707"
         app:srcCompat="@drawable/languages" />
 
+=======
+>>>>>>> FinalArtiom
 
 </androidx.constraintlayout.widget.ConstraintLayout>

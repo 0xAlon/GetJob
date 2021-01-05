@@ -1,10 +1,15 @@
 com/team3/getjob/databinding/JobRowBinding.java
  com.team3.getjob.databinding.JobRowBinding
+<<<<<<< HEAD
 com/team3/getjob/AddJobWindow.java
  com.team3.getjob.AddJobWindow
  com.team3.getjob.AddJobWindow$1
  com.team3.getjob.AddJobWindow$2
  com.team3.getjob.AddJobWindow$3
+=======
+com/team3/getjob/job_model.java
+ com.team3.getjob.job_model
+>>>>>>> FinalArtiom
 com/team3/getjob/databinding/JobRowProfileBinding.java
  com.team3.getjob.databinding.JobRowProfileBinding
 com/team3/getjob/rank_filter.java
@@ -46,10 +51,15 @@ com/team3/getjob/JobAction.java
  com.team3.getjob.JobAction$4
  com.team3.getjob.JobAction$4$1
  com.team3.getjob.JobAction$4$2
+<<<<<<< HEAD
 com/team3/getjob/EmployeeProfile.java
  com.team3.getjob.EmployeeProfile
  com.team3.getjob.EmployeeProfile$1
  com.team3.getjob.EmployeeProfile$2
+=======
+com/team3/getjob/Filter_model.java
+ com.team3.getjob.Filter_model
+>>>>>>> FinalArtiom
 com/team3/getjob/databinding/EmployerProfileBinding.java
  com.team3.getjob.databinding.EmployerProfileBinding
 com/team3/getjob/databinding/ActivityRankFilterBinding.java
@@ -78,8 +88,11 @@ com/team3/getjob/Utilities/Validation.java
  com.team3.getjob.Utilities.Validation
 com/team3/getjob/databinding/ActivityLocationBinding.java
  com.team3.getjob.databinding.ActivityLocationBinding
+<<<<<<< HEAD
 com/team3/getjob/databinding/ActivityAgeBinding.java
  com.team3.getjob.databinding.ActivityAgeBinding
+=======
+>>>>>>> FinalArtiom
 com/team3/getjob/About.java
  com.team3.getjob.About
  com.team3.getjob.About$1
@@ -104,18 +117,28 @@ com/team3/getjob/Login/RegisterRecruiter.java
  com.team3.getjob.Login.RegisterRecruiter$5
  com.team3.getjob.Login.RegisterRecruiter$6
  com.team3.getjob.Login.RegisterRecruiter$7
+<<<<<<< HEAD
 com/team3/getjob/BaseActivity.java
  com.team3.getjob.BaseActivity
+=======
+com/team3/getjob/MainActivity.java
+ com.team3.getjob.MainActivity
+>>>>>>> FinalArtiom
 com/team3/getjob/databinding/ActivityAboutBinding.java
  com.team3.getjob.databinding.ActivityAboutBinding
 com/team3/getjob/jobs_adapter.java
  com.team3.getjob.jobs_adapter
+<<<<<<< HEAD
 com/team3/getjob/EmployerProfile.java
  com.team3.getjob.EmployerProfile
  com.team3.getjob.EmployerProfile$1
  com.team3.getjob.EmployerProfile$2
  com.team3.getjob.EmployerProfile$3
  com.team3.getjob.EmployerProfile$4
+=======
+com/team3/getjob/databinding/ActivityJobActionBinding.java
+ com.team3.getjob.databinding.ActivityJobActionBinding
+>>>>>>> FinalArtiom
 com/team3/getjob/Location.java
  com.team3.getjob.Location
  com.team3.getjob.Location$1
@@ -151,6 +174,7 @@ com/team3/getjob/Login/RegisterUser.java
  com.team3.getjob.Login.RegisterUser$5
  com.team3.getjob.Login.RegisterUser$6
  com.team3.getjob.Login.RegisterUser$7
+<<<<<<< HEAD
 com/team3/getjob/MainActivity.java
  com.team3.getjob.MainActivity
 com/team3/getjob/Filter_model.java
@@ -159,3 +183,25 @@ com/team3/getjob/databinding/ActivityJobActionBinding.java
  com.team3.getjob.databinding.ActivityJobActionBinding
 com/team3/getjob/job_model.java
  com.team3.getjob.job_model
+=======
+com/team3/getjob/EmployeeProfile.java
+ com.team3.getjob.EmployeeProfile
+ com.team3.getjob.EmployeeProfile$1
+ com.team3.getjob.EmployeeProfile$2
+ com.team3.getjob.EmployeeProfile$3
+com/team3/getjob/AddJobWindow.java
+ com.team3.getjob.AddJobWindow
+ com.team3.getjob.AddJobWindow$1
+ com.team3.getjob.AddJobWindow$2
+ com.team3.getjob.AddJobWindow$3
+ com.team3.getjob.AddJobWindow$4
+com/team3/getjob/EmployerProfile.java
+ com.team3.getjob.EmployerProfile
+ com.team3.getjob.EmployerProfile$1
+ com.team3.getjob.EmployerProfile$2
+ com.team3.getjob.EmployerProfile$3
+ com.team3.getjob.EmployerProfile$4
+ com.team3.getjob.EmployerProfile$5
+com/team3/getjob/BaseActivity.java
+ com.team3.getjob.BaseActivity
+>>>>>>> FinalArtiom
