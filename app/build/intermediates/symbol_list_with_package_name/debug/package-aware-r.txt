@@ -2069,10 +2069,12 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
 id textView11
 id textView13
 id textView2
 id textView3
+id textView4
 id textView5
 id textView7
 id textView9
