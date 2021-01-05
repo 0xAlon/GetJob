@@ -51,7 +51,7 @@
             android:name="com.team3.getjob.Filter"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.team3.getjob.Location"
+            android:name="com.team3.getjob.Age"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.team3.getjob.PaymentActivity"

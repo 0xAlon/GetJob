@@ -197,12 +197,12 @@ ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\Android
 		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:37:13-49
 	android:name
 		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:36:13-35
-activity#com.team3.getjob.Location
+activity#com.team3.getjob.Age
 ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:39:9-41:52
 	android:screenOrientation
 		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:41:13-49
 	android:name
-		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:40:13-37
+		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:40:13-32
 activity#com.team3.getjob.PaymentActivity
 ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:43:9-45:52
 	android:screenOrientation
