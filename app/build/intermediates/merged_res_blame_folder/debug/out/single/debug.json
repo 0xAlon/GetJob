@@ -36,12 +36,12 @@
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/layout/app_bar_base.xml"
     },
     {
-        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/alon/Documents/GetJob/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
-    },
-    {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/alon/Documents/GetJob/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
     },
     {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/layout_activity_languages.xml.flat",
@@ -170,6 +170,10 @@
     {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/drawable_button_2.xml.flat",
         "source": "/Users/alon/Documents/GetJob/app/src/main/res/drawable/button_2.xml"
+    },
+    {
+        "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/drawable_cursor.xml.flat",
+        "source": "/Users/alon/Documents/GetJob/app/src/main/res/drawable/cursor.xml"
     },
     {
         "merged": "/Users/alon/Documents/GetJob/app/build/intermediates/res/merged/debug/drawable_background.xml.flat",

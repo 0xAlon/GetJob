@@ -22,9 +22,12 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.team3.getjob.Login.ForgotPassword;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.team3.getjob.MainActivity.fragmentManager;
 
 public class Jobs_Pull extends BaseActivity {
 

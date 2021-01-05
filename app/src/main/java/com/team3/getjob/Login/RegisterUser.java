@@ -196,6 +196,7 @@ public class RegisterUser extends Fragment implements View.OnClickListener {
                                     userData.put("Id", Integer.parseInt(id.getText().toString()));
                                     userData.put("Name", String.valueOf(name.getText().toString()));
                                     userData.put("UserType", userType());
+
                                     userData.put("PhoneNumber", Integer.parseInt(phone.getText().toString()));
 
                                     db.collection("Users") // Add a new document with a generated ID
