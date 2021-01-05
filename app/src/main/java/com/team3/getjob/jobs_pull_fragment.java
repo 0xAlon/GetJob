@@ -7,8 +7,11 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -30,7 +33,7 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
  * Use the {@link jobs_pull_fragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class jobs_pull_fragment extends Fragment {
+public class jobs_pull_fragment extends Fragment implements AdapterView.OnItemSelectedListener {
     FirebaseFirestore db;
     ListView mListView;
     TextView title;
@@ -38,6 +41,7 @@ public class jobs_pull_fragment extends Fragment {
     TextView location;
     TextView payment;
     Button apply;
+    Spinner spinnerRanks;
 
     //Setup
     private static final String ARG_PARAM1 = "PostId";
@@ -88,6 +92,15 @@ public class jobs_pull_fragment extends Fragment {
         TextView location = (TextView) view.findViewById(R.id.location_Full);
         TextView payment = (TextView) view.findViewById(R.id.payment_Full);
 
+        //Setup spinner ranks
+        spinnerRanks = view.findViewById(R.id.spinner_ranks);
+        spinnerRanks.setOnItemSelectedListener(this);
+        String[] ranks_val = getResources().getStringArray(R.array.rank_values);
+        ArrayAdapter adapter = new ArrayAdapter(this.getContext(), android.R.layout.simple_spinner_item, ranks_val);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerRanks.setAdapter(adapter);
+
+
         //DATABASE REF
         db = FirebaseFirestore.getInstance();
 
@@ -106,7 +119,7 @@ public class jobs_pull_fragment extends Fragment {
 
 
         //Apply add post id to user id
-        Button apply = (Button) view.findViewById(R.id.apply);
+        Button apply = (Button)view.findViewById(R.id.apply);
         apply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -129,7 +142,7 @@ public class jobs_pull_fragment extends Fragment {
 
                                     //Add userUid to post
                                     DocumentReference docRef = db.collection("Posts").document(mParam1);
-                                    docRef.update("Users", FieldValue.arrayUnion(mParam3));
+                                    docRef.update("users", FieldValue.arrayUnion(mParam3));
                                 }
 
                             } else {
@@ -150,6 +163,7 @@ public class jobs_pull_fragment extends Fragment {
 
     }
 
+    //Data Pull
     private void FillPostData(TextView title, TextView description, TextView location, TextView payment) {
         DocumentReference docRef = db.collection("Posts").document(mParam1); //mParam the postId from activity
         docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
@@ -177,6 +191,28 @@ public class jobs_pull_fragment extends Fragment {
         });
     }
 
-    //DataPull andUpdate
+
+
+    //Spinner Adapter view methods
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
+    {
+        if(parent.getId() == R.id.spinner_ranks)
+        {
+            //find click rank
+            String valueFromSpinner = parent.getItemAtPosition(position).toString();
+
+
+            //Add rank to data
+            DocumentReference postRef = db.collection("Posts").document(mParam1);
+            postRef.update("rank", valueFromSpinner);
+        }
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView)
+    {
+
+    }
 
 }

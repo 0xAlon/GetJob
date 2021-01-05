@@ -38,7 +38,7 @@
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".Location"
+            android:name=".Age"
             android:screenOrientation="portrait" />
 
         <activity

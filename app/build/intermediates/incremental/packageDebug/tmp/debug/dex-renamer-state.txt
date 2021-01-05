@@ -1,10 +1,14 @@
+<<<<<<< HEAD
 #Sun Jan 03 15:48:16 IST 2021
+=======
+#Tue Jan 05 17:50:33 IST 2021
+>>>>>>> Mike_Final
 path.2=classes2.dex
 path.1=classes.dex
 path.0=classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.2=/Users/alon/Documents/GetJob/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
-base.1=/Users/alon/Documents/GetJob/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
-base.0=/Users/alon/Documents/GetJob/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.2=C\:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.1=C\:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
+base.0=C\:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex

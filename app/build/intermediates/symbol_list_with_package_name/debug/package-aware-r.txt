@@ -49,6 +49,7 @@ array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
 array preloaded_fonts
+array rank_values
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -1588,6 +1589,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable funnel
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_back
@@ -1605,6 +1607,7 @@ drawable ic_nav_bar
 drawable icons8_checkmark
 drawable icons8_delete
 drawable icons8_filter_24
+drawable languages
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
 drawable material_ic_edit_black_24dp
@@ -1634,9 +1637,15 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable rank
+drawable salary
+drawable team
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable top_three
+drawable youth
+drawable youth__1_
 font poppins
 font poppins_bold
 id ALT
@@ -1867,6 +1876,12 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
+id imageView2
+id imageView3
+id imageView4
+id imageView5
+id imageView6
 id info
 id invisible
 id italic
@@ -1899,6 +1914,7 @@ id linearLayout
 id linearLayout2
 id linearLayout3
 id linearLayout4
+id linearLayout7
 id list
 id listMode
 id list_item
@@ -2033,6 +2049,7 @@ id snackbar_text
 id snap
 id snapMargins
 id spacer
+id spinner_ranks
 id spline
 id split_action_bar
 id spread
@@ -2075,6 +2092,7 @@ id textView11
 id textView13
 id textView2
 id textView3
+id textView4
 id textView5
 id textView7
 id textView9
@@ -2182,6 +2200,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_about
 layout activity_add_job_window
+layout activity_age
 layout activity_base
 layout activity_edit_profile
 layout activity_employee_profile
@@ -2190,7 +2209,6 @@ layout activity_job_action
 layout activity_job_list
 layout activity_jobs__pull
 layout activity_languages
-layout activity_location
 layout activity_main
 layout activity_payment
 layout activity_rank_filter
@@ -2366,6 +2384,7 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string filter
 string filter_by_age
+string filter_page
 string filters
 string firebase_database_url
 string gcm_defaultSenderId
@@ -2377,7 +2396,6 @@ string hebrew
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string high
-string i_am_under_18
 string i_m_under_18
 string icon_content_description
 string id

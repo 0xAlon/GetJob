@@ -7,6 +7,7 @@
     android:background="@drawable/background"
     tools:context=".LanguagesActivity">
 
+
     <Button
         android:id="@+id/applyChanges"
         android:layout_width="70dp"
@@ -17,58 +18,31 @@
         app:iconTint="#03A9F4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        app:layout_constraintVertical_bias="0.838" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.673" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="36dp"
         android:backgroundTint="@color/white"
         app:icon="@drawable/icons8_delete"
         app:iconGravity="textStart"
         app:iconTint="@color/light_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintHorizontal_bias="0.918"
         app:layout_constraintStart_toEndOf="@+id/applyChanges"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.838" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="324dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="80dp"
-
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="180dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="288dp"
-            android:layout_height="59dp"
-            android:fontFamily="sans-serif-medium"
-            android:gravity="center"
-            android:text="@string/payment_filter"
-            android:textAlignment="center"
-            android:textSize="40sp" />
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.911" />
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="174dp"
         android:layout_height="41dp"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="300dp"
         android:layout_marginTop="80dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -85,7 +59,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:hint="@string/enter_low_border" />
+            android:hint="ערך תחתון"
+            android:textAlignment="center" />
 
     </LinearLayout>
 
@@ -94,7 +69,6 @@
         android:layout_width="174dp"
         android:layout_height="41dp"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="300dp"
         android:layout_marginTop="80dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -111,7 +85,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:hint="@string/enter_high_border" />
+            android:hint="ערך עליון"
+            android:textAlignment="center" />
 
     </LinearLayout>
 
@@ -127,7 +102,18 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.468" />
+        app:layout_constraintVertical_bias="0.307" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="218dp"
+        android:layout_height="185dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:srcCompat="@drawable/salary" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -33,20 +33,37 @@
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/payment_Full"
             app:layout_constraintVertical_bias="0.122" />
+=======
+            app:layout_constraintHorizontal_bias="0.532"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/payment_Full"
+            app:layout_constraintVertical_bias="0.41" />
+>>>>>>> Mike_Final
 
         <TextView
             android:id="@+id/description_Full"
             android:layout_width="337dp"
+<<<<<<< HEAD
             android:layout_height="280dp"
             android:layout_marginTop="64dp"
+=======
+<<<<<<< HEAD
+            android:layout_height="wrap_content"
+=======
+            android:layout_height="280dp"
+>>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
+            android:layout_marginTop="8dp"
+>>>>>>> Mike_Final
             android:lineSpacingExtra="2dp"
             android:text=""
             android:textColor="#282f39"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/location_Full" />
 
@@ -61,11 +78,61 @@
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
+=======
+<<<<<<< HEAD
+            app:layout_constraintHorizontal_bias="0.486"
+=======
+>>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+<<<<<<< HEAD
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:text="תיאור משרה"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location_Full" />
+=======
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="48dp"
+            android:text="תיאור משרה"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/location_Full"
+            app:layout_constraintTop_toBottomOf="@+id/title_full" />
+>>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
+
+        <TextView
+            android:id="@+id/title_full"
+            android:layout_width="260dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="160dp"
+            android:text=""
+            android:textColor="@color/light_blue"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
+=======
+            app:layout_constraintHorizontal_bias="0.754"
+            app:layout_constraintStart_toStartOf="parent"
+>>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
+>>>>>>> Mike_Final
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/location_Full"
             android:layout_width="110dp"
+<<<<<<< HEAD
             android:layout_height="50dp"
             android:layout_marginTop="220dp"
             android:text=""
@@ -77,11 +144,33 @@
             app:layout_constraintHorizontal_bias="0.557"
             app:layout_constraintStart_toEndOf="@+id/title_full"
             app:layout_constraintTop_toTopOf="parent" />
+=======
+            android:layout_height="28dp"
+<<<<<<< HEAD
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+=======
+            android:layout_marginStart="36dp"
+            android:layout_marginBottom="8dp"
+>>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
+            android:text=""
+            android:textColor="#282f39"
+            android:textSize="18sp"
+            android:textStyle="bold"
+<<<<<<< HEAD
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_full" />
+=======
+            app:layout_constraintBottom_toTopOf="@+id/description_Full"
+            app:layout_constraintStart_toStartOf="parent" />
+>>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
+>>>>>>> Mike_Final
 
         <TextView
             android:id="@+id/payment_Full"
             android:layout_width="66dp"
             android:layout_height="23dp"
+<<<<<<< HEAD
             android:layout_marginTop="16dp"
             android:text=""
             android:textAlignment="center"
@@ -92,6 +181,67 @@
             app:layout_constraintHorizontal_bias="0.871"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/description_Full" />
+=======
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#282f39"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/textView4"
+<<<<<<< HEAD
+=======
+            app:layout_constraintHorizontal_bias="0.981"
+            app:layout_constraintStart_toStartOf="parent"
+>>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
+            app:layout_constraintTop_toBottomOf="@+id/description_Full" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+<<<<<<< HEAD
+            android:layout_marginEnd="24dp"
+            android:text="שכר"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description_Full" />
+
+        <Spinner
+            android:id="@+id/spinner_ranks"
+            android:layout_width="64dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="56dp"
+            android:dropDownSelector="@drawable/ic_edit"
+            app:layout_constraintEnd_toStartOf="@+id/location_Full"
+            app:layout_constraintHorizontal_bias="0.169"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/rank"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+=======
+            android:layout_marginEnd="48dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="סכר"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description_Full" />
+>>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
+>>>>>>> Mike_Final
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

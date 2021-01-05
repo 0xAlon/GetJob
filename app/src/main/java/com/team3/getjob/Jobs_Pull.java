@@ -90,6 +90,8 @@ public class Jobs_Pull extends BaseActivity {
             String MinVal = Filter_model.Min_payment;
             boolean ageVal=Filter_model.ageAdult;
             //Data Pull WITH FILTERS
+
+            Log.d("CheckFilter", "Check" + ageVal);
             DataBasePull(id_list, temp_list, context, temp_lang, temp_ranks, MaxVAL, MinVal,ageVal);
         }
         else
