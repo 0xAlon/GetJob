@@ -2209,6 +2209,7 @@ layout activity_job_action
 layout activity_job_list
 layout activity_jobs__pull
 layout activity_languages
+layout activity_location
 layout activity_main
 layout activity_payment
 layout activity_rank_filter
