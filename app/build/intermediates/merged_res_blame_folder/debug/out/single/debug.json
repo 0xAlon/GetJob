@@ -1,6 +1,7 @@
 [
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_jobs__pull.xml.flat",
         "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\activity_jobs__pull.xml"
     },
@@ -11,12 +12,21 @@
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_login.xml.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\fragment_login.xml"
 >>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
+=======
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_languages.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\languages.png"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_login.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\fragment_login.xml"
+>>>>>>> parent of 86765c8... Some changes
     },
     {
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+<<<<<<< HEAD
 <<<<<<< HEAD
         "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_scrolling.xml.flat",
         "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\menu\\menu_scrolling.xml"
@@ -32,20 +42,29 @@
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_image_1.xml.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\ic_image_1.xml"
 >>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
+=======
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_image_1.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\ic_image_1.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_welcome.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\fragment_welcome.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_top_three.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\top_three.png"
+>>>>>>> parent of 86765c8... Some changes
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_edit.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\ic_edit.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\background.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_2.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\button_2.xml"
     },
     {
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+<<<<<<< HEAD
 <<<<<<< HEAD
         "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_job_window.xml.flat",
         "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\activity_add_job_window.xml"
@@ -57,61 +76,75 @@
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_register_recruiter.xml.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\fragment_register_recruiter.xml"
 >>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
+=======
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_youth.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\youth.png"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_register_recruiter.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\fragment_register_recruiter.xml"
+>>>>>>> parent of 86765c8... Some changes
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_filter.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\activity_filter.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins_bold.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\font\\poppins_bold.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_jobs_pull_fragment.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\fragment_jobs_pull_fragment.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icons8_filter_24.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\icons8_filter_24.png"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icons8_delete.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\icons8_delete.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_employer_profile.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\employer_profile.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_job_action.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_job_action.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_employee_profile.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_employee_profile.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_team.png.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\team.png"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_register_user.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\fragment_register_user.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_edit_profile.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\activity_edit_profile.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rank_filter.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_rank_filter.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins_bold.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\font\\poppins_bold.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_languages.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_languages.xml"
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_job_row.xml.flat",
         "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\job_row.xml"
+=======
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_age.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_age.xml"
+>>>>>>> parent of 86765c8... Some changes
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_nav_bar.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\ic_nav_bar.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_employee_profile.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\activity_employee_profile.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rank.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\rank.png"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
 =======
@@ -122,76 +155,81 @@
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
 >>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
+=======
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+>>>>>>> parent of 86765c8... Some changes
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_bar_base.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\app_bar_base.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icons8_checkmark.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\icons8_checkmark.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_edit.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\ic_edit.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\font\\poppins.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_forgot_password.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\fragment_forgot_password.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_delete.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\ic_delete.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_1.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\button_1.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_login.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\fragment_login.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_welcome.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\fragment_welcome.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_job_list.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\activity_job_list.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_bar_base.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\app_bar_base.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rank.png.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\rank.png"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_about.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_about.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_employer_profile.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\employer_profile.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icons8_delete.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\icons8_delete.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_job_action.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\activity_job_action.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_job_row_profile.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\job_row_profile.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_job_list.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_job_list.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_languages.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\activity_languages.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_1.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\button_1.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_base.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_base.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_funnel.png.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\funnel.png"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_4.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\button_4.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\background.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_register_user.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\fragment_register_user.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_jobs_pull_fragment.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\fragment_jobs_pull_fragment.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_4.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\button_4.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_nav_bar.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\ic_nav_bar.xml"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\menu_activity_base_drawer.xml.flat",
         "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\menu\\activity_base_drawer.xml"
@@ -203,81 +241,100 @@
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
 >>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
+=======
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_team.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\team.png"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_age.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\activity_age.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+>>>>>>> parent of 86765c8... Some changes
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icons8_filter_24.png.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\icons8_filter_24.png"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_job_row.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\job_row.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_payment.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\activity_payment.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\font\\poppins.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_excel.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\ic_excel.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\menu_activity_base_drawer.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\menu\\activity_base_drawer.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_salary.png.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\salary.png"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_back.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\ic_back.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_job_row_profile.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\job_row_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_edit_profile.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_edit_profile.xml"
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rank_filter.xml.flat",
         "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\activity_rank_filter.xml"
+=======
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_youth__1_.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\youth__1_.png"
+>>>>>>> parent of 86765c8... Some changes
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_image_1.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\ic_image_1.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_salary.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\salary.png"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
 =======
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_scrolling.xml.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\menu\\menu_scrolling.xml"
 >>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
+=======
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_scrolling.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\menu\\menu_scrolling.xml"
+>>>>>>> parent of 86765c8... Some changes
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_youth.png.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\youth.png"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_jobs__pull.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_jobs__pull.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_back.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\ic_back.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_register_recruiter.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\fragment_register_recruiter.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_delete.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\ic_delete.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_top_three.png.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\top_three.png"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_excel.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\ic_excel.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_3.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\button_3.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_3.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\button_3.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_payment.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_payment.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icons8_checkmark.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\icons8_checkmark.xml"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_about.xml.flat",
         "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\activity_about.xml"
@@ -289,13 +346,21 @@
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_filter.xml.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_filter.xml"
 >>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
+=======
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_funnel.png.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\funnel.png"
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_forgot_password.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\fragment_forgot_password.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_filter.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_filter.xml"
+>>>>>>> parent of 86765c8... Some changes
     },
     {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_base.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\activity_base.xml"
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_job_window.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_add_job_window.xml"
+    },
+    {
+        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     }
 ]
