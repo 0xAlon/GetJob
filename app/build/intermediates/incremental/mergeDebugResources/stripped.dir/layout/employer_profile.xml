@@ -14,10 +14,13 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/back"
+            android:id="@+id/nav"
             style="@style/back_button"
+            android:layout_width="98dp"
+            android:layout_height="75dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_back" />
+            app:srcCompat="@drawable/ic_nav_bar"
+            tools:ignore="MissingConstraints" />
 
     </LinearLayout>
 

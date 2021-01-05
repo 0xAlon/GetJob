@@ -17,6 +17,7 @@ import androidx.fragment.app.Fragment;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.team3.getjob.Jobs_Pull;
 import com.team3.getjob.R;
@@ -196,7 +197,7 @@ public class RegisterUser extends Fragment implements View.OnClickListener {
                                     userData.put("Id", Integer.parseInt(id.getText().toString()));
                                     userData.put("Name", String.valueOf(name.getText().toString()));
                                     userData.put("UserType", userType());
-
+                                    userData.put("Jobs", FieldValue.arrayUnion());
                                     userData.put("PhoneNumber", Integer.parseInt(phone.getText().toString()));
 
                                     db.collection("Users") // Add a new document with a generated ID

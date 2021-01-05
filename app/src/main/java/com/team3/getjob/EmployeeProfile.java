@@ -3,6 +3,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -24,7 +26,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EmployeeProfile extends AppCompatActivity {
+public class EmployeeProfile extends BaseActivity {
 
     private FirebaseAuth mAuth;
     private String TAG="EmployeeProfile";
@@ -41,7 +43,8 @@ public class EmployeeProfile extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_employee_profile);
+        //setContentView(R.layout.activity_employee_profile);
+        View rootView = getLayoutInflater().inflate(R.layout.activity_employee_profile, frameLayout);
 
         FirebaseApp.initializeApp(this);
         mAuth = FirebaseAuth.getInstance();
@@ -65,6 +68,18 @@ public class EmployeeProfile extends AppCompatActivity {
             }
         });
 
+        View clickView = rootView.findViewById(R.id.nav);
+        clickView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+                drawer.openDrawer(Gravity.LEFT);
+
+            }
+        });
+
+/*
+
         //back
         back=(ImageButton) findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
@@ -73,7 +88,7 @@ public class EmployeeProfile extends AppCompatActivity {
                 Intent intent = new Intent(EmployeeProfile.this, MainActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
     }
 
     @Override
@@ -164,18 +179,3 @@ public class EmployeeProfile extends AppCompatActivity {
     }
 
 }
-
-
-//db.collection("Users").whereEqualTo("Uid", currentUser.getUid())
-//                    .get()
-//                    .addOnCompleteListener(task -> {
-//                        if (task.isSuccessful()) {
-//                            for (QueryDocumentSnapshot document : task.getResult()) {
-//                                if (currentUser.getUid().equals(String.valueOf(document.getData().get("Uid")))) {
-//                                    name.setTitle(String.valueOf(document.getData().get("Name")));
-//                                }
-//                            }
-//                        } else {
-//                            Log.d(TAG, "Error getting documents: ", task.getException());
-//                        }
-//                    });

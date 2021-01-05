@@ -8,12 +8,20 @@
     android:background="@drawable/background"
     android:orientation="vertical">
 
+    <ImageButton
+        android:id="@+id/nav"
+        style="@style/back_button"
+        android:layout_width="98dp"
+        android:layout_height="75dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/ic_nav_bar"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="45dp"
         android:text="My account"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"

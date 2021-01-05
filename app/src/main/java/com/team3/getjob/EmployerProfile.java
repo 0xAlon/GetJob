@@ -1,57 +1,49 @@
 package com.team3.getjob;
 
 import android.Manifest;
-import android.app.Activity;
-import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.FieldValue;
+
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
-import com.google.firebase.storage.StorageReference;
+
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+import java.util.Locale;
+
+import jxl.Workbook;
+import jxl.WorkbookSettings;
+import jxl.write.Label;
+import jxl.write.WritableSheet;
+import jxl.write.WritableWorkbook;
 
 public class EmployerProfile extends BaseActivity {
 
@@ -69,6 +61,9 @@ public class EmployerProfile extends BaseActivity {
     FirebaseFirestore db;
     ListView mListView;
     ArrayList<String> my_posts;
+    File directory, sd, file;
+    WritableWorkbook workbook;
+    List<MyInfo> listdata;
 
     public EmployerProfile() {
     }
@@ -91,6 +86,12 @@ public class EmployerProfile extends BaseActivity {
             }
         });*/
 
+        listdata = new ArrayList<>();
+
+        listdata.add(new MyInfo("oshin", "gardening"));
+        listdata.add(new MyInfo("oshin", "Programming"));
+        listdata.add(new MyInfo("oshin", "Swimming "));
+
         FirebaseApp.initializeApp(this);
         mAuth = FirebaseAuth.getInstance();
         user_name = (TextView) findViewById(R.id.user_name);
@@ -98,16 +99,16 @@ public class EmployerProfile extends BaseActivity {
         phone_num = (TextView) findViewById(R.id.phone);
         company_name = (TextView) findViewById(R.id.company_name);
         location = (TextView) findViewById(R.id.location);
-        //back
-        back=(ImageButton) findViewById(R.id.back);
-        back.setOnClickListener(new View.OnClickListener() {
+
+        View clickView = rootView.findViewById(R.id.nav);
+        clickView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(EmployerProfile.this, MainActivity.class);
-                startActivity(intent);
+            public void onClick(View view) {
+                DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+                drawer.openDrawer(Gravity.LEFT);
+
             }
         });
-
 
         mListView = findViewById(R.id.list);
         db = FirebaseFirestore.getInstance();
@@ -153,13 +154,13 @@ public class EmployerProfile extends BaseActivity {
         });
 
         //download to excel
-//        excel_button=(ImageButton) findViewById(R.id.excel_button);
-//        excel_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//            }
-//        });
+        excel_button=(ImageButton) findViewById(R.id.excel_button);
+        excel_button.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               createExcelSheet();
+            }
+        });
     }
 
 
@@ -244,6 +245,86 @@ public class EmployerProfile extends BaseActivity {
         intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
+    }
+
+    private void createExcelSheet() {
+        if(isStoragePermissionGranted()) {
+            String csvFile = "Mytest.xls";
+            sd = Environment.getExternalStorageDirectory();
+            directory = new File(sd.getAbsolutePath());
+            file = new File(directory, csvFile);
+            WorkbookSettings wbSettings = new WorkbookSettings();
+            wbSettings.setLocale(new Locale("en", "EN"));
+            try {
+                workbook = Workbook.createWorkbook(file, wbSettings);
+                createFirstSheet();
+                //closing cursor
+                workbook.write();
+                workbook.close();
+
+                Toast.makeText(this, "File Saved !", Toast.LENGTH_SHORT).show();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }else{
+
+            Toast.makeText(this, "Permission Denied !", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void SaveTheFile(View view) {
+        createExcelSheet();
+    }
+
+    public void createFirstSheet() {
+        try {
+
+            //Excel sheet name. 0 (number)represents first sheet
+            WritableSheet sheet = workbook.createSheet("sheet1", 0);
+            // column and row title
+            sheet.addCell(new Label(0, 0, "NameInitial"));
+            sheet.addCell(new Label(1, 0, "firstName"));
+
+
+            for (int i = 0; i < listdata.size(); i++) {
+                sheet.addCell(new Label(0, i + 1, listdata.get(i).getName()));
+                sheet.addCell(new Label(1, i + 1, listdata.get(i).getHobby()));
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
+
+    public  boolean isStoragePermissionGranted() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                    == PackageManager.PERMISSION_GRANTED) {
+                Log.v(TAG,"Permission is granted");
+                return true;
+            } else {
+
+                Log.v(TAG,"Permission is revoked");
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+                return false;
+            }
+        }
+        else { //permission is automatically granted on sdk<23 upon installation
+            Log.v(TAG,"Permission is granted");
+            return true;
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+            Log.v(TAG,"Permission: "+permissions[0]+ "was "+grantResults[0]);
+            //resume tasks needing this permission
+        }
     }
 
 }
