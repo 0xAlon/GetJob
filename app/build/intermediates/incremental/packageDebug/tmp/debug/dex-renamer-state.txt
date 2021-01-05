@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #Tue Jan 05 18:33:02 IST 2021
+=======
+#Tue Jan 05 13:54:48 IST 2021
+>>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
 path.2=classes2.dex
 path.1=classes.dex
 path.0=classes.dex

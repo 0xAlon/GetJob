@@ -26,26 +26,26 @@ public class LanguagesActivity extends AppCompatActivity {
         englishL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!Filter_model.s_languages.contains("אנגלית"))
+                if(!Filter_model.s_languages.contains("English"))
                 {
-                    Filter_model.s_languages.add("אנגלית");
+                    Filter_model.s_languages.add("English");
                 }
-                else if(Filter_model.s_languages.contains("אנגלית"))
+                else if(Filter_model.s_languages.contains("English"))
                 {
-                    Filter_model.s_languages.remove("אנגלית");
+                    Filter_model.s_languages.remove("English");
                 }
             }
         });
         hebrewL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!Filter_model.s_languages.contains("עברית"))
+                if(!Filter_model.s_languages.contains("Hebrew"))
                 {
-                    Filter_model.s_languages.add("עברית");
+                    Filter_model.s_languages.add("Hebrew");
                 }
-                else if(Filter_model.s_languages.contains("עברית"))
+                else if(Filter_model.s_languages.contains("Hebrew"))
                 {
-                    Filter_model.s_languages.remove("עברית");
+                    Filter_model.s_languages.remove("Hebrew");
                 }
             }
         });
@@ -54,14 +54,14 @@ public class LanguagesActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (russianL.isChecked())
-                    if(!Filter_model.s_languages.contains("רוסית"))
+                    if(!Filter_model.s_languages.contains("Russian"))
                     {
-                        Filter_model.s_languages.add("רוסית");
+                        Filter_model.s_languages.add("Russian");
                     }
 
-                    else if(Filter_model.s_languages.contains("רוסית"))
+                    else if(Filter_model.s_languages.contains("Russian"))
                     {
-                        Filter_model.s_languages.remove("רוסית");
+                        Filter_model.s_languages.remove("Russian");
                     }
             }
         });

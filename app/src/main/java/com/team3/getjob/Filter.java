@@ -2,7 +2,6 @@ package com.team3.getjob;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -27,7 +26,7 @@ public class Filter extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(Filter.this, Age.class);
+                Intent intent1 = new Intent(Filter.this, Location.class);
                 startActivity(intent1);
             }
         });
@@ -94,7 +93,6 @@ public class Filter extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Add info to PullJobs that will effect Database pull
-                    Log.d("Language", "FLanguage: " + Filter_model.s_languages);
                 Intent intent6 = new Intent(Filter.this, Jobs_Pull.class);
                 startActivity(intent6);
             }
