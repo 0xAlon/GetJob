@@ -66,8 +66,8 @@ com/team3/getjob/databinding/ActivityEmployeeProfileBinding.java
  com.team3.getjob.databinding.ActivityEmployeeProfileBinding
 com/team3/getjob/Utilities/Validation.java
  com.team3.getjob.Utilities.Validation
-com/team3/getjob/databinding/ActivityLocationBinding.java
- com.team3.getjob.databinding.ActivityLocationBinding
+com/team3/getjob/databinding/ActivityAgeBinding.java
+ com.team3.getjob.databinding.ActivityAgeBinding
 com/team3/getjob/About.java
  com.team3.getjob.About
  com.team3.getjob.About$1
@@ -104,11 +104,6 @@ com/team3/getjob/EmployerProfile.java
  com.team3.getjob.EmployerProfile$2
  com.team3.getjob.EmployerProfile$3
  com.team3.getjob.EmployerProfile$4
-com/team3/getjob/Location.java
- com.team3.getjob.Location
- com.team3.getjob.Location$1
- com.team3.getjob.Location$2
- com.team3.getjob.Location$3
 com/team3/getjob/Filter.java
  com.team3.getjob.Filter
  com.team3.getjob.Filter$1
@@ -125,6 +120,11 @@ com/team3/getjob/Login/ForgotPassword.java
  com.team3.getjob.Login.ForgotPassword
 com/team3/getjob/databinding/FragmentJobsPullFragmentBinding.java
  com.team3.getjob.databinding.FragmentJobsPullFragmentBinding
+com/team3/getjob/Age.java
+ com.team3.getjob.Age
+ com.team3.getjob.Age$1
+ com.team3.getjob.Age$2
+ com.team3.getjob.Age$3
 com/team3/getjob/Login/RegisterUser.java
  com.team3.getjob.Login.RegisterUser
  com.team3.getjob.Login.RegisterUser$1

@@ -1,55 +1,23 @@
 [
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_jobs__pull.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\activity_jobs__pull.xml"
-    },
-    {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-=======
-        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_login.xml.flat",
-        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\fragment_login.xml"
->>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
-=======
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_languages.png.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\languages.png"
     },
     {
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_login.xml.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\fragment_login.xml"
->>>>>>> parent of 86765c8... Some changes
     },
     {
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_scrolling.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\menu\\menu_scrolling.xml"
-    },
-    {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_languages.png.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\languages.png"
-=======
-        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_location.xml.flat",
-        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_location.xml"
-    },
-    {
-        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_image_1.xml.flat",
-        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\ic_image_1.xml"
->>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
-=======
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_image_1.xml.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\ic_image_1.xml"
     },
     {
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_top_three.png.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\top_three.png"
->>>>>>> parent of 86765c8... Some changes
     },
     {
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background.xml.flat",
@@ -64,26 +32,12 @@
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_job_window.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\activity_add_job_window.xml"
-    },
-    {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_2.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\button_2.xml"
-=======
-        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_register_recruiter.xml.flat",
-        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\fragment_register_recruiter.xml"
->>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
-=======
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_youth.png.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\youth.png"
     },
     {
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_register_recruiter.xml.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\fragment_register_recruiter.xml"
->>>>>>> parent of 86765c8... Some changes
     },
     {
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins_bold.xml.flat",
@@ -126,14 +80,8 @@
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_languages.xml"
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_job_row.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\job_row.xml"
-=======
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_age.xml.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_age.xml"
->>>>>>> parent of 86765c8... Some changes
     },
     {
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
@@ -144,21 +92,8 @@
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\rank.png"
     },
     {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
-=======
-        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
-    },
-    {
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
->>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
-=======
-        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
->>>>>>> parent of 86765c8... Some changes
     },
     {
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
@@ -229,26 +164,12 @@
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\ic_nav_bar.xml"
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\menu_activity_base_drawer.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\menu\\activity_base_drawer.xml"
-    },
-    {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-=======
-        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
->>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
-=======
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_team.png.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\team.png"
     },
     {
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
->>>>>>> parent of 86765c8... Some changes
     },
     {
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_job_row.xml.flat",
@@ -275,31 +196,16 @@
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_edit_profile.xml"
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rank_filter.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\activity_rank_filter.xml"
-=======
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_youth__1_.png.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\youth__1_.png"
->>>>>>> parent of 86765c8... Some changes
     },
     {
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_salary.png.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\salary.png"
     },
     {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
-=======
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_scrolling.xml.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\menu\\menu_scrolling.xml"
->>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
-=======
-        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_scrolling.xml.flat",
-        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\menu\\menu_scrolling.xml"
->>>>>>> parent of 86765c8... Some changes
     },
     {
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_jobs__pull.xml.flat",
@@ -334,26 +240,12 @@
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_about.xml.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\layout\\activity_about.xml"
-    },
-    {
-        "merged": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_youth__1_.png.flat",
-        "source": "C:\\Users\\rabin\\Documents\\GitHub\\GetJob\\app\\src\\main\\res\\drawable\\youth__1_.png"
-=======
-        "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_filter.xml.flat",
-        "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_filter.xml"
->>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
-=======
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\drawable_funnel.png.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\drawable\\funnel.png"
     },
     {
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_filter.xml.flat",
         "source": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\src\\main\\res\\layout\\activity_filter.xml"
->>>>>>> parent of 86765c8... Some changes
     },
     {
         "merged": "C:\\Users\\97253\\Desktop\\VS_Projects\\The-sufferers\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_job_window.xml.flat",

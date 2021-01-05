@@ -196,33 +196,13 @@ ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\Android
 	android:screenOrientation
 		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:37:13-49
 	android:name
-<<<<<<< HEAD
-<<<<<<< HEAD
-		ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:36:13-35
-activity#com.team3.getjob.Age
-ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:39:9-41:52
-=======
-		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:36:13-35
-activity#com.team3.getjob.Location
-ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:39:9-41:52
->>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
-=======
 		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:36:13-35
 activity#com.team3.getjob.Age
 ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:39:9-41:52
->>>>>>> parent of 86765c8... Some changes
 	android:screenOrientation
 		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:41:13-49
 	android:name
-<<<<<<< HEAD
-<<<<<<< HEAD
-		ADDED from C:\Users\rabin\Documents\GitHub\GetJob\app\src\main\AndroidManifest.xml:40:13-32
-=======
-		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:40:13-37
->>>>>>> parent of 40bc7a6... Bug fixes Design of filter section and Rank selection on job_fragment
-=======
 		ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:40:13-32
->>>>>>> parent of 86765c8... Some changes
 activity#com.team3.getjob.PaymentActivity
 ADDED from C:\Users\97253\Desktop\VS_Projects\The-sufferers\app\src\main\AndroidManifest.xml:43:9-45:52
 	android:screenOrientation
