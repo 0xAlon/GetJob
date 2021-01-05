@@ -25,8 +25,13 @@ com/team3/getjob/EditProfile.java
  com.team3.getjob.EditProfile$3$2
  com.team3.getjob.EditProfile$4
  com.team3.getjob.EditProfile$4$1
-com/team3/getjob/job_model.java
- com.team3.getjob.job_model
+com/team3/getjob/Jobs_Pull.java
+ com.team3.getjob.Jobs_Pull
+ com.team3.getjob.Jobs_Pull$1
+ com.team3.getjob.Jobs_Pull$2
+ com.team3.getjob.Jobs_Pull$3
+ com.team3.getjob.Jobs_Pull$4
+ com.team3.getjob.Jobs_Pull$5
 com/team3/getjob/Login/LoginFragment.java
  com.team3.getjob.Login.LoginFragment
 com/team3/getjob/JobAction.java
@@ -54,8 +59,10 @@ com/team3/getjob/LanguagesActivity.java
  com.team3.getjob.LanguagesActivity$3
  com.team3.getjob.LanguagesActivity$4
  com.team3.getjob.LanguagesActivity$5
-com/team3/getjob/databinding/ActivityJobActionBinding.java
- com.team3.getjob.databinding.ActivityJobActionBinding
+com/team3/getjob/jobs_pull_fragment.java
+ com.team3.getjob.jobs_pull_fragment
+ com.team3.getjob.jobs_pull_fragment$1
+ com.team3.getjob.jobs_pull_fragment$2
 com/team3/getjob/Login/WelcomeActivity.java
  com.team3.getjob.Login.WelcomeActivity
 com/team3/getjob/databinding/ActivityLanguagesBinding.java
@@ -138,14 +145,7 @@ com/team3/getjob/Filter_model.java
  com.team3.getjob.Filter_model
 com/team3/getjob/MainActivity.java
  com.team3.getjob.MainActivity
-com/team3/getjob/Jobs_Pull.java
- com.team3.getjob.Jobs_Pull
- com.team3.getjob.Jobs_Pull$1
- com.team3.getjob.Jobs_Pull$2
- com.team3.getjob.Jobs_Pull$3
- com.team3.getjob.Jobs_Pull$4
- com.team3.getjob.Jobs_Pull$5
-com/team3/getjob/jobs_pull_fragment.java
- com.team3.getjob.jobs_pull_fragment
- com.team3.getjob.jobs_pull_fragment$1
- com.team3.getjob.jobs_pull_fragment$2
+com/team3/getjob/databinding/ActivityJobActionBinding.java
+ com.team3.getjob.databinding.ActivityJobActionBinding
+com/team3/getjob/job_model.java
+ com.team3.getjob.job_model
