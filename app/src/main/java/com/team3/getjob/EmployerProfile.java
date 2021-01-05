@@ -20,7 +20,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -35,6 +37,8 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -91,6 +95,8 @@ public class EmployerProfile extends BaseActivity {
         listdata.add(new MyInfo("oshin", "gardening"));
         listdata.add(new MyInfo("oshin", "Programming"));
         listdata.add(new MyInfo("oshin", "Swimming "));
+        listdata.add(new MyInfo("oshin", "gardening"));
+        listdata.add(new MyInfo("oshin", "Programming"));
 
         FirebaseApp.initializeApp(this);
         mAuth = FirebaseAuth.getInstance();
@@ -247,10 +253,12 @@ public class EmployerProfile extends BaseActivity {
         startActivity(intent);
     }
 
-    private void createExcelSheet() {
+    //Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
+
+    public void createExcelSheet() {
         if(isStoragePermissionGranted()) {
-            String csvFile = "Mytest.xls";
-            sd = Environment.getExternalStorageDirectory();
+            String csvFile = "GetJob.xls";
+            sd = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
             directory = new File(sd.getAbsolutePath());
             file = new File(directory, csvFile);
             WorkbookSettings wbSettings = new WorkbookSettings();
@@ -258,6 +266,7 @@ public class EmployerProfile extends BaseActivity {
             try {
                 workbook = Workbook.createWorkbook(file, wbSettings);
                 createFirstSheet();
+
                 //closing cursor
                 workbook.write();
                 workbook.close();
@@ -270,10 +279,6 @@ public class EmployerProfile extends BaseActivity {
 
             Toast.makeText(this, "Permission Denied !", Toast.LENGTH_SHORT).show();
         }
-    }
-
-    public void SaveTheFile(View view) {
-        createExcelSheet();
     }
 
     public void createFirstSheet() {
@@ -297,6 +302,11 @@ public class EmployerProfile extends BaseActivity {
 
     }
 
+
+
+    public void SaveTheFile(View view) {
+        createExcelSheet();
+    }
 
 
     public  boolean isStoragePermissionGranted() {
@@ -326,5 +336,4 @@ public class EmployerProfile extends BaseActivity {
             //resume tasks needing this permission
         }
     }
-
 }

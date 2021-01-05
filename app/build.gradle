@@ -23,6 +23,16 @@ android {
         viewBinding true
     }
 
+    dexOptions {
+        //incremental = true;
+        preDexLibraries = false
+        javaMaxHeapSize "4g"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE.txt' // will not include NOTICE file
+        exclude 'META-INF/LICENSE.txt' // will not include LICENSE file
+    }
     buildTypes {
         release {
             minifyEnabled false

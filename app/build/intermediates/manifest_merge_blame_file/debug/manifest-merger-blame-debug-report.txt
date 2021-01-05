@@ -11,136 +11,135 @@
 9-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-11-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:5:5-81
-11-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:5:22-78
-12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-12-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:5:5-81
-12-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:5:22-78
-13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-13-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:68:5-80
-13-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:68:22-77
-14    <uses-permission android:name="android.permission.INTERNET" />
-14-->[com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:23:5-67
-14-->[com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:23:22-64
-15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-15-->[com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:24:5-79
-15-->[com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:24:22-76
-16    <uses-permission android:name="android.permission.WAKE_LOCK" />
-16-->[com.google.android.gms:play-services-measurement-api:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/9001e637591bf99550f9534257e99161/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:24:5-68
-16-->[com.google.android.gms:play-services-measurement-api:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/9001e637591bf99550f9534257e99161/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:24:22-65
-17    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-17-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:26:5-110
-17-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:26:22-107
-18
-19    <application
-19-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:6:5-66:19
-20        android:allowBackup="true"
-20-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:7:9-35
-21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.3.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/cdfea8f3da9d3d8e26bbb73a40c2de98/core-1.3.1/AndroidManifest.xml:24:18-86
-22        android:debuggable="true"
-23        android:extractNativeLibs="false"
-24        android:icon="@mipmap/ic_launcher"
-24-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:8:9-43
-25        android:label="@string/app_name"
-25-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:9:9-41
+11-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:7:5-8:40
+11-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:7:22-78
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:9:5-80
+12-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:9:22-77
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->[com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:23:5-67
+13-->[com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:23:22-64
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->[com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:24:5-79
+14-->[com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:24:22-76
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->[com.google.android.gms:play-services-measurement-api:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/9001e637591bf99550f9534257e99161/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:24:5-68
+15-->[com.google.android.gms:play-services-measurement-api:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/9001e637591bf99550f9534257e99161/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:24:22-65
+16    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+16-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:26:5-110
+16-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/alon/.gradle/caches/transforms-2/files-2.1/d535ddb9b282b7dfd1ae98643f85d9b9/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:26:22-107
+17
+18    <application
+18-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:11:5-72:19
+19        android:allowBackup="true"
+19-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:12:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.3.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/cdfea8f3da9d3d8e26bbb73a40c2de98/core-1.3.1/AndroidManifest.xml:24:18-86
+21        android:debuggable="true"
+22        android:extractNativeLibs="false"
+23        android:icon="@mipmap/ic_launcher"
+23-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:13:9-43
+24        android:label="@string/app_name"
+24-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:14:9-41
+25        android:requestLegacyExternalStorage="true"
+25-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:17:9-52
 26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:10:9-54
+26-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:15:9-54
 27        android:supportsRtl="true"
-27-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:11:9-35
+27-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:16:9-35
 28        android:testOnly="true"
 29        android:theme="@style/Theme.GetJob"
-29-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:13:9-44
+29-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:19:9-44
 30        android:usesCleartextTraffic="true" >
-30-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:12:9-44
+30-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:18:9-44
 31        <activity android:name="com.team3.getjob.EditProfile" />
-31-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:14:9-49
-31-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:14:19-46
+31-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:20:9-49
+31-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:20:19-46
 32        <activity
-32-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:15:9-17:61
+32-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:21:9-23:61
 33            android:name="com.team3.getjob.JobAction"
-33-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:16:13-38
+33-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:22:13-38
 34            android:parentActivityName="com.team3.getjob.EmployerProfile" />
-34-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:17:13-58
+34-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:23:13-58
 35        <activity android:name="com.team3.getjob.EmployeeProfile" />
-35-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:18:9-53
-35-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:18:19-50
+35-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:24:9-53
+35-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:24:19-50
 36        <activity
-36-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:19:9-21:61
+36-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:25:9-27:61
 37            android:name="com.team3.getjob.AddJobWindow"
-37-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:20:13-41
+37-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:26:13-41
 38            android:parentActivityName="com.team3.getjob.EmployerProfile" />
-38-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:21:13-58
+38-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:27:13-58
 39        <activity android:name="com.team3.getjob.MainActivity" >
-39-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:22:9-28:20
-39-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:22:19-47
+39-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:28:9-34:20
+39-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:28:19-47
 40            <intent-filter>
-40-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:23:13-27:29
+40-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:29:13-33:29
 41                <action android:name="android.intent.action.MAIN" />
-41-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:24:17-69
-41-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:24:25-66
+41-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:30:17-69
+41-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:30:25-66
 42
 43                <category android:name="android.intent.category.LAUNCHER" />
-43-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:26:17-77
-43-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:26:27-74
+43-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:32:17-77
+43-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:32:27-74
 44            </intent-filter>
 45        </activity>
 46
 47        <meta-data
-47-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:29:9-31:57
+47-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:35:9-37:57
 48            android:name="preloaded_fonts"
-48-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:30:13-43
+48-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:36:13-43
 49            android:resource="@array/preloaded_fonts" />
-49-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:31:13-54
+49-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:37:13-54
 50
 51        <activity
-51-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:33:9-35:52
+51-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:39:9-41:52
 52            android:name="com.team3.getjob.Jobs_Pull"
-52-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:34:13-38
+52-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:40:13-38
 53            android:screenOrientation="portrait" />
-53-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:35:13-49
+53-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:41:13-49
 54        <activity
-54-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:37:9-39:52
+54-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:43:9-45:52
 55            android:name="com.team3.getjob.Filter"
-55-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:38:13-35
+55-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:44:13-35
 56            android:screenOrientation="portrait" />
-56-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:39:13-49
+56-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:45:13-49
 57        <activity
-57-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:41:9-43:52
+57-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:47:9-49:52
 58            android:name="com.team3.getjob.Age"
-58-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:42:13-32
+58-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:48:13-32
 59            android:screenOrientation="portrait" />
-59-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:43:13-49
+59-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:49:13-49
 60        <activity
-60-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:45:9-47:52
+60-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:51:9-53:52
 61            android:name="com.team3.getjob.PaymentActivity"
-61-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:46:13-44
+61-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:52:13-44
 62            android:screenOrientation="portrait" />
-62-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:47:13-49
+62-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:53:13-49
 63        <activity
-63-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:49:9-51:52
+63-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:55:9-57:52
 64            android:name="com.team3.getjob.LanguagesActivity"
-64-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:50:13-46
+64-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:56:13-46
 65            android:screenOrientation="portrait" />
-65-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:51:13-49
+65-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:57:13-49
 66        <activity
-66-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:53:9-55:52
+66-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:59:9-61:52
 67            android:name="com.team3.getjob.rank_filter"
-67-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:54:13-40
+67-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:60:13-40
 68            android:screenOrientation="portrait" />
-68-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:55:13-49
+68-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:61:13-49
 69        <activity
-69-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:57:9-59:52
+69-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:63:9-65:52
 70            android:name="com.team3.getjob.About"
-70-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:58:13-34
+70-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:64:13-34
 71            android:screenOrientation="portrait" />
-71-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:59:13-49
+71-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:65:13-49
 72        <activity
-72-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:61:9-63:52
+72-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:67:9-69:52
 73            android:name="com.team3.getjob.EmployerProfile"
-73-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:62:13-44
+73-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:68:13-44
 74            android:screenOrientation="portrait" />
-74-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:63:13-49
+74-->/Users/alon/Documents/GetJob/app/src/main/AndroidManifest.xml:69:13-49
 75        <activity
 75-->[com.google.firebase:firebase-auth:20.0.1] /Users/alon/.gradle/caches/transforms-2/files-2.1/1e516b41c11a3c77410f7ed5454fe678/jetified-firebase-auth-20.0.1/AndroidManifest.xml:27:9-44:20
 76            android:name="com.google.firebase.auth.internal.GenericIdpActivity"

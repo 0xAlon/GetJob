@@ -116,6 +116,8 @@ com/team3/getjob/Filter.java
  com.team3.getjob.Filter$4
  com.team3.getjob.Filter$5
  com.team3.getjob.Filter$6
+com/team3/getjob/MyInfo.java
+ com.team3.getjob.MyInfo
 com/team3/getjob/databinding/ActivityAddJobWindowBinding.java
  com.team3.getjob.databinding.ActivityAddJobWindowBinding
 com/team3/getjob/databinding/AppBarBaseBinding.java
@@ -138,8 +140,6 @@ com/team3/getjob/Login/RegisterUser.java
  com.team3.getjob.Login.RegisterUser$5
  com.team3.getjob.Login.RegisterUser$6
  com.team3.getjob.Login.RegisterUser$7
-com/team3/getjob/MyInfo.java
- com.team3.getjob.MyInfo
 com/team3/getjob/AddJobWindow.java
  com.team3.getjob.AddJobWindow
  com.team3.getjob.AddJobWindow$1
