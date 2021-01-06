@@ -53,14 +53,12 @@ public class EmployerProfile extends BaseActivity {
 
     private FirebaseAuth mAuth;
     private String TAG = "EmployerProfile";
-    private Button add_job_button;
-    private Button logout;
+    private ImageButton add_job_button;
     TextView user_name;
     TextView email;
     TextView phone_num;
     TextView company_name;
     TextView location;
-    ImageButton back;
     ImageButton excel_button;
     FirebaseFirestore db;
     ListView mListView;
@@ -90,13 +88,7 @@ public class EmployerProfile extends BaseActivity {
             }
         });*/
 
-        listdata = new ArrayList<>();
 
-        listdata.add(new MyInfo("oshin", "gardening"));
-        listdata.add(new MyInfo("oshin", "Programming"));
-        listdata.add(new MyInfo("oshin", "Swimming "));
-        listdata.add(new MyInfo("oshin", "gardening"));
-        listdata.add(new MyInfo("oshin", "Programming"));
 
         FirebaseApp.initializeApp(this);
         mAuth = FirebaseAuth.getInstance();
@@ -122,13 +114,7 @@ public class EmployerProfile extends BaseActivity {
 
 
         //logout button
-        logout = (Button) findViewById(R.id.logout);
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                SingOut();
-            }
-        });
+
 
         //Data Pull
         List<String> id_list = new ArrayList<String>();
@@ -136,7 +122,7 @@ public class EmployerProfile extends BaseActivity {
         Context context = this;
         DataBasePull(id_list, temp_list, context);
 
-        add_job_button = (Button) findViewById(R.id.addjob);
+        add_job_button = (ImageButton) findViewById(R.id.addjob);
         add_job_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -154,8 +140,6 @@ public class EmployerProfile extends BaseActivity {
                 Intent intent = new Intent(EmployerProfile.this, JobAction.class);
                 intent.putExtra("keyName", id_list.get(position));
                 startActivity(intent);
-
-
             }
         });
 
@@ -165,6 +149,7 @@ public class EmployerProfile extends BaseActivity {
            @Override
            public void onClick(View v) {
                createExcelSheet();
+
             }
         });
     }
@@ -198,7 +183,7 @@ public class EmployerProfile extends BaseActivity {
                         Log.d("CHECK", "my_post: "+my_posts);
                         user_name.setText(String.valueOf(list.get(0)));
                         email.setText(String.valueOf(list.get(1)));
-                        phone_num.setText(String.valueOf(list.get(2)));
+                        phone_num.setText("0"+String.valueOf(list.get(2)));
                         company_name.setText(String.valueOf(list.get(3)));
                         location.setText(String.valueOf(list.get(4)));
 
@@ -245,18 +230,40 @@ public class EmployerProfile extends BaseActivity {
                 });
     }
 
-    public void SingOut() {
-        FirebaseAuth.getInstance().signOut();
-        Intent intent = new Intent(this, MainActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(intent);
+    public void getExcelData(){
+        listdata = new ArrayList<>();
+
+        db.collection("Posts")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                Log.d("check", document.getId() + " => " + document.getData());
+                                Log.d("CHECK", "DataBasePull: "+my_posts);
+
+                                if(my_posts.contains(document.getId())){
+                                    listdata.add(new MyInfo(String.valueOf(document.get("title"))));
+                                }
+                            }
+                        } else {
+                            Log.d("check", "Error getting documents: ", task.getException());
+                        }
+                    }
+                });
+
+
+
+
+
     }
 
     //Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
 
     public void createExcelSheet() {
         if(isStoragePermissionGranted()) {
+            getExcelData();
             String csvFile = "GetJob.xls";
             sd = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
             directory = new File(sd.getAbsolutePath());
@@ -293,7 +300,6 @@ public class EmployerProfile extends BaseActivity {
 
             for (int i = 0; i < listdata.size(); i++) {
                 sheet.addCell(new Label(0, i + 1, listdata.get(i).getName()));
-                sheet.addCell(new Label(1, i + 1, listdata.get(i).getHobby()));
 
             }
         } catch (Exception e) {

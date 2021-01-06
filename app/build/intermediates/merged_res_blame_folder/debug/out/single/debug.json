@@ -4,6 +4,10 @@
         "source": "D:\\getJob\\app\\src\\main\\res\\layout\\activity_rank_filter.xml"
     },
     {
+        "merged": "D:\\getJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_microsoft_excel_logo_wine.png.flat",
+        "source": "D:\\getJob\\app\\src\\main\\res\\drawable\\microsoft_excel_logo_wine.png"
+    },
+    {
         "merged": "D:\\getJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_back.xml.flat",
         "source": "D:\\getJob\\app\\src\\main\\res\\drawable\\ic_back.xml"
     },
@@ -24,6 +28,10 @@
         "source": "D:\\getJob\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
+        "merged": "D:\\getJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icons8_microsoft_excel_2019_48.png.flat",
+        "source": "D:\\getJob\\app\\src\\main\\res\\drawable\\icons8_microsoft_excel_2019_48.png"
+    },
+    {
         "merged": "D:\\getJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_job_row.xml.flat",
         "source": "D:\\getJob\\app\\src\\main\\res\\layout\\job_row.xml"
     },
@@ -38,6 +46,10 @@
     {
         "merged": "D:\\getJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "D:\\getJob\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\getJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_plus.png.flat",
+        "source": "D:\\getJob\\app\\src\\main\\res\\drawable\\plus.png"
     },
     {
         "merged": "D:\\getJob\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
@@ -104,6 +116,10 @@
         "source": "D:\\getJob\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "D:\\getJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icons8_add_48.png.flat",
+        "source": "D:\\getJob\\app\\src\\main\\res\\drawable\\icons8_add_48.png"
+    },
+    {
         "merged": "D:\\getJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_languages.png.flat",
         "source": "D:\\getJob\\app\\src\\main\\res\\drawable\\languages.png"
     },
@@ -132,6 +148,10 @@
         "source": "D:\\getJob\\app\\src\\main\\res\\drawable\\icons8_filter_24.png"
     },
     {
+        "merged": "D:\\getJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_microsoft_office_excel__2018_present_.xml.flat",
+        "source": "D:\\getJob\\app\\src\\main\\res\\drawable\\microsoft_office_excel__2018_present_.xml"
+    },
+    {
         "merged": "D:\\getJob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_job_action.xml.flat",
         "source": "D:\\getJob\\app\\src\\main\\res\\layout\\activity_job_action.xml"
     },
@@ -146,6 +166,14 @@
     {
         "merged": "D:\\getJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icons8_delete.xml.flat",
         "source": "D:\\getJob\\app\\src\\main\\res\\drawable\\icons8_delete.xml"
+    },
+    {
+        "merged": "D:\\getJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dog.png.flat",
+        "source": "D:\\getJob\\app\\src\\main\\res\\drawable\\dog.png"
+    },
+    {
+        "merged": "D:\\getJob\\app\\build\\intermediates\\res\\merged\\debug\\drawable_add.png.flat",
+        "source": "D:\\getJob\\app\\src\\main\\res\\drawable\\add.png"
     },
     {
         "merged": "D:\\getJob\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins.xml.flat",

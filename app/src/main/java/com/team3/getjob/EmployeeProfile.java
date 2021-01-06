@@ -30,7 +30,6 @@ public class EmployeeProfile extends BaseActivity {
 
     private FirebaseAuth mAuth;
     private String TAG="EmployeeProfile";
-    private Button logout;
     TextView user_name;
     TextView email;
     TextView phone_num;
@@ -60,14 +59,6 @@ public class EmployeeProfile extends BaseActivity {
 
 
         //logout button
-        logout=(Button)findViewById(R.id.logout);
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                SingOut();
-            }
-        });
-
         View clickView = rootView.findViewById(R.id.nav);
         clickView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -120,12 +111,12 @@ public class EmployeeProfile extends BaseActivity {
                             list.add(String.valueOf(document.getData().get("Name")));
                             list.add(String.valueOf(document.getData().get("Email")));
                             list.add(String.valueOf(document.getData().get("PhoneNumber")));
-                            list.add(String.valueOf(document.getData().get("Address")));
+                            list.add(String.valueOf(document.getData().get("Address ")));
                             post_apply=(ArrayList<String>) document.getData().get("Jobs");
                         }
                         user_name.setText(String.valueOf(list.get(0)));
                         email.setText(String.valueOf(list.get(1)));
-                        phone_num.setText(String.valueOf(list.get(2)));
+                        phone_num.setText("0"+String.valueOf(list.get(2)));
                         location.setText(String.valueOf(list.get(3)));
                     } else {
                         Log.d(TAG, "Error getting documents: ", task.getException());

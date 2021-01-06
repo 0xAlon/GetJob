@@ -1548,6 +1548,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable add
 drawable avd_hide_password
 drawable avd_show_password
 drawable background
@@ -1590,6 +1591,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable dog
 drawable funnel
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
@@ -1605,9 +1607,11 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_nav_bar
+drawable icons8_add_48
 drawable icons8_checkmark
 drawable icons8_delete
 drawable icons8_filter_24
+drawable icons8_microsoft_excel_2019_48
 drawable languages
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1616,6 +1620,8 @@ drawable material_ic_keyboard_arrow_left_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
+drawable microsoft_excel_logo_wine
+drawable microsoft_office_excel__2018_present_
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1638,6 +1644,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable plus
 drawable rank
 drawable salary
 drawable team
@@ -1895,7 +1902,6 @@ id job_location
 id job_title
 id jobdetail
 id jobdetail_field
-id jobs_pull_employer_frame
 id jobs_pull_frame
 id jobs_search
 id jobtitle
@@ -1917,6 +1923,7 @@ id linearLayout2
 id linearLayout3
 id linearLayout4
 id linearLayout5
+id linearLayout6
 id linearLayout7
 id list
 id listMode
@@ -2094,7 +2101,6 @@ id textView
 id textView11
 id textView13
 id textView2
-id textView3
 id textView4
 id textView5
 id textView7

@@ -2,7 +2,6 @@ package com.team3.getjob;
 
 public class MyInfo {
     String name;
-    String hobby;
 
     public MyInfo() {
     }
@@ -15,16 +14,7 @@ public class MyInfo {
         this.name = name;
     }
 
-    public String getHobby() {
-        return hobby;
-    }
-
-    public void setHobby(String hobby) {
-        this.hobby = hobby;
-    }
-
-    public MyInfo(String name, String hobby) {
+    public MyInfo(String name) {
         this.name = name;
-        this.hobby = hobby;
     }
 }
