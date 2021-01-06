@@ -50,7 +50,6 @@ public class Jobs_Pull extends BaseActivity {
             public void onClick(View view) {
                 DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
                 drawer.openDrawer(Gravity.LEFT);
-
             }
         });
 

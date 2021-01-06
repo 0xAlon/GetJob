@@ -1563,6 +1563,7 @@ drawable button_1
 drawable button_2
 drawable button_3
 drawable button_4
+drawable cat
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1882,6 +1883,7 @@ id imageView3
 id imageView4
 id imageView5
 id imageView6
+id imageView7
 id info
 id invisible
 id italic
@@ -1914,6 +1916,7 @@ id linearLayout
 id linearLayout2
 id linearLayout3
 id linearLayout4
+id linearLayout5
 id linearLayout7
 id list
 id listMode

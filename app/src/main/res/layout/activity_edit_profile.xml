@@ -42,7 +42,7 @@
                 <TextView
                     android:id="@+id/name"
                     style="@style/text"
-                    android:text="name" />
+                    android:text="שם" />
                 <EditText
                     android:id="@+id/name_field"
                     style="@style/text_field"
@@ -50,7 +50,7 @@
                 <TextView
                     android:id="@+id/old_password"
                     style="@style/text"
-                    android:text="old password" />
+                    android:text="סיסמא ישנה" />
 
                 <EditText
                     android:id="@+id/old_password_field"
@@ -60,7 +60,7 @@
                 <TextView
                     android:id="@+id/password"
                     style="@style/text"
-                    android:text="password" />
+                    android:text="סיסמא" />
 
                 <EditText
                     android:id="@+id/password_field"
@@ -70,7 +70,7 @@
                 <TextView
                     android:id="@+id/email"
                     style="@style/text"
-                    android:text="mail" />
+                    android:text="מייל" />
 
                 <EditText
                     android:id="@+id/email_field"
@@ -80,7 +80,7 @@
                 <TextView
                     android:id="@+id/address"
                     style="@style/text"
-                    android:text="address" />
+                    android:text="כתובת" />
 
                 <EditText
                     android:id="@+id/address_field"
@@ -90,7 +90,7 @@
                 <TextView
                     android:id="@+id/phone"
                     style="@style/text"
-                    android:text="phone" />
+                    android:text="פלאפון" />
 
                 <EditText
                     android:id="@+id/phone_field"
@@ -100,7 +100,7 @@
                 <TextView
                     android:id="@+id/id"
                     style="@style/text"
-                    android:text="id" />
+                    android:text="תעודת זהות" />
 
                 <EditText
                     android:id="@+id/id_field"
@@ -110,7 +110,7 @@
                 <TextView
                     android:id="@+id/age"
                     style="@style/text"
-                    android:text="age" />
+                    android:text="גיל" />
 
                 <EditText
                     android:id="@+id/age_field"
@@ -126,14 +126,16 @@
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/save_edit_profile"
-                        style="@style/button_3"
+                        style="@style/button_2"
                         android:text="שמור שינוי"
                         />
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/delete_user"
-                        style="@style/button_3"
+                        style="@style/button_2"
                         android:text="מחק משתמש"
+                        android:backgroundTint="@android:color/holo_red_light"/>
+
                         />
                 </LinearLayout>
 
