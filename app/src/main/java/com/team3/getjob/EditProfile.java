@@ -25,8 +25,10 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
-public class EditProfile extends AppCompatActivity{
+public class EditProfile extends AppCompatActivity {
+    String TAG = "EditProfile";
     Button update_button;
     Button delete;
     TextView password;
@@ -41,7 +43,9 @@ public class EditProfile extends AppCompatActivity{
     private FirebaseAuth mAuth;
 
     private String postId = null;
-    public EditProfile() {}
+
+    public EditProfile() {
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +61,7 @@ public class EditProfile extends AppCompatActivity{
         phone = (TextView) findViewById(R.id.phone_field);
         address = (TextView) findViewById(R.id.address_field);
         old_password = (TextView) findViewById(R.id.old_password_field);
-        back=(ImageButton) findViewById(R.id.back);
+        back = (ImageButton) findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -92,24 +96,41 @@ public class EditProfile extends AppCompatActivity{
         update_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!password.getText().toString().isEmpty()){
+                if (!password.getText().toString().isEmpty()) {
                     PasswordUpdate();
                 }
-                DocumentReference ref = db.collection("Users").document(String.valueOf(currentUser));
-                ref
-                        .update("Name", name.getText().toString())
-                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+
+                db.collection("Users")
+                        .get()
+                        .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                             @Override
-                            public void onSuccess(Void aVoid) {
-                                Log.d("TAG", "DocumentSnapshot successfully updated!");
-                                Intent intent = new Intent(EditProfile.this,MainActivity.class);
-                                startActivity(intent);
-                            }
-                        })
-                        .addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                Log.w("TAG", "Error updating document", e);
+                            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                                if (task.isSuccessful()) {
+                                    for (QueryDocumentSnapshot document : task.getResult()) {
+
+                                        if (currentUser.getUid().equals(String.valueOf(document.get("Uid")))) {
+                                            DocumentReference ref = db.collection("Users").document(document.getId());
+                                            ref
+                                                    .update("Name", name.getText().toString())
+                                                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                        @Override
+                                                        public void onSuccess(Void aVoid) {
+                                                            Log.d("TAG", "DocumentSnapshot successfully updated!");
+                                                            Intent intent = new Intent(EditProfile.this, MainActivity.class);
+                                                            startActivity(intent);
+                                                        }
+                                                    })
+                                                    .addOnFailureListener(new OnFailureListener() {
+                                                        @Override
+                                                        public void onFailure(@NonNull Exception e) {
+                                                            Log.w("TAG", "Error updating document", e);
+                                                        }
+                                                    });
+                                        }
+                                    }
+                                } else {
+                                    Log.d("check", "Error getting documents: ", task.getException());
+                                }
                             }
                         });
             }
@@ -119,39 +140,56 @@ public class EditProfile extends AppCompatActivity{
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                db.collection("Users").document(String.valueOf(currentUser))//UserID
-                        .delete()
-                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+
+                db.collection("Users")
+                        .get()
+                        .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                             @Override
-                            public void onSuccess(Void aVoid) {
-                                Log.d("TAG", "DocumentSnapshot successfully deleted!");
-                                Intent intent = new Intent(EditProfile.this,MainActivity.class);
-                                startActivity(intent);
-                            }
-                        })
-                        .addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                Log.w("TAG", "Error deleting document", e);
+                            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                                if (task.isSuccessful()) {
+                                    for (QueryDocumentSnapshot document : task.getResult()) {
+
+                                        if (currentUser.getUid().equals(String.valueOf(document.get("Uid")))) {
+
+                                            db.collection("Users").document(document.getId())//UserID
+                                                    .delete()
+                                                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                        @Override
+                                                        public void onSuccess(Void aVoid) {
+                                                            Log.d("TAG", "DocumentSnapshot successfully deleted!");
+                                                            FirebaseAuth.getInstance().signOut();
+                                                            Intent intent = new Intent(EditProfile.this, MainActivity.class);
+                                                            startActivity(intent);
+                                                        }
+                                                    })
+                                                    .addOnFailureListener(new OnFailureListener() {
+                                                        @Override
+                                                        public void onFailure(@NonNull Exception e) {
+                                                            Log.w("TAG", "Error deleting document", e);
+                                                        }
+                                                    });
+                                        }
+                                    }
+                                } else {
+                                    Log.d("check", "Error getting documents: ", task.getException());
+                                }
                             }
                         });
             }
         });
 
-
     }
 
-    private void PasswordUpdate()
-    {
+    private void PasswordUpdate() {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
-// Get auth credentials from the user for re-authentication. The example below shows
-// email and password credentials but there are multiple possible providers,
-// such as GoogleAuthProvider or FacebookAuthProvider.
+        // Get auth credentials from the user for re-authentication. The example below shows
+        // email and password credentials but there are multiple possible providers,
+        // such as GoogleAuthProvider or FacebookAuthProvider.
         AuthCredential credential = EmailAuthProvider
                 .getCredential(password.getText().toString(), old_password.getText().toString());
 
-// Prompt the user to re-provide their sign-in credentials
+        // Prompt the user to re-provide their sign-in credentials
         user.reauthenticate(credential)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
