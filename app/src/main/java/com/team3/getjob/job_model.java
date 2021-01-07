@@ -1,5 +1,7 @@
 package com.team3.getjob;
 
+import com.google.firebase.firestore.FieldValue;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -29,6 +31,8 @@ public class job_model {
         this.languages = languages;
         this.users = users;
     }
+
+
 
     public String getTitle() {
         return title;

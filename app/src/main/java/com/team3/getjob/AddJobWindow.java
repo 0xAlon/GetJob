@@ -98,8 +98,6 @@ public class AddJobWindow extends AppCompatActivity implements View.OnClickListe
 
                 job_model jobs = new job_model(job_title.getText().toString(),job_detail.getText().toString(), location.getText().toString(), salary.getText().toString(),"0" ,true,temp_date,temp_lang, null);
 
-
-
                 db.collection("Posts")
                         .add(jobs)
                         .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {

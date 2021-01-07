@@ -21,6 +21,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -89,9 +90,7 @@ public class JobAction extends AppCompatActivity {
                         Log.d("TAG", "DocumentSnapshot data: " + document.getData());
                         job_title.setText(String.valueOf(document.getData().get("title")));
                         salary.setText(String.valueOf(document.getData().get("payment")));
-                        date.setText(String.valueOf(document.getData().get("date")));
                         location.setText(String.valueOf(document.getData().get("location")));
-                        age.setText(String.valueOf(document.getData().get("age")));
                         phone.setText(String.valueOf(document.getData().get("phone")));
                         languages.setText(String.valueOf(document.getData().get("languages")));
                         job_detail.setText(String.valueOf(document.getData().get("description")));
@@ -108,9 +107,10 @@ public class JobAction extends AppCompatActivity {
         update_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 DocumentReference ref = db.collection("Posts").document(postId);
                 ref
-                        .update("title", job_title.getText().toString())
+                        .update("title", job_title.getText().toString(), "payment", salary.getText().toString(), "location", location.getText().toString(),"phone",phone.getText().toString(), "description",job_detail.getText().toString(),"languages", FieldValue.arrayUnion(languages.getText().toString()))
                         .addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {

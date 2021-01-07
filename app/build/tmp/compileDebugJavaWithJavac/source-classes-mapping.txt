@@ -1,11 +1,7 @@
 com/team3/getjob/databinding/JobRowBinding.java
  com.team3.getjob.databinding.JobRowBinding
-com/team3/getjob/AddJobWindow.java
- com.team3.getjob.AddJobWindow
- com.team3.getjob.AddJobWindow$1
- com.team3.getjob.AddJobWindow$2
- com.team3.getjob.AddJobWindow$3
- com.team3.getjob.AddJobWindow$4
+com/team3/getjob/Login/ForgotPassword.java
+ com.team3.getjob.Login.ForgotPassword
 com/team3/getjob/databinding/JobRowProfileBinding.java
  com.team3.getjob.databinding.JobRowProfileBinding
 com/team3/getjob/rank_filter.java
@@ -15,33 +11,39 @@ com/team3/getjob/rank_filter.java
  com.team3.getjob.rank_filter$3
  com.team3.getjob.rank_filter$4
  com.team3.getjob.rank_filter$5
-com/team3/getjob/job_model.java
- com.team3.getjob.job_model
-com/team3/getjob/Jobs_Pull.java
- com.team3.getjob.Jobs_Pull
- com.team3.getjob.Jobs_Pull$1
- com.team3.getjob.Jobs_Pull$2
- com.team3.getjob.Jobs_Pull$3
- com.team3.getjob.Jobs_Pull$4
- com.team3.getjob.Jobs_Pull$5
+com/team3/getjob/Age.java
+ com.team3.getjob.Age
+ com.team3.getjob.Age$1
+ com.team3.getjob.Age$2
+ com.team3.getjob.Age$3
+com/team3/getjob/MainActivity.java
+ com.team3.getjob.MainActivity
 com/team3/getjob/Login/LoginFragment.java
  com.team3.getjob.Login.LoginFragment
  com.team3.getjob.Login.LoginFragment$1
  com.team3.getjob.Login.LoginFragment$2
-com/team3/getjob/JobAction.java
- com.team3.getjob.JobAction
- com.team3.getjob.JobAction$1
- com.team3.getjob.JobAction$2
- com.team3.getjob.JobAction$3
- com.team3.getjob.JobAction$3$1
- com.team3.getjob.JobAction$3$2
- com.team3.getjob.JobAction$4
- com.team3.getjob.JobAction$4$1
- com.team3.getjob.JobAction$4$2
-com/team3/getjob/EmployeeProfile.java
- com.team3.getjob.EmployeeProfile
- com.team3.getjob.EmployeeProfile$1
- com.team3.getjob.EmployeeProfile$2
+com/team3/getjob/EditProfile.java
+ com.team3.getjob.EditProfile
+ com.team3.getjob.EditProfile$1
+ com.team3.getjob.EditProfile$2
+ com.team3.getjob.EditProfile$2$1
+ com.team3.getjob.EditProfile$2$1$1
+ com.team3.getjob.EditProfile$2$1$2
+ com.team3.getjob.EditProfile$3
+ com.team3.getjob.EditProfile$3$1
+ com.team3.getjob.EditProfile$3$1$1
+ com.team3.getjob.EditProfile$3$1$2
+ com.team3.getjob.EditProfile$4
+ com.team3.getjob.EditProfile$4$1
+com/team3/getjob/Login/RegisterUser.java
+ com.team3.getjob.Login.RegisterUser
+ com.team3.getjob.Login.RegisterUser$1
+ com.team3.getjob.Login.RegisterUser$2
+ com.team3.getjob.Login.RegisterUser$3
+ com.team3.getjob.Login.RegisterUser$4
+ com.team3.getjob.Login.RegisterUser$5
+ com.team3.getjob.Login.RegisterUser$6
+ com.team3.getjob.Login.RegisterUser$7
 com/team3/getjob/databinding/EmployerProfileBinding.java
  com.team3.getjob.databinding.EmployerProfileBinding
 com/team3/getjob/databinding/ActivityRankFilterBinding.java
@@ -53,11 +55,8 @@ com/team3/getjob/LanguagesActivity.java
  com.team3.getjob.LanguagesActivity$3
  com.team3.getjob.LanguagesActivity$4
  com.team3.getjob.LanguagesActivity$5
-com/team3/getjob/jobs_pull_fragment.java
- com.team3.getjob.jobs_pull_fragment
- com.team3.getjob.jobs_pull_fragment$1
- com.team3.getjob.jobs_pull_fragment$2
- com.team3.getjob.jobs_pull_fragment$3
+com/team3/getjob/databinding/FragmentJobsPullFragmentBinding.java
+ com.team3.getjob.databinding.FragmentJobsPullFragmentBinding
 com/team3/getjob/Login/WelcomeActivity.java
  com.team3.getjob.Login.WelcomeActivity
 com/team3/getjob/databinding/ActivityLanguagesBinding.java
@@ -96,20 +95,14 @@ com/team3/getjob/Login/RegisterRecruiter.java
  com.team3.getjob.Login.RegisterRecruiter$5
  com.team3.getjob.Login.RegisterRecruiter$6
  com.team3.getjob.Login.RegisterRecruiter$7
-com/team3/getjob/databinding/ActivityJobActionBinding.java
- com.team3.getjob.databinding.ActivityJobActionBinding
+com/team3/getjob/Filter_model.java
+ com.team3.getjob.Filter_model
 com/team3/getjob/databinding/ActivityAboutBinding.java
  com.team3.getjob.databinding.ActivityAboutBinding
-com/team3/getjob/jobs_adapter.java
- com.team3.getjob.jobs_adapter
-com/team3/getjob/EmployerProfile.java
- com.team3.getjob.EmployerProfile
- com.team3.getjob.EmployerProfile$1
- com.team3.getjob.EmployerProfile$2
- com.team3.getjob.EmployerProfile$3
- com.team3.getjob.EmployerProfile$4
- com.team3.getjob.EmployerProfile$5
- com.team3.getjob.EmployerProfile$6
+com/team3/getjob/databinding/ActivityJobActionBinding.java
+ com.team3.getjob.databinding.ActivityJobActionBinding
+com/team3/getjob/BaseActivity.java
+ com.team3.getjob.BaseActivity
 com/team3/getjob/Location.java
  com.team3.getjob.Location
  com.team3.getjob.Location$1
@@ -129,40 +122,47 @@ com/team3/getjob/databinding/ActivityAddJobWindowBinding.java
  com.team3.getjob.databinding.ActivityAddJobWindowBinding
 com/team3/getjob/databinding/AppBarBaseBinding.java
  com.team3.getjob.databinding.AppBarBaseBinding
-com/team3/getjob/Login/ForgotPassword.java
- com.team3.getjob.Login.ForgotPassword
-com/team3/getjob/databinding/FragmentJobsPullFragmentBinding.java
- com.team3.getjob.databinding.FragmentJobsPullFragmentBinding
-com/team3/getjob/Age.java
- com.team3.getjob.Age
- com.team3.getjob.Age$1
- com.team3.getjob.Age$2
- com.team3.getjob.Age$3
-com/team3/getjob/Login/RegisterUser.java
- com.team3.getjob.Login.RegisterUser
- com.team3.getjob.Login.RegisterUser$1
- com.team3.getjob.Login.RegisterUser$2
- com.team3.getjob.Login.RegisterUser$3
- com.team3.getjob.Login.RegisterUser$4
- com.team3.getjob.Login.RegisterUser$5
- com.team3.getjob.Login.RegisterUser$6
- com.team3.getjob.Login.RegisterUser$7
-com/team3/getjob/MainActivity.java
- com.team3.getjob.MainActivity
-com/team3/getjob/Filter_model.java
- com.team3.getjob.Filter_model
-com/team3/getjob/EditProfile.java
- com.team3.getjob.EditProfile
- com.team3.getjob.EditProfile$1
- com.team3.getjob.EditProfile$2
- com.team3.getjob.EditProfile$2$1
- com.team3.getjob.EditProfile$2$1$1
- com.team3.getjob.EditProfile$2$1$2
- com.team3.getjob.EditProfile$3
- com.team3.getjob.EditProfile$3$1
- com.team3.getjob.EditProfile$3$1$1
- com.team3.getjob.EditProfile$3$1$2
- com.team3.getjob.EditProfile$4
- com.team3.getjob.EditProfile$4$1
-com/team3/getjob/BaseActivity.java
- com.team3.getjob.BaseActivity
+com/team3/getjob/JobAction.java
+ com.team3.getjob.JobAction
+ com.team3.getjob.JobAction$1
+ com.team3.getjob.JobAction$2
+ com.team3.getjob.JobAction$3
+ com.team3.getjob.JobAction$3$1
+ com.team3.getjob.JobAction$3$2
+ com.team3.getjob.JobAction$4
+ com.team3.getjob.JobAction$4$1
+ com.team3.getjob.JobAction$4$2
+com/team3/getjob/jobs_pull_fragment.java
+ com.team3.getjob.jobs_pull_fragment
+ com.team3.getjob.jobs_pull_fragment$1
+ com.team3.getjob.jobs_pull_fragment$2
+ com.team3.getjob.jobs_pull_fragment$3
+com/team3/getjob/jobs_adapter.java
+ com.team3.getjob.jobs_adapter
+com/team3/getjob/job_model.java
+ com.team3.getjob.job_model
+com/team3/getjob/Jobs_Pull.java
+ com.team3.getjob.Jobs_Pull
+ com.team3.getjob.Jobs_Pull$1
+ com.team3.getjob.Jobs_Pull$2
+ com.team3.getjob.Jobs_Pull$3
+ com.team3.getjob.Jobs_Pull$4
+ com.team3.getjob.Jobs_Pull$5
+com/team3/getjob/AddJobWindow.java
+ com.team3.getjob.AddJobWindow
+ com.team3.getjob.AddJobWindow$1
+ com.team3.getjob.AddJobWindow$2
+ com.team3.getjob.AddJobWindow$3
+ com.team3.getjob.AddJobWindow$4
+com/team3/getjob/EmployerProfile.java
+ com.team3.getjob.EmployerProfile
+ com.team3.getjob.EmployerProfile$1
+ com.team3.getjob.EmployerProfile$2
+ com.team3.getjob.EmployerProfile$3
+ com.team3.getjob.EmployerProfile$4
+ com.team3.getjob.EmployerProfile$5
+ com.team3.getjob.EmployerProfile$6
+com/team3/getjob/EmployeeProfile.java
+ com.team3.getjob.EmployeeProfile
+ com.team3.getjob.EmployeeProfile$1
+ com.team3.getjob.EmployeeProfile$2

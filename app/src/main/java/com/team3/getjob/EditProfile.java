@@ -111,7 +111,7 @@ public class EditProfile extends AppCompatActivity {
                                         if (currentUser.getUid().equals(String.valueOf(document.get("Uid")))) {
                                             DocumentReference ref = db.collection("Users").document(document.getId());
                                             ref
-                                                    .update("Name", name.getText().toString())
+                                                    .update("Name", name.getText().toString(),"Address", address.getText().toString(), "PhoneNumber",phone.getText().toString(),"Id",id.getText().toString(),"Age",age.getText().toString(),"Email",email.getText().toString())
                                                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                                                         @Override
                                                         public void onSuccess(Void aVoid) {

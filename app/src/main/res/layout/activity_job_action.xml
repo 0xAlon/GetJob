@@ -45,7 +45,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="130dp"
         android:orientation="vertical"
         android:paddingLeft="13dp"
         android:paddingRight="13dp">
@@ -77,23 +77,6 @@
             android:inputType="number" />
 
         <TextView
-            android:id="@+id/date"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="תאריך" />
-
-        <EditText
-            android:id="@+id/date_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="00/00/0000"
-            android:inputType="date"
-            android:gravity="right"
-
-            />
-
-        <TextView
             android:id="@+id/location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -123,20 +106,6 @@
             android:inputType="phone" />
 
         <TextView
-            android:id="@+id/age"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="גיל" />
-
-        <EditText
-            android:id="@+id/age_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="00"
-            android:gravity="right"
-            android:inputType="numberSigned" />
-        <TextView
             android:id="@+id/jobdetail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -164,6 +133,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="130dp"
             android:orientation="horizontal"
             android:layout_weight="2">
 
