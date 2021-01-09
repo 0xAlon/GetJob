@@ -35,7 +35,6 @@ public class EmployeeProfile extends BaseActivity {
     TextView phone_num;
     TextView location;
     ListView mListView;
-    ImageButton back;
     FirebaseFirestore db;
     ArrayList<String> post_apply;
 
@@ -69,17 +68,6 @@ public class EmployeeProfile extends BaseActivity {
             }
         });
 
-/*
-
-        //back
-        back=(ImageButton) findViewById(R.id.back);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(EmployeeProfile.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });*/
     }
 
     @Override
@@ -116,7 +104,7 @@ public class EmployeeProfile extends BaseActivity {
                         }
                         user_name.setText(String.valueOf(list.get(0)));
                         email.setText(String.valueOf(list.get(1)));
-                        phone_num.setText("0"+String.valueOf(list.get(2)));
+                        phone_num.setText(String.valueOf(list.get(2)));
                         location.setText(String.valueOf(list.get(3)));
                     } else {
                         Log.d(TAG, "Error getting documents: ", task.getException());
@@ -142,11 +130,11 @@ public class EmployeeProfile extends BaseActivity {
                                 Log.d("CHECK", "updateFields: "+post_apply);
 
                                 if(post_apply.contains(document.getId())){
-                                    //Log.d("test -----> ",document.getId());
+
                                     //Fill the class with data!!!!!
                                     job_model jobs = document.toObject(job_model.class);
                                     id_list.add(document.getId());
-                                    //temp_list.add(new job_model(jobs.getTitle(),jobs.getDescription(), jobs.getLocation(), jobs.getPayment(),jobs.getRank(),jobs.getDate(),jobs.getLanguages()));
+
                                     temp_list.add(new job_model(jobs.getTitle(),jobs.getDescription(), jobs.getLocation(), jobs.getPayment(),jobs.getRank() ,jobs.isAgeAdult(),jobs.getDate(),jobs.getLanguages(), jobs.getUsers()));
                                     jobs_adapter adapter = new jobs_adapter(context, temp_list);
 

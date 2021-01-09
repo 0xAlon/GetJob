@@ -15,10 +15,14 @@ public class job_model {
     private String Uid;
     private boolean ageAdult;
     private Date date;
+
+
+
     private ArrayList<String> languages;
     private ArrayList<String> users;
 
     public job_model() { }
+
 
     public job_model(String title, String description, String location, String payment, String rank, boolean ageAdult, Date date, ArrayList<String> languages, ArrayList<String> users) {
         this.title = title;
@@ -105,4 +109,6 @@ public class job_model {
     public void setUsers(ArrayList<String> users) {
         this.users = users;
     }
+
+
 }

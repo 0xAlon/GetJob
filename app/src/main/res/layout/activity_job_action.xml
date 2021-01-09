@@ -91,21 +91,6 @@
             android:inputType="textPostalAddress" />
 
         <TextView
-            android:id="@+id/phone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="מספר טלפון" />
-
-        <EditText
-            android:id="@+id/phone_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="0500000000"
-            android:gravity="right"
-            android:inputType="phone" />
-
-        <TextView
             android:id="@+id/jobdetail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

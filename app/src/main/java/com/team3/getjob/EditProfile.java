@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -26,6 +28,7 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.team3.getjob.Utilities.Validation;
 
 public class EditProfile extends AppCompatActivity {
     String TAG = "EditProfile";
@@ -54,13 +57,92 @@ public class EditProfile extends AppCompatActivity {
         FirebaseUser currentUser = mAuth.getCurrentUser();
         setContentView(R.layout.activity_edit_profile);
         name = (EditText) findViewById(R.id.name_field);
+        name.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {
+                if (!Validation.isAlpha(name.getText().toString())) {
+                    name.setError(getString(R.string.InvalidName));
+                }
+            }
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+        });
         id = (TextView) findViewById(R.id.id_field);
+        id.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {
+                if (!Validation.isValidId(id.getText().toString())) {
+                    id.setError(getString(R.string.InvalidId));
+                }
+            }
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+        });
         email = (TextView) findViewById(R.id.email_field);
-        password = (TextView) findViewById(R.id.password_field);
+        email.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {
+                if (!Validation.isEmailValid(email.getText().toString())) {
+                    email.setError(getString(R.string.InvalidEmail));
+                }
+            }
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+        });
         age = (TextView) findViewById(R.id.age_field);
+        age.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {
+                if (!Validation.isValidAge(age.getText().toString())) {
+                    age.setError(getString(R.string.InvalidAge));
+                }
+            }
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+        });
+
         phone = (TextView) findViewById(R.id.phone_field);
+        phone.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {
+                if (!Validation.isValidPhoneNumber(phone.getText().toString())) {
+                    phone.setError(getString(R.string.InvalidPhone));
+                }
+            }
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+        });
+
         address = (TextView) findViewById(R.id.address_field);
-        old_password = (TextView) findViewById(R.id.old_password_field);
+        address.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {
+                if (!Validation.isAlpha(address.getText().toString())) {
+                    address.setError(getString(R.string.InvalidName));
+                }
+            }
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+        });
+
         back = (ImageButton) findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +152,8 @@ public class EditProfile extends AppCompatActivity {
             }
         });
 
+        password = (TextView) findViewById(R.id.password_field);
+        old_password = (TextView) findViewById(R.id.old_password_field);
 
         FirebaseApp.initializeApp(this);
         FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -96,43 +180,45 @@ public class EditProfile extends AppCompatActivity {
         update_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 if (!password.getText().toString().isEmpty()) {
                     PasswordUpdate();
                 }
+                if(checkValidation()) {
+                    db.collection("Users")
+                            .get()
+                            .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                                @Override
+                                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                                    if (task.isSuccessful()) {
+                                        for (QueryDocumentSnapshot document : task.getResult()) {
 
-                db.collection("Users")
-                        .get()
-                        .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                            @Override
-                            public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                                if (task.isSuccessful()) {
-                                    for (QueryDocumentSnapshot document : task.getResult()) {
-
-                                        if (currentUser.getUid().equals(String.valueOf(document.get("Uid")))) {
-                                            DocumentReference ref = db.collection("Users").document(document.getId());
-                                            ref
-                                                    .update("Name", name.getText().toString(),"Address", address.getText().toString(), "PhoneNumber",phone.getText().toString(),"Id",id.getText().toString(),"Age",age.getText().toString(),"Email",email.getText().toString())
-                                                    .addOnSuccessListener(new OnSuccessListener<Void>() {
-                                                        @Override
-                                                        public void onSuccess(Void aVoid) {
-                                                            Log.d("TAG", "DocumentSnapshot successfully updated!");
-                                                            Intent intent = new Intent(EditProfile.this, MainActivity.class);
-                                                            startActivity(intent);
-                                                        }
-                                                    })
-                                                    .addOnFailureListener(new OnFailureListener() {
-                                                        @Override
-                                                        public void onFailure(@NonNull Exception e) {
-                                                            Log.w("TAG", "Error updating document", e);
-                                                        }
-                                                    });
+                                            if (currentUser.getUid().equals(String.valueOf(document.get("Uid")))) {
+                                                DocumentReference ref = db.collection("Users").document(document.getId());
+                                                ref
+                                                        .update("Name", name.getText().toString(), "Address", address.getText().toString(), "PhoneNumber", phone.getText().toString(), "Id", id.getText().toString(), "Age", age.getText().toString(), "Email", email.getText().toString())
+                                                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                            @Override
+                                                            public void onSuccess(Void aVoid) {
+                                                                Log.d("TAG", "DocumentSnapshot successfully updated!");
+                                                                Intent intent = new Intent(EditProfile.this, MainActivity.class);
+                                                                startActivity(intent);
+                                                            }
+                                                        })
+                                                        .addOnFailureListener(new OnFailureListener() {
+                                                            @Override
+                                                            public void onFailure(@NonNull Exception e) {
+                                                                Log.w("TAG", "Error updating document", e);
+                                                            }
+                                                        });
+                                            }
                                         }
+                                    } else {
+                                        Log.d("check", "Error getting documents: ", task.getException());
                                     }
-                                } else {
-                                    Log.d("check", "Error getting documents: ", task.getException());
                                 }
-                            }
-                        });
+                            });
+                }
             }
         });
 
@@ -211,4 +297,27 @@ public class EditProfile extends AppCompatActivity {
                     }
                 });
     }
+
+    private boolean checkValidation() {
+        if (!Validation.isEmailValid(email.getText().toString())) {
+            return false;
+        }
+        if (!Validation.isAlpha(name.getText().toString())) {
+            return false;
+        }
+        if (!Validation.isAlpha(address.getText().toString())) {
+            return false;
+        }
+        if (!Validation.isValidAge(age.getText().toString())) {
+            return false;
+        }
+        if (!Validation.isValidId(id.getText().toString())) {
+            return false;
+        }
+        if (!Validation.isValidPhoneNumber(phone.getText().toString())) {
+            return false;
+        }
+        return true;
+    }
+
 }

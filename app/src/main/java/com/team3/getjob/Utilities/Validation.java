@@ -47,6 +47,14 @@ public class Validation {
         return matcher.matches();
     }
 
+    public static boolean isValidSalary(String salary) {
+        String regularExpression = "[-+]?[0-9]*\\.?[0-9]+$";
+        Pattern pattern = Pattern.compile(regularExpression);
+        Matcher matcher = pattern.matcher(salary);
+        return matcher.matches();
+    }
+
+
     public static boolean isValidCompany(String company) {
         return !company.isEmpty();
     }

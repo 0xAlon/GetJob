@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.BaseAdapter;
@@ -25,6 +27,7 @@ import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.team3.getjob.Utilities.Validation;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,9 +41,8 @@ public class JobAction extends AppCompatActivity {
     EditText job_title;
     TextView salary;
     TextView date;
-    TextView location;
+    TextView address;
     TextView age;
-    TextView phone;
     TextView languages;
     TextView job_detail;
     ImageButton back;
@@ -54,13 +56,63 @@ public class JobAction extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_job_action);
         job_title = (EditText) findViewById(R.id.jobtitle_field);
+        job_title.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {
+                if (!Validation.isValidCompany(job_title.getText().toString())) {
+                    job_title.setError("יש להזין כותרת");
+                }
+            }
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+        });
+
         salary = (TextView) findViewById(R.id.salary_field);
+        salary.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {
+                if (!Validation.isValidSalary(salary.getText().toString())) {
+                    salary.setError("מחיר לא חוקי");
+                }
+            }
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+        });
+
         date = (TextView) findViewById(R.id.date_field);
-        location = (TextView) findViewById(R.id.location_field);
-        age = (TextView) findViewById(R.id.age_field);
-        phone = (TextView) findViewById(R.id.phone_field);
+
+        address = (TextView) findViewById(R.id.location_field);
+
+
+
         languages = (TextView) findViewById(R.id.languages_field);
+        languages.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {
+                if (!Validation.isValidCompany(languages.getText().toString())) {
+                    languages.setError("יש להזין שפה");
+                }
+            }
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+        });
+
         job_detail = (TextView) findViewById(R.id.jobdetail_field);
+        job_detail.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {
+                if (!Validation.isValidCompany(job_detail.getText().toString())) {
+                    job_detail.setError("יש להזין תיאור");
+                }
+            }
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+        });
+
         back=(ImageButton) findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,8 +142,7 @@ public class JobAction extends AppCompatActivity {
                         Log.d("TAG", "DocumentSnapshot data: " + document.getData());
                         job_title.setText(String.valueOf(document.getData().get("title")));
                         salary.setText(String.valueOf(document.getData().get("payment")));
-                        location.setText(String.valueOf(document.getData().get("location")));
-                        phone.setText(String.valueOf(document.getData().get("phone")));
+                        address.setText(String.valueOf(document.getData().get("location")));
                         languages.setText(String.valueOf(document.getData().get("languages")));
                         job_detail.setText(String.valueOf(document.getData().get("description")));
                     } else {
@@ -108,23 +159,25 @@ public class JobAction extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                DocumentReference ref = db.collection("Posts").document(postId);
-                ref
-                        .update("title", job_title.getText().toString(), "payment", salary.getText().toString(), "location", location.getText().toString(),"phone",phone.getText().toString(), "description",job_detail.getText().toString(),"languages", FieldValue.arrayUnion(languages.getText().toString()))
-                        .addOnSuccessListener(new OnSuccessListener<Void>() {
-                            @Override
-                            public void onSuccess(Void aVoid) {
-                                Log.d("TAG", "DocumentSnapshot successfully updated!");
-                                Intent intent = new Intent(JobAction.this,MainActivity.class);
-                                startActivity(intent);
-                            }
-                        })
-                        .addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                Log.w("TAG", "Error updating document", e);
-                            }
-                        });
+                if(checkValidation()) {
+                    DocumentReference ref = db.collection("Posts").document(postId);
+                    ref
+                            .update("title", job_title.getText().toString(), "payment", salary.getText().toString(), "location", address.getText().toString(), "description", job_detail.getText().toString(), "languages", FieldValue.arrayUnion(languages.getText().toString()))
+                            .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void aVoid) {
+                                    Log.d("TAG", "DocumentSnapshot successfully updated!");
+                                    Intent intent = new Intent(JobAction.this, MainActivity.class);
+                                    startActivity(intent);
+                                }
+                            })
+                            .addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    Log.w("TAG", "Error updating document", e);
+                                }
+                            });
+                }
 
             }
         });
@@ -153,5 +206,21 @@ public class JobAction extends AppCompatActivity {
         });
 
 
+    }
+
+    private boolean checkValidation(){
+        if (!Validation.isValidSalary(salary.getText().toString())) {
+            return false;
+        }
+        if (!Validation.isValidCompany(job_title.getText().toString())) {
+            return false;
+        }
+        if (!Validation.isValidCompany(job_detail.getText().toString())) {
+            return false;
+        }
+        if (!Validation.isValidCompany(languages.getText().toString())) {
+            return false;
+        }
+        return true;
     }
 }

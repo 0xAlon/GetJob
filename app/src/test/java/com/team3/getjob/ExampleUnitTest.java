@@ -1,5 +1,7 @@
 package com.team3.getjob;
 
+import com.team3.getjob.Utilities.Validation;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -58,7 +60,9 @@ public class ExampleUnitTest {
 
     }
 
-
-
-
+    @Test
+    public void isValidSalary() {
+        assertFalse(Validation.isValidSalary("a"));
+        assertTrue(Validation.isValidSalary("200"));
+    }
 }

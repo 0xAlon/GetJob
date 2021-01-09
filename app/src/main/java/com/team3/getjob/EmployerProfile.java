@@ -74,21 +74,8 @@ public class EmployerProfile extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.employer_profile);
 
         View rootView = getLayoutInflater().inflate(R.layout.employer_profile, frameLayout);
-
-        /*View clickView = rootView.findViewById(R.id.nav);
-        clickView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-                drawer.openDrawer(Gravity.LEFT);
-
-            }
-        });*/
-
-
 
         FirebaseApp.initializeApp(this);
         mAuth = FirebaseAuth.getInstance();
@@ -110,11 +97,6 @@ public class EmployerProfile extends BaseActivity {
 
         mListView = findViewById(R.id.list);
         db = FirebaseFirestore.getInstance();
-
-
-
-        //logout button
-
 
         //Data Pull
         List<String> id_list = new ArrayList<String>();
@@ -183,7 +165,7 @@ public class EmployerProfile extends BaseActivity {
                         Log.d("CHECK", "my_post: "+my_posts);
                         user_name.setText(String.valueOf(list.get(0)));
                         email.setText(String.valueOf(list.get(1)));
-                        phone_num.setText("0"+String.valueOf(list.get(2)));
+                        phone_num.setText(String.valueOf(list.get(2)));
                         company_name.setText(String.valueOf(list.get(3)));
                         location.setText(String.valueOf(list.get(4)));
 
@@ -211,11 +193,11 @@ public class EmployerProfile extends BaseActivity {
                                 Log.d("CHECK", "DataBasePull: "+my_posts);
 
                                 if(my_posts.contains(document.getId())){
-                                    //Log.d("test -----> ",document.getId());
+
                                     //Fill the class with data!!!!!
                                     job_model jobs = document.toObject(job_model.class);
                                     id_list.add(document.getId());
-                                    //temp_list.add(new job_model(jobs.getTitle(),jobs.getDescription(), jobs.getLocation(), jobs.getPayment(),jobs.getRank(),jobs.getDate(),jobs.getLanguages()));
+
                                     temp_list.add(new job_model(jobs.getTitle(),jobs.getDescription(), jobs.getLocation(), jobs.getPayment(),jobs.getRank() ,jobs.isAgeAdult(),jobs.getDate(),jobs.getLanguages(), jobs.getUsers()));
                                     jobs_adapter adapter = new jobs_adapter(context, temp_list);
 
@@ -259,7 +241,6 @@ public class EmployerProfile extends BaseActivity {
 
     }
 
-    //Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
 
     public void createExcelSheet() {
         if(isStoragePermissionGranted()) {
@@ -306,12 +287,6 @@ public class EmployerProfile extends BaseActivity {
             e.printStackTrace();
         }
 
-    }
-
-
-
-    public void SaveTheFile(View view) {
-        createExcelSheet();
     }
 
 
