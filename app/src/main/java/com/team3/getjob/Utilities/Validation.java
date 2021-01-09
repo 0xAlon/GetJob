@@ -53,6 +53,13 @@ public class Validation {
         Matcher matcher = pattern.matcher(salary);
         return matcher.matches();
     }
+    public static boolean isValidPayment(String name) {
+        String expression = "[+]?[0-9]*\\.?[0-9]+$\n";
+        CharSequence inputStr = name;
+        Pattern pattern = Pattern.compile(expression);
+        Matcher matcher = pattern.matcher(inputStr);
+        return matcher.matches();
+    }
 
 
     public static boolean isValidCompany(String company) {

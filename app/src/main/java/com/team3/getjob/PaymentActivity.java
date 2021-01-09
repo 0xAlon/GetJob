@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.team3.getjob.Utilities.Validation;
+
 public class PaymentActivity extends AppCompatActivity {
 
     @Override
@@ -46,10 +48,12 @@ public class PaymentActivity extends AppCompatActivity {
                 }else{
                     String lowF = low.getText().toString();
                     String highF = high.getText().toString();
-                    Filter_model.Max_payment = highF;
-                    Filter_model.Min_payment = lowF;
+                    if(!Validation.isValidPayment(lowF) && !Validation.isValidPayment(highF)) {
+                        Filter_model.Max_payment = highF;
+                        Filter_model.Min_payment = lowF;
+                    }
 
-                    Intent intent_Apply = new Intent(PaymentActivity.this, Filter.class);
+                        Intent intent_Apply = new Intent(PaymentActivity.this, Filter.class);
                     startActivity(intent_Apply);
 
                 }

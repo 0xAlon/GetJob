@@ -65,4 +65,12 @@ public class ExampleUnitTest {
         assertFalse(Validation.isValidSalary("a"));
         assertTrue(Validation.isValidSalary("200"));
     }
+
+    public void isValidPayment() {
+        assertFalse(Validation.isValidPayment(""));
+        assertFalse(Validation.isValidPayment("-10"));
+        assertEquals(true, !Validation.isValidPayment("100"));
+        assertFalse(Validation.isValidPayment("text"));
+
+    }
 }

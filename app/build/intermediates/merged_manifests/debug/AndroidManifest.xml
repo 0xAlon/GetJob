@@ -25,7 +25,6 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.GetJob"
         android:usesCleartextTraffic="true" >
         <activity android:name="com.team3.getjob.EditProfile" />
